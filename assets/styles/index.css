@@ -1,5 +1,20 @@
+@font-face {
+  font-family: 'Leafy Extended';
+  src: url('LeafyExtended.eot');
+  src: local('Leafy Extended'), local('LeafyExtended'),
+      url('../fonts/LeafyExtended/LeafyExtended.eot') format('embedded-opentype'),
+      url('../fonts/LeafyExtended/LeafyExtended.woff2') format('woff2'),
+      url('../fonts/LeafyExtended/LeafyExtended.woff') format('woff'),
+      url('../fonts/LeafyExtended/LeafyExtended.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: black;
+
+  font-family: 'Roboto', sans-serif;
+  font-family: 'LeafyExtended', fantasy;
 }
 
 /*# sourceMappingURL=index.css.map */
