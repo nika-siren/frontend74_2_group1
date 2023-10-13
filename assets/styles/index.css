@@ -1,5 +1,27 @@
+@font-face {
+  font-family: 'Leafy Extended';
+  src: local('LeafyExtended'), 
+      url('./fonts/LeafyExtended/LeafyExtended.eot') format('embedded-opentype'),
+      url('./fonts/LeafyExtended/LeafyExtended.woff2') format('woff2'),
+      url('./fonts/LeafyExtended/LeafyExtended.woff') format('woff'),
+      url('./fonts/LeafyExtended/LeafyExtended.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: black;
+
+  
+}
+
+.header__logo {
+  width: 5vw;
+}
+
+.header__title {
+  font-family: 'Leafy Extended';
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=index.css.map */
