@@ -1,3 +1,19 @@
+
+
+@font-face {
+    font-family: 'Leafy Extended';
+    src: url('LeafyExtended.eot');
+    src: local('Leafy Extended'), local('LeafyExtended'),
+        url('./fonts/LeafyExtended/LeafyExtended.eot') format('embedded-opentype'),
+        url('./fonts/LeafyExtended/LeafyExtended.woff2') format('woff2'),
+        url('./fonts/LeafyExtended/LeafyExtended.woff') format('woff'),
+        url('./fonts/LeafyExtended/LeafyExtended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@import 'header.scss';  
+
 $main-color: black;
 
 /*задаем цвета, добавила пока примерную структуру, чтобы не забыть (:
@@ -12,4 +28,5 @@ $wine: #91778C;
 
 body {
     color: $main-color;
+    font-family: 'Roboto', sans-serif;
 }

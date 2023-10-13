@@ -1,36 +1,33 @@
+@charset "UTF-8";
 @font-face {
-  font-family: 'Leafy Extended';
-  src: url('LeafyExtended.eot');
-  src: local('Leafy Extended'), local('LeafyExtended'),
-      url('./fonts/LeafyExtended/LeafyExtended.eot') format('embedded-opentype'),
-      url('./fonts/LeafyExtended/LeafyExtended.woff2') format('woff2'),
-      url('./fonts/LeafyExtended/LeafyExtended.woff') format('woff'),
-      url('./fonts/LeafyExtended/LeafyExtended.ttf') format('truetype');
+  font-family: "Leafy Extended";
+  src: url("LeafyExtended.eot");
+  src: local("Leafy Extended"), local("LeafyExtended"), url("./fonts/LeafyExtended/LeafyExtended.eot") format("embedded-opentype"), url("./fonts/LeafyExtended/LeafyExtended.woff2") format("woff2"), url("./fonts/LeafyExtended/LeafyExtended.woff") format("woff"), url("./fonts/LeafyExtended/LeafyExtended.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+/*  Header */
+.header__logo {
+  width: 5%;
+}
 
+.header__link {
+  margin: 5% 1% 5% 1%;
+  text-decoration: none;
+}
+
+/*задаем цвета, добавила пока примерную структуру, чтобы не забыть (:
+$background-color: #E8D8CB;
+$purple: #CDB0E3;
+$pink?: #E2B2B5;
+$orange: #F4CB7C;
+$blue: #B9D0DF;
+$wine: #91778C;
+
+*/
 body {
   color: black;
-
-  font-family: 'Roboto', sans-serif;
-  
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */
-
-/* С Т А Р Т  Б Л О К А номер блока */
-
-/* п о з и ц и о н и р о в а н и е */
-
-/* б л о ч н а я  м о д е л ь */
-
-/* т и п о г р а ф и к а */
-
-/* о ф о р м л е н и е */
-
-/* а н и м а ц и я */
-
-/* р а з н о е */
-
-/* К О Н Е Ц  Б Л О К А номер блока */
