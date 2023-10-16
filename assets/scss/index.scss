@@ -12,21 +12,29 @@
     font-style: normal;
   }
 
-@import 'header.scss';  
-
-$main-color: black;
-
-/*задаем цвета, добавила пока примерную структуру, чтобы не забыть (:
-$background-color: #E8D8CB;
-$purple: #CDB0E3;
-$pink?: #E2B2B5;
-$orange: #F4CB7C;
-$blue: #B9D0DF;
-$wine: #91778C;
-
-*/
+@import 'variables.scss';
+@import 'index-media.scss';
 
 body {
     color: $main-color;
     font-family: 'Roboto', sans-serif;
 }
+
+
+* {
+    box-sizing: border-box;
+}
+  
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .25s ease;
+}
+  
+li {
+    list-style: none;
+}
+  
+@import 'header.scss';  
+@import 'about-me.scss';
+@import 'footer.scss';
