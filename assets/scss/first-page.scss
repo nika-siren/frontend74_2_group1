@@ -1,0 +1,67 @@
+// First page
+.first-page__container {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    align-items: stretch;
+    justify-items: center;
+        
+}
+
+.first-page__main {
+    display: flex;
+    flex-direction: column;
+    
+           
+}
+
+.first-page__title {
+    
+    margin-left: 10%;
+
+    font-family: 'Leafy Extended';
+    font-size: 8em;
+    line-height: 80%;
+}
+
+.first-page__subtitle {
+
+    margin-left: 10%;
+
+    font-family: 'Leafy Extended';
+    font-size: 2em;
+    line-height: 75%;
+}
+
+.first-page__text {
+
+    margin-left: 10%;
+
+    font-size: 1.5em;
+
+}
+
+.first-page__link {
+
+    margin-left: 10%;
+    
+    
+
+}
+
+.first-page__button {
+
+    padding: 7px 12px 7px 12px;
+
+    font-size: 1.5em;
+    font-weight: 500;
+
+}
+
+.first-page__img {
+     
+    width: 50%;
+}

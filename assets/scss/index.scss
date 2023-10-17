@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: 'Leafy Extended';
     src: url('LeafyExtended.eot');
@@ -20,7 +18,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
+img {
+    max-width: 100%;
+}
 * {
     box-sizing: border-box;
 }
@@ -36,5 +36,6 @@ li {
 }
   
 @import 'header.scss';  
+@import 'first-page.scss';
 @import 'about-me.scss';
 @import 'footer.scss';
