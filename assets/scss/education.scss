@@ -1,0 +1,35 @@
+.education__h1 {
+    font-family: 'Leafy Extended';
+    font-size: 8em;
+    line-height: 80%;
+
+    padding-left: 10%;
+}
+
+/* .education__container {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    justify-items: center;
+
+} */
+
+.education__main {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+
+.education__text__main {
+    width: 60%;
+    padding-bottom: 5vh;
+}
+
+.education__text {
+    border-bottom: solid 1px black;
+    border-top: 1px solid black;
+    padding: 3%;
+}

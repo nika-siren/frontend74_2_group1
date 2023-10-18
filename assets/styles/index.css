@@ -12,7 +12,7 @@ $purple: #CDB0E3;
 $pink?: #E2B2B5;
 $orange: #F4CB7C;
 $blue: #B9D0DF;
-$wine: #91778C;
+$wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 */
 /*пока тоже примерно, шаблон из статьи 7 недели: https://itgirlschool.notion.site/7-d538acf66018487ea0b5b12167679fc9*/
@@ -40,8 +40,9 @@ $wine: #91778C;
     стили для малого смартфона 
 } */
 body {
-  color: black;
+  color: #91778C;
   font-family: "Roboto", sans-serif;
+  background-color: #E8D8CB;
 }
 
 img {
@@ -254,6 +255,40 @@ li {
   -webkit-user-select: none;
 }
 
+.education__h1 {
+  font-family: "Leafy Extended";
+  font-size: 8em;
+  line-height: 80%;
+  padding-left: 10%;
+}
+
+/* .education__container {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    justify-items: center;
+
+} */
+.education__main {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+}
+
+.education__text__main {
+  width: 60%;
+  padding-bottom: 5vh;
+}
+
+.education__text {
+  border-bottom: solid 1px black;
+  border-top: 1px solid black;
+  padding: 3%;
+}
+
 /*  Footer */
 .footer__menu {
   padding-left: 200px;
@@ -323,10 +358,12 @@ li {
 }
 
 .footer__menu-item a:after {
-  background-color: #f66d52; /* Цвет линии при наведении на нее курсора мыши */
+  background-color: #E2B2B5;
+  /* Цвет линии при наведении на нее курсора мыши */
   display: block;
   content: "";
-  height: 2px; /* Высота линии */
+  height: 2px;
+  /* Высота линии */
   width: 0%;
   -webkit-transition: width 0.3s ease-in-out;
   -moz--transition: width 0.3s ease-in-out;
