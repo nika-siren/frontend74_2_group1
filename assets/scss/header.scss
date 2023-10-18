@@ -1,10 +1,15 @@
 /*  Header */
 
 .header__container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     display: flex;
     width: 100%;
 
     justify-content: right;  
+
+    background-color: $background-color;
 }
 
 .header__nav {
