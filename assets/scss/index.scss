@@ -16,6 +16,7 @@
 body {
     color: $main-color;
     font-family: 'Roboto', sans-serif;
+    background-color: $background-color;
 }
 
 img {
@@ -40,4 +41,5 @@ li {
 @import 'first-page.scss';
 @import 'about-me.scss';
 @import 'experience.scss';
+@import 'education.scss';
 @import 'footer.scss';
