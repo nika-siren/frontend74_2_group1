@@ -8,7 +8,7 @@
         url('./fonts/LeafyExtended/LeafyExtended.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 @import 'variables.scss';
 @import 'index-media.scss';
@@ -21,21 +21,23 @@ body {
 img {
     max-width: 100%;
 }
+
 * {
     box-sizing: border-box;
 }
-  
+
 a {
     color: inherit;
     text-decoration: none;
     transition: .25s ease;
 }
-  
+
 li {
     list-style: none;
 }
-  
-@import 'header.scss';  
+
+@import 'header.scss';
 @import 'first-page.scss';
 @import 'about-me.scss';
+@import 'experience.scss';
 @import 'footer.scss';
