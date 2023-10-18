@@ -1,0 +1,33 @@
+/* about me page */
+
+.about-me__img img {
+    border-radius: 20px;
+    width: 50%;
+
+    margin-left: 10%;
+}
+
+.about-me__h1 {
+    font-family: 'Leafy Extended';
+    font-size: 8em;
+    line-height: 80%;
+}
+
+.about-me__container {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    justify-items: center;
+    justify-content: space-around;
+
+}
+
+.about-me__main {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 10%;
+}
