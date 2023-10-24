@@ -39,30 +39,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 @media screen and (max-width: 320px) {
     стили для малого смартфона 
 } */
-body {
-  color: #91778C;
-  font-family: "Roboto", sans-serif;
-  background-color: #E8D8CB;
-}
-
-img {
-  max-width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: 0.25s ease;
-}
-
-li {
-  list-style: none;
-}
-
 /*  Header */
 .header__container {
   display: flex;
@@ -289,10 +265,8 @@ li {
   padding: 3%;
 }
 
-
 /*  Prices */
-
-.prices__container{
+.prices__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content 1fr 1fr;
@@ -301,7 +275,7 @@ li {
   justify-items: center;
 }
 
-.prices__h1{
+.prices__h1 {
   font-family: "Leafy Extended";
   font-size: 8em;
   line-height: 80%;
@@ -312,13 +286,13 @@ li {
   align-items: center;
 }
 
-.services_text{
+.services_text {
   margin-left: 10%;
   margin-right: 10%;
   font-size: 1.5em;
 }
 
-.btn_sign{
+.btn_sign {
   background-color: #FFFFFF;
   border: 1px solid #222222;
   border-radius: 8px;
@@ -342,8 +316,8 @@ li {
   width: auto;
 }
 
-.services{
-  border: solid 1px none ;
+.services {
+  border: solid 1px none;
   border-radius: 5%;
   background-color: #E2B2B5;
   width: 30em;
@@ -389,7 +363,7 @@ li {
 
 .button-footer {
   background-color: #FFFFFF;
-  border: 1px solid none;
+  border: 1px solid #222222;
   border-radius: 8px;
   color: #222222;
   cursor: pointer;
@@ -455,6 +429,30 @@ li {
 .logo__social-media1 {
   max-width: 28px;
   max-height: 28px;
+}
+
+body {
+  color: #91778C;
+  font-family: "Roboto", sans-serif;
+  background-color: #E8D8CB;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+li {
+  list-style: none;
 }
 
 /*# sourceMappingURL=index.css.map */
