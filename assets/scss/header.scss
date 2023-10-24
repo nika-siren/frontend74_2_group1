@@ -1,19 +1,21 @@
 /*  Header */
 
 .header__container {
+    position: sticky;
+    top: 0;
     display: flex;
     width: 100%;
 
     justify-content: right;  
+
+    background-color: $background-color;
 }
 
 .header__nav {
-    display: grid;
+    display: flex;
     width: 100%;
-
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-
+   
+    justify-content: space-evenly;
     justify-items: center;
 }
 
@@ -21,6 +23,7 @@
    
     width: 10%;
     margin: 15px 15px 15px 15px;
+    
 }
 
 .header__logo {
@@ -30,10 +33,10 @@
 
 .header__link {
 
-    justify-self: center;
-    align-self: center;
-  
+      
     margin: 5% 1% 5% 1%;
+    text-align: center;
+    text-wrap: nowrap;
   
     text-decoration: none;
     font-size: 1.5em;

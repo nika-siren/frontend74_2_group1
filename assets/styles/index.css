@@ -41,16 +41,18 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 } */
 /*  Header */
 .header__container {
+  position: sticky;
+  top: 0;
   display: flex;
   width: 100%;
   justify-content: right;
+  background-color: #E8D8CB;
 }
 
 .header__nav {
-  display: grid;
+  display: flex;
   width: 100%;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr;
+  justify-content: space-evenly;
   justify-items: center;
 }
 
@@ -64,9 +66,9 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .header__link {
-  justify-self: center;
-  align-self: center;
   margin: 5% 1% 5% 1%;
+  text-align: center;
+  text-wrap: nowrap;
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 500;
@@ -89,14 +91,14 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .first-page__title {
   margin-left: 10%;
   font-family: "Leafy Extended";
-  font-size: 8em;
+  font-size: 10em;
   line-height: 80%;
 }
 
 .first-page__subtitle {
   margin-left: 10%;
-  font-family: "Leafy Extended";
-  font-size: 2em;
+  font-family: "Caveat";
+  font-size: 3em;
   line-height: 75%;
 }
 
@@ -127,7 +129,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .about-me__h1 {
-  font-family: "Leafy Extended";
+  font-family: "Caveat", cursive;
   font-size: 8em;
   line-height: 80%;
 }
@@ -157,7 +159,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .experience__h1 {
-  font-family: "Leafy Extended";
+  font-family: "Caveat", cursive;
   font-size: 8em;
   line-height: 80%;
 }
@@ -209,7 +211,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .experience__button {
-  background-color: #FFFFFF;
+  background-color: white;
   border: 1px solid #222222;
   border-radius: 8px;
   color: #222222;
@@ -232,7 +234,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .education__h1 {
-  font-family: "Leafy Extended";
+  font-family: "Caveat", cursive;
   font-size: 8em;
   line-height: 80%;
   padding-left: 10%;
@@ -362,7 +364,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .button-footer {
-  background-color: #FFFFFF;
+  background-color: white;
   border: 1px solid #222222;
   border-radius: 8px;
   color: #222222;

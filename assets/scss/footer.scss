@@ -32,10 +32,10 @@
 }
 
 .button-footer {
-  background-color: #FFFFFF;
-  border: 1px solid #222222;
+  background-color: $button-color;
+  border: 1px solid $button-text-color;
   border-radius: 8px;
-  color: #222222;
+  color: $button-text-color;
   cursor: pointer;
   display: inline-block;
   font-family: Roboto, sans-serif;
@@ -70,7 +70,7 @@
 }
 
 .footer__menu-item a:after {
-  background-color: $pink;
+  background-color: $hover-line-color;
   /* Цвет линии при наведении на нее курсора мыши */
   display: block;
   content: "";
