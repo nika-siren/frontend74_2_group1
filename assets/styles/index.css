@@ -300,8 +300,23 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-align: start;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.requests .request_name {
+.requests .request__name {
   text-align: start;
+}
+.requests .requests__btn {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #222222;
+  border-radius: 8px;
+  border: 1px solid #222222;
+  padding: 8px 25px;
+  text-align: center;
+}
+
+.requests__btn:hover {
+  color: #222222;
+  letter-spacing: 1px;
 }
 
 .requests:hover {
