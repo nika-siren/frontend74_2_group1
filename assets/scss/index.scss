@@ -15,8 +15,9 @@
 @import 'header.scss';
 @import 'first-page.scss';
 @import 'about-me.scss';
-@import 'experience.scss';
 @import 'education.scss';
+@import 'experience.scss';
+@import 'requests.scss';
 @import 'prices.scss';
 @import 'footer.scss';
 
@@ -24,6 +25,10 @@ body {
     color: $main-text-color;
     font-family: 'Roboto', sans-serif;
     background-color: $background-color;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
 }
 
 img {
