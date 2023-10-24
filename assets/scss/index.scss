@@ -12,6 +12,12 @@
 
 @import 'variables.scss';
 @import 'index-media.scss';
+@import 'header.scss';
+@import 'first-page.scss';
+@import 'about-me.scss';
+@import 'experience.scss';
+@import 'education.scss';
+@import 'footer.scss';
 
 body {
     color: $main-color;
@@ -36,10 +42,3 @@ a {
 li {
     list-style: none;
 }
-
-@import 'header.scss';
-@import 'first-page.scss';
-@import 'about-me.scss';
-@import 'experience.scss';
-@import 'education.scss';
-@import 'footer.scss';
