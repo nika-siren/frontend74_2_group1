@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: "Leafy Extended";
   src: url("LeafyExtended.eot");
@@ -6,6 +7,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /*задаем цвета, добавила пока примерную структуру, чтобы не забыть (:
 $background-color: #E8D8CB;
 $purple: #CDB0E3;
@@ -347,7 +349,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   font-weight: 400px;
 }
 
-.footer__menu-item + .footer__menu-item {
+.footer__menu-item+.footer__menu-item {
   padding-top: 10px;
 }
 
