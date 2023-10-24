@@ -65,7 +65,6 @@ li {
 
 /*  Header */
 .header__container {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
@@ -75,10 +74,9 @@ li {
 }
 
 .header__nav {
-  display: grid;
+  display: flex;
   width: 100%;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr;
+  justify-content: space-evenly;
   justify-items: center;
 }
 
@@ -92,9 +90,9 @@ li {
 }
 
 .header__link {
-  justify-self: center;
-  align-self: center;
   margin: 5% 1% 5% 1%;
+  text-align: center;
+  text-wrap: nowrap;
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 500;
@@ -117,14 +115,14 @@ li {
 .first-page__title {
   margin-left: 10%;
   font-family: "Leafy Extended";
-  font-size: 8em;
+  font-size: 10em;
   line-height: 80%;
 }
 
 .first-page__subtitle {
   margin-left: 10%;
-  font-family: "Leafy Extended";
-  font-size: 2em;
+  font-family: "Caveat";
+  font-size: 3em;
   line-height: 75%;
 }
 
@@ -155,7 +153,7 @@ li {
 }
 
 .about-me__h1 {
-  font-family: "Leafy Extended";
+  font-family: "Caveat", cursive;
   font-size: 8em;
   line-height: 80%;
 }
@@ -185,7 +183,7 @@ li {
 }
 
 .experience__h1 {
-  font-family: "Leafy Extended";
+  font-family: "Caveat", cursive;
   font-size: 8em;
   line-height: 80%;
 }
@@ -237,7 +235,7 @@ li {
 }
 
 .experience__button {
-  background-color: #FFFFFF;
+  background-color: white;
   border: 1px solid #222222;
   border-radius: 8px;
   color: #222222;
@@ -260,7 +258,7 @@ li {
 }
 
 .education__h1 {
-  font-family: "Leafy Extended";
+  font-family: "Caveat", cursive;
   font-size: 8em;
   line-height: 80%;
   padding-left: 10%;
@@ -326,7 +324,7 @@ li {
 }
 
 .button-footer {
-  background-color: #FFFFFF;
+  background-color: white;
   border: 1px solid #222222;
   border-radius: 8px;
   color: #222222;
