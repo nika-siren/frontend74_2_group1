@@ -6,16 +6,18 @@
     padding-left: 10%;
 }
 
-/* .education__container {
-    display: grid;
-    width: 100%;
+.education__container {
+    // display: grid;
+    // width: 100%;
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr;
 
-    justify-items: center;
+    // justify-items: center;
 
-} */
+    scroll-margin-top: 12em;
+
+} 
 
 .education__main {
     display: flex;

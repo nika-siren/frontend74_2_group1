@@ -9,6 +9,8 @@
     align-items: stretch;
     justify-items: center;
 
+    scroll-margin-top: 15em;
+   
 }
 
 .first-page__main {
@@ -54,14 +56,36 @@
 
 .first-page__button {
 
-    padding: 7px 12px 7px 12px;
-
+    background-color: $button-color;
+    border: 1px solid $button-text-color;
+    border-radius: 8px;
+    color: $button-text-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 1.7em;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
+    // position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+}
 
+.first-page__button:hover {
+    background-color: $hover-line-color;
 }
 
 .first-page__img {
-
+    border-radius: 50%;
     width: 50%;
+
+    margin-left: 10%;
 }
