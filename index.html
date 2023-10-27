@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
@@ -19,30 +22,42 @@
     <!-- H E A D E R  S T A R T -->
     <header class="header__container">
       <a href="#first-page" class="header__logo-link">
-        <img class="header__logo" src="./assets/images/logo.png" />
+        <img class="header__logo" src="./assets/images/logo-new.svg" />
       </a>
       <nav class="header__nav">
-        <a href="" class="header__link">Обо мне</a
+        <a href="#about-me" class="header__link">Обо мне</a
         ><a href="" class="header__link">Запросы</a
-        ><a href="" class="header__link">Образование и опыт</a
+        ><a href="#education" class="header__link">Образование и опыт</a
         >
         <a href="" class="header__link">Консультации</a
         ><a href="" class="header__link">Отзывы</a
-        ><a href="" class="header__link">Контакты</a>
+        >
+        <div>
+          <ul class="header__contacts">
+            <li><a href="" class="header__contact"><img src="./assets/images/Watsapp.png" /></a></li>
+            <li><a href="" class="header__contact"><img src="./assets/images/Telegram.png" /></a></li>
+            <li><a href="" class="header__contact"><img src="./assets/images/Instagram.png" /></a></li>
+          </ul>
+
+        </div>
+        
       </nav>
     </header>
     <main>
       <!-- F I R S T  P A G E  S T A R T -->
-      <div class="first-page__container">
+      <div class="first-page__container" id="first-page">
         <div class="firts-page__main">
           <h1 class="first-page__title">Daria</h1>
           <h2 class="first-page__subtitle">Преподаватель по английскому</h2>
           <h2 class="first-page__subtitle">Наставник для преподавателей</h2>
-          <p class="first-page__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere
-            morbi leo urna molestie at elementum eu facilisis sed.</p>
+          <ul class="first-page__text">
+            <li class="first-page__item">Занятия с детьми от 7 лет и подростками</li>
+            <li class="first-page__item">Общий английский и IT английский для взрослых с начальным уровнем</li>
+            <li class="first-page__item">Консультации для преподавателей по методике</li>
+          </ul>
+          
             <a href="" class="first-page__link">
-              <button class="first-page__button" type="button">Попасть на консультацию</button>
+              <button class="first-page__button" type="button">Связаться</button>
             </a>  
         </div>  
         <div class="first-page__img">
@@ -51,7 +66,7 @@
       </div>
 
       <!-- A B O U T  M E  S T A R T -->
-      <div class="about-me__container">
+      <div class="about-me__container" id="about-me">
         <div class="about-me__img">
           <img src="assets/images/1.png" alt="about-me-photo" />
         </div>
@@ -108,22 +123,9 @@
           eget mauris pharetra.  </p>
           <p class="experience__text"> Odio ut sem nulla pharetra
           diam sit. </p>
-          <div class="experience__button__container">
-
-          <!-- Trigger/Open The Modal -->
-          <button class="experience__button" role="button" id="modal-button">ПОДРОБНЕЕ О МОЁМ ОПЫТЕ</button></div>
+          
       </div>
     </div>
-    
-<!-- The Modal -->
-<div id="modal__additional-experience" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
 </div>
 
       <!-- E X P E R I E N C E  E N D -->
