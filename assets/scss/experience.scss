@@ -1,39 +1,41 @@
 /* experience page */
 
-.experience__img img {
-    border-radius: 20px;
-    width: 50%;
+.experience__img {
 
-    margin-left: 10%;
+    .experience__img img {
+        width: 50%;
+    }
 }
 
 .experience__h1 {
     font-family: 'Caveat', cursive;
-    font-size: 8em;
+    font-size: 6.5em;
     line-height: 80%;
 
     color: #3E2E3B;
 }
 
 .experience__container {
-    display: grid;
+    display: flex;
     width: 100%;
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-
-    justify-items: center;
-    justify-content: space-around;
-
     .experience__list {
-        line-height: 27.6px;
+        line-height: 1.9rem;
+        width: 65%;
     }
+
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .experience__main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-items: center;
 
     margin-right: 10%;
+
+    .experience__text-main {
+        flex-direction: column;
+    }
 }

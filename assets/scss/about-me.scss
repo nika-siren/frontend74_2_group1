@@ -1,15 +1,12 @@
 /* about me page */
 
 .about-me__img img {
-    border-radius: 20px;
     width: 50%;
-
-    margin-left: 10%;
 }
 
 .about-me__h1 {
     font-family: 'Caveat', cursive;
-    font-size: 8em;
+    font-size: 6.5em;
     line-height: 80%;
     color: #3E2E3B;
 }
@@ -31,7 +28,7 @@
 
     .about-me__text {
         width: 80%;
-        line-height: 1.7rem;
+        line-height: 1.9rem;
         text-align: left;
     }
 
@@ -49,6 +46,4 @@
 .about-me__main {
     display: flex;
     flex-direction: column;
-
-    margin-right: 10%;
 }
