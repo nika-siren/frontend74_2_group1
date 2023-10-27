@@ -170,14 +170,12 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 /* about me page */
 .about-me__img img {
-  border-radius: 20px;
   width: 50%;
-  margin-left: 10%;
 }
 
 .about-me__h1 {
   font-family: "Caveat", cursive;
-  font-size: 8em;
+  font-size: 6.5em;
   line-height: 80%;
   color: #3E2E3B;
 }
@@ -195,7 +193,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 .about-me__container .about-me__text {
   width: 80%;
-  line-height: 1.7rem;
+  line-height: 1.9rem;
   text-align: left;
 }
 .about-me__container .about-me__text2 {
@@ -210,7 +208,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .about-me__main {
   display: flex;
   flex-direction: column;
-  margin-right: 10%;
 }
 
 .education__h1 {
@@ -242,41 +239,46 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 /* experience page */
-.experience__img img {
-  border-radius: 20px;
+.experience__img .experience__img img {
   width: 50%;
-  margin-left: 10%;
 }
 
 .experience__h1 {
   font-family: "Caveat", cursive;
-  font-size: 8em;
+  font-size: 6.5em;
   line-height: 80%;
   color: #3E2E3B;
 }
 
 .experience__container {
-  display: grid;
+  display: flex;
   width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .experience__container .experience__list {
-  line-height: 27.6px;
+  line-height: 1.9rem;
+  width: 65%;
 }
 
 .experience__main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-items: center;
   margin-right: 10%;
 }
+.experience__main .experience__text-main {
+  flex-direction: column;
+}
 
 /* requests */
+.requests__container-main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .requests__h1 {
-  font-size: 5rem;
+  font-size: 6.5em;
   color: #3E2E3B;
 }
 
