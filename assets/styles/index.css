@@ -170,15 +170,14 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 /* about me page */
 .about-me__img img {
-  border-radius: 20px;
   width: 50%;
-  margin-left: 10%;
 }
 
 .about-me__h1 {
   font-family: "Caveat", cursive;
-  font-size: 8em;
+  font-size: 6.5em;
   line-height: 80%;
+  color: #3E2E3B;
 }
 
 .about-me__container {
@@ -192,11 +191,23 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   justify-content: space-around;
   scroll-margin-top: 8em;
 }
+.about-me__container .about-me__text {
+  width: 80%;
+  line-height: 1.9rem;
+  text-align: left;
+}
+.about-me__container .about-me__text2 {
+  color: black;
+  font-family: Caveat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45.4px;
+}
 
 .about-me__main {
   display: flex;
   flex-direction: column;
-  margin-right: 10%;
 }
 
 .education__h1 {
@@ -228,168 +239,53 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 /* experience page */
-.experience__img img {
-  border-radius: 20px;
+.experience__img .experience__img img {
   width: 50%;
-  margin-left: 10%;
 }
 
 .experience__h1 {
   font-family: "Caveat", cursive;
-  font-size: 8em;
+  font-size: 6.5em;
   line-height: 80%;
+  color: #3E2E3B;
 }
 
 .experience__container {
-  display: grid;
+  display: flex;
   width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.experience__container .experience__list {
+  line-height: 1.9rem;
+  width: 65%;
 }
 
 .experience__main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-items: center;
   margin-right: 10%;
 }
-
-.experience__text {
-  border-bottom: solid 1px black;
-  border-top: 1px solid black;
-  padding: 3%;
-}
-
-/* пока лучше не трогать 
-    #experience__text__gap-top {
-    border-top: 1px solid black;
-    padding: 3%;
-}
-
-#experience__text__gap-2 {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 3%;
-} */
-.experience__button__container {
-  padding-top: 3vh;
-}
-
-.experience__button {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content min-content;
-  grid-column: 1/3;
-  grid-row: 1;
-  width: 50%;
-}
-
-.experience__button {
-  background-color: white;
-  border: 1px solid #222222;
-  border-radius: 8px;
-  color: #222222;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
-  user-select: none;
-  -webkit-user-select: none;
+.experience__main .experience__text-main {
+  flex-direction: column;
 }
 
 /* requests */
 .requests__container-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5em;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
-  scroll-margin-top: 1em;
-}
-.requests__container-main .requests__h1 {
-  font-size: 8em;
-  line-height: 80%;
 }
 
-.requests__container {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+.requests__h1 {
+  font-size: 6.5em;
+  color: #3E2E3B;
 }
 
-.requests {
-  background-color: #E2B2B5;
-  border-radius: 20px;
-  padding: 20px 30px 20px 30px;
-  text-align: start;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.requests .request__name {
-  text-align: start;
-}
-.requests .requests__btn {
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #FFFFFF;
-  color: #222222;
-  border-radius: 8px;
-  border: 1px solid #222222;
-  padding: 8px 25px;
-  text-align: center;
+.requests__text {
+  list-style: circle;
 }
 
-.requests__btn:hover {
-  color: #222222;
-  letter-spacing: 1px;
-}
-
-.requests:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  transform: scale(1.03);
-}
-
-/*.requests__h1 {
-    font-family: 'Caveat', cursive;
-    font-size: 8em;
-    line-height: 80%;
-    padding-left: 10%;
-    display: grid;
-    grid-column: 1/3;
-    justify-content: center;
-    align-items: center;
-}
-
-.requests_text {
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 1.5em;
-}
-
-.requests {
-    border: solid 1px none;
-    border-radius: 5%;
-    background-color: #E2B2B5;
-    width: 30em;
-    height: 30em;
-    display: grid;
-    grid-row: 2;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}*/
 /*  Prices */
 .prices__container {
   display: grid;
