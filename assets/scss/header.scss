@@ -56,9 +56,10 @@
 .header__link {
 
       
-    margin: 5% 1% 5% 1%;
     text-align: center;
     text-wrap: nowrap;
+
+    align-self: center;
   
     text-decoration: none;
     font-size: 1.5em;
@@ -78,7 +79,6 @@
 
     align-self: center;
 
-    margin-top: 5%;
     align-items: center;
 }
 
@@ -88,4 +88,5 @@
 
 .header__contact:hover {
     width: 90px;
+   
 }

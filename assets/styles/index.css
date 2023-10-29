@@ -78,9 +78,9 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .header__link {
-  margin: 5% 1% 5% 1%;
   text-align: center;
   text-wrap: nowrap;
+  align-self: center;
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 500;
@@ -96,7 +96,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   display: flex;
   flex-direction: row;
   align-self: center;
-  margin-top: 5%;
   align-items: center;
 }
 
@@ -205,7 +204,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   grid-template-rows: 1fr;
   justify-items: center;
   justify-content: space-around;
-  scroll-margin-top: 8em;
+  scroll-margin-top: 6em;
 }
 .about-me__container .about-me__text {
   width: 80%;
@@ -243,6 +242,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   width: 100%;
   margin-left: 10%;
   margin-right: 10%;
+  scroll-margin-top: 12em;
 }
 .experience__container .experience__list {
   line-height: 1.9rem;
@@ -263,6 +263,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .requests__container-main {
   margin-left: 10%;
   margin-right: 10%;
+  scroll-margin-top: 15em;
 }
 
 .requests__h1 {
@@ -282,7 +283,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   gap: 10%;
   justify-content: center;
   justify-items: center;
-  scroll-margin-top: 8em;
+  scroll-margin-top: 10em;
 }
 
 .prices__h1 {
@@ -347,6 +348,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   grid-template-areas: "reviews__h1 reviews__h1" "reviews__container-circle reviews__container-circle";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto min-content;
+  scroll-margin-top: 11em;
   /*это основной круглый блок*/
   /*это плашки круглые с результатами*/
 }
