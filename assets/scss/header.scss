@@ -7,11 +7,12 @@
     display: grid;
     width: 100%;
 
-    grid-template-columns: 15% 1fr;
+    grid-template-columns: 14.3% 1fr;
     grid-template-rows: 1fr;
 
     // justify-content: space-evenly;  
     // justify-items: stretch;
+    color: #3E2E3B;
 
     background-color: $background-color;
 }
@@ -34,7 +35,11 @@
    
     width: 75%;
     justify-self: center;
-    
+
+    margin-top: 15%;
+
+
+        
 }
 
 .header__logo {
@@ -63,6 +68,24 @@
 }
 
 .header__link:hover {
-    text-decoration: underline;
     color: $hover-line-color;
+    font-size: 1.6em;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: row;
+
+    align-self: center;
+
+    margin-top: 5%;
+    align-items: center;
+}
+
+.header__contact {
+    width: 77.8px;
+}
+
+.header__contact:hover {
+    width: 90px;
 }

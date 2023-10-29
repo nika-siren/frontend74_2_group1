@@ -6,9 +6,12 @@
     <title>Daria's English Lessons Online</title>
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/index.css" />
-    <link rel="shortcut icon" href="assets/images/logo-new.svg" type="image/svg" />
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
@@ -17,19 +20,27 @@
   </head>
   <body>
     <!-- H E A D E R  S T A R T -->
-    
     <header class="header__container">
       <a href="#first-page" class="header__logo-link">
         <img class="header__logo" src="./assets/images/logo-new.svg" />
       </a>
       <nav class="header__nav">
         <a href="#about-me" class="header__link">Обо мне</a
-        ><a href="#requests" class="header__link">Запросы</a
+        ><a href="" class="header__link">Запросы</a
         ><a href="#education" class="header__link">Образование и опыт</a
         >
-        <a href="#prices" class="header__link">Консультации</a
+        <a href="" class="header__link">Консультации</a
         ><a href="" class="header__link">Отзывы</a
-        ><a href="" class="header__link">Контакты</a>
+        >
+        <div>
+          <ul class="header__contacts">
+            <li><a href="" class="header__contact"><img src="./assets/images/Watsapp.png" /></a></li>
+            <li><a href="" class="header__contact"><img src="./assets/images/Telegram.png" /></a></li>
+            <li><a href="" class="header__contact"><img src="./assets/images/Instagram.png" /></a></li>
+          </ul>
+
+        </div>
+        
       </nav>
     </header>
     <main>
@@ -39,11 +50,14 @@
           <h1 class="first-page__title">Daria</h1>
           <h2 class="first-page__subtitle">Преподаватель по английскому</h2>
           <h2 class="first-page__subtitle">Наставник для преподавателей</h2>
-          <p class="first-page__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere
-            morbi leo urna molestie at elementum eu facilisis sed.</p>
-            <a href="#prices" class="first-page__link">
-              <button class="first-page__button" type="button" data-toc-button>Попасть на консультацию</button>
+          <ul class="first-page__text">
+            <li class="first-page__item">Занятия с детьми от 7 лет и подростками</li>
+            <li class="first-page__item">Общий английский и IT английский для взрослых с начальным уровнем</li>
+            <li class="first-page__item">Консультации для преподавателей по методике</li>
+          </ul>
+          
+            <a href="" class="first-page__link">
+              <button class="first-page__button" type="button">Связаться</button>
             </a>  
         </div>  
         <div class="first-page__img">
@@ -78,61 +92,111 @@
     </div>
       <!-- A B O U T  M E  E N D -->
 
-            <!-- R E Q U E S T S  S T A R T -->
-            <div class="requests__container-main" id="requests">
-        
-              <h1 class="requests__h1">Вопросы, <br>
-                с которыми я могу помочь</h1>
-      
-              <div class="requests__container">
-      
-                <div class="requests">
-                  <ul class="requests__list">
-                    <li class="requests__text">Подготовка к кембриджским экзаменам Starters, Movers, Flyers, KET</li>
-                    <li class="requests__text">Обучение чтению</li>
-                    <li class="requests__text">Работа с запросом: подтянуть оценки по школьной программе</li>
-                    <li class="requests__text">Эффективное планирование уроков, как организовать повторение материала</li>
-                    <li class="requests__text">Как выстроить взаимодействие с родителями учеников и давать обратную связь</li>
-                    <li class="requests__text">Как работать с детьми и подростками онлайн и оффлайн</li>
-                    <li class="requests__text">Как определить уровень и подобрать учебное пособие</li>
-                    <li class="requests__text">Как организовать систему мотивации для студентов</li>
-                    <li class="requests__text">Как выстроить свою работу, чтобы отмены и переносы не влияли на доход</li>
-                  </ul>
-                </div>
-      
-              </div>
-            </div>
-            <!-- R E Q U E S T S  E N D -->
+      <!-- E D U C A T I O N  S T A R T -->
+      <div class="education__container" id="education">
+        <div class="education__main">
+          <h1 class="education__h1">Где я обучалась</h1>
+          <div class="education__text__main">
+            <p class="education__text" id="education__text__gap-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p class="education__text" id="education__text__gap-2">Sit amet venenatis urna cursus eget nunc scelerisque viverra mauris. </p>
+          <p class="education__text">Morbi leo urna molestie at elementum eu. Amet aliquam id diam maecenas ultricies mi
+          eget mauris pharetra.</p>
+          <p class="education__text"> Odio ut sem nulla pharetra
+          diam sit. </p>
+        </div>
+        </div>
+    </div>
+      <!-- E D U C A T I O N  E N D -->
 
       <!-- E X P E R I E N C E  S T A R T -->
-      <div class="experience__container" id="education">
-        
+      <div class="experience__container" id="experience">
+        <div class="experience__img">
+          <img src="assets/images/IMG_0280.JPEG" alt="experience-photo" />
+        </div>
         <div class="experience__main">
-          <div class="experience__text-main">
-          <h1 class="experience__h1">Мое образование и опыт</h1>
-          <div class="experience__list-main">
-            <ul class="experience__list">
-              <li class="experience__text">НГУ Гуманитарный факультет бакалавриат, магистратура 2012-2018</li>
-              <li class="experience__text">Работа преподавателем английского для детей и подростков в частных языковых школах онлайн и оффлайн 2016-2022</li>
-              <li class="experience__text">Кембриджские сертификаты по методике преподавания английского языка TKT, modules 1,2,3 в 2020</li>
-              <li class="experience__text">Повышение квалификации для преподавателей английского от Валерии Климовой “Тот самый урок” 2021</li>
-              <li class="experience__text">Повышение квалификации для преподавателей английского от Валерии Климовой “Траектория” 2023</li>
-              <li class="experience__text">Работа методистом в частной языковой школе с 2023</li>
-              <li class="experience__text">Участие и обучение на психологических курсах и группах 2021-2023</li>
-          </div>
-          </div>
-
-          <div class="experience__img">
-            <img src="assets/images/2.png" alt="experience-photo" />
-          </div>
+          <h1 class="experience__h1">Мой опыт</h1>
+          <p class="experience__text" id="experience__text__gap-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p class="experience__text" id="experience__text__gap-2">Sit amet venenatis urna cursus eget nunc scelerisque viverra mauris. </p>
+          <p class="experience__text">Morbi leo urna molestie at elementum eu. Amet aliquam id diam maecenas ultricies mi
+          eget mauris pharetra.  </p>
+          <p class="experience__text"> Odio ut sem nulla pharetra
+          diam sit. </p>
           
       </div>
     </div>
-  
+</div>
+
       <!-- E X P E R I E N C E  E N D -->
+
+      <!-- R E Q U E S T S  S T A R T -->
+      <div class="requests__container-main" id="requests">
+        
+        <h1 class="requests__h1">С какими запросами я помогаю</h1>
+
+        <div class="requests__container">
+
+          <div class="requests">
+            <h2 class="request__name">1</h2> 
+            <p class="request__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+
+          <div class="requests">
+            <h2 class="request__name">2</h2> 
+            <p class="request__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+
+          <div class="requests">
+            <h2 class="request__name">3</h2> 
+            <p class="request__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+
+          <div class="requests">
+            <h2 class="request__name">4</h2> 
+            <p class="request__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+
+          <div class="requests">
+            <h2 class="request__name">5</h2> 
+            <p class="request__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+
+          <div class="requests">
+            <h2 class="request__name">6</h2> 
+            <p class="request__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+
+          <div class="requests">
+            <h2 class="request__name">7</h2> 
+            <p class="request__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+
+          <div class="requests">
+            <h2 class="request__name">8</h2> 
+            <p class="request__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+
+          <div class="requests">
+            <p class="request__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="requests__btn">Попасть на консультацию</a>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- R E Q U E S T S  E N D -->
       
       <!-- P R I C E S  S T A R T -->
-      <div class="prices__container" id="prices">
+      <div class="prices__container">
         <h1 class="prices__h1">Консультации</h1>
         <div class="services">
           <h2 class="services_name">Консультация для начинающих</h2>
@@ -183,34 +247,5 @@
       </ul>
       </nav>
   </footer>
-  <script type="text/javascript">
-    // Get the modal
-var modal = document.getElementById("modal__additional-experience");
-
-// Get the button that opens the modal
-var btn = document.getElementById("modal-button");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-  </script>
-
   </body>
 </html>

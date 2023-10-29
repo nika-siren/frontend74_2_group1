@@ -22,33 +22,40 @@
 
 .first-page__title {
 
-    margin-left: 10%;
+    margin-left: 17%;
 
-    font-family: 'Leafy Extended';
+    font-family: 'Caveat', cursive;
     font-size: 10em;
-    line-height: 80%;
+    line-height: 60%;
+    color: #3E2E3B;
 }
 
 .first-page__subtitle {
 
-    margin-left: 10%;
+    margin-left: 17%;
 
     font-family: 'Caveat';
     font-size: 3em;
-    line-height: 75%;
+    line-height: 60%;
+    color: #3E2E3B;
 }
 
 .first-page__text {
 
-    margin-left: 10%;
+    margin-left: 17%;
 
     font-size: 1.5em;
+    
+}
 
+.first-page__item {
+
+    list-style-type: disc;
 }
 
 .first-page__link {
 
-    margin-left: 10%;
+    margin-left: 17%;
 
 
 
@@ -56,19 +63,19 @@
 
 .first-page__button {
 
-    background-color: $button-color;
-    border: 1px solid $button-text-color;
-    border-radius: 8px;
-    color: $button-text-color;
+    background-color: $button-color-one;
+    border: 1px solid $button-color-one;
+    border-radius: 50px;
+    color: #3E2E3B;
     cursor: pointer;
     display: inline-block;
-    font-family: Roboto, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
     line-height: 1.7em;
     margin: 0;
     outline: none;
-    padding: 13px 23px;
+    padding: 10px;
     // position: relative;
     text-align: center;
     text-decoration: none;
@@ -76,16 +83,16 @@
     transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
     user-select: none;
     -webkit-user-select: none;
-    width: auto;
+    width: 303px;
 }
 
 .first-page__button:hover {
-    background-color: $hover-line-color;
+    border: 1px solid $button-text-color;
 }
 
 .first-page__img {
-    border-radius: 50%;
-    width: 50%;
+    
+    width: 75%;
 
     margin-left: 10%;
 }

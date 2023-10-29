@@ -1,11 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Leafy Extended";
-  src: url("LeafyExtended.eot");
-  src: local("Leafy Extended"), local("LeafyExtended"), url("./fonts/LeafyExtended/LeafyExtended.eot") format("embedded-opentype"), url("./fonts/LeafyExtended/LeafyExtended.woff2") format("woff2"), url("./fonts/LeafyExtended/LeafyExtended.woff") format("woff"), url("./fonts/LeafyExtended/LeafyExtended.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 /*задаем цвета, добавила пока примерную структуру, чтобы не забыть (:
 $background-color: #E8D8CB;
 $purple: #CDB0E3;
@@ -51,8 +44,9 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   top: 0;
   display: grid;
   width: 100%;
-  grid-template-columns: 15% 1fr;
+  grid-template-columns: 14.3% 1fr;
   grid-template-rows: 1fr;
+  color: #3E2E3B;
   background-color: #E8D8CB;
 }
 
@@ -72,6 +66,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .header__logo-link {
   width: 75%;
   justify-self: center;
+  margin-top: 15%;
 }
 
 .header__logo {
@@ -93,8 +88,24 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .header__link:hover {
-  text-decoration: underline;
   color: #E2B2B5;
+  font-size: 1.6em;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: 5%;
+  align-items: center;
+}
+
+.header__contact {
+  width: 77.8px;
+}
+
+.header__contact:hover {
+  width: 90px;
 }
 
 .first-page__container {
@@ -113,58 +124,63 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .first-page__title {
-  margin-left: 10%;
-  font-family: "Leafy Extended";
+  margin-left: 17%;
+  font-family: "Caveat", cursive;
   font-size: 10em;
-  line-height: 80%;
+  line-height: 60%;
+  color: #3E2E3B;
 }
 
 .first-page__subtitle {
-  margin-left: 10%;
+  margin-left: 17%;
   font-family: "Caveat";
   font-size: 3em;
-  line-height: 75%;
+  line-height: 60%;
+  color: #3E2E3B;
 }
 
 .first-page__text {
-  margin-left: 10%;
+  margin-left: 17%;
   font-size: 1.5em;
 }
 
+.first-page__item {
+  list-style-type: disc;
+}
+
 .first-page__link {
-  margin-left: 10%;
+  margin-left: 17%;
 }
 
 .first-page__button {
-  background-color: white;
-  border: 1px solid #222222;
-  border-radius: 8px;
-  color: #222222;
+  background-color: #CCB0E3;
+  border: 1px solid #CCB0E3;
+  border-radius: 50px;
+  color: #3E2E3B;
   cursor: pointer;
   display: inline-block;
-  font-family: Roboto, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.5em;
   font-weight: 600;
   line-height: 1.7em;
   margin: 0;
   outline: none;
-  padding: 13px 23px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
   transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
   user-select: none;
   -webkit-user-select: none;
-  width: auto;
+  width: 303px;
 }
 
 .first-page__button:hover {
-  background-color: #E2B2B5;
+  border: 1px solid #222222;
 }
 
 .first-page__img {
-  border-radius: 50%;
-  width: 50%;
+  width: 75%;
   margin-left: 10%;
 }
 
@@ -189,7 +205,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   grid-template-rows: 1fr;
   justify-items: center;
   justify-content: space-around;
-  scroll-margin-top: 8em;
+  scroll-margin-top: 6em;
 }
 .about-me__container .about-me__text {
   width: 80%;
@@ -384,7 +400,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .button-footer {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #222222;
   border-radius: 8px;
   color: #222222;
@@ -453,48 +469,9 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   max-height: 28px;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #E8D8CB;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 20px;
-  width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 body {
   color: #91778C;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #E8D8CB;
   scroll-behavior: smooth;
 }
