@@ -14,28 +14,28 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
     padding: 20px;
   }
 }
-/*
-Основной код для разрешения 1024px 
-@media screen and (min-width: 2560px) {
-     стили для больших мониторов с разрешением 4K 
-}
-@media screen and (min-width: 1440px) {
-    стили для больших настольных компьютеров и ноутбуков 
-}
-@media screen and (max-width: 1024px) {
-     стили для планшета в альбомной ориентации 
-}
-@media screen and (max-width: 768px) {
-     стили для планшета 
-}
-@media screen and (max-width: 425px) {
-    стили для широкого смартфона 
-}
-@media screen and (max-width: 375px) {
-    стили для среднего смартфона
-}
-@media screen and (max-width: 320px) {
-    стили для малого смартфона 
+/* 
+Основной код для разрешения 1024px  
+@media screen and (min-width: 2560px) { 
+     стили для больших мониторов с разрешением 4K  
+} 
+@media screen and (min-width: 1440px) { 
+    стили для больших настольных компьютеров и ноутбуков  
+} 
+@media screen and (max-width: 1024px) { 
+     стили для планшета в альбомной ориентации  
+} 
+@media screen and (max-width: 768px) { 
+     стили для планшета  
+} 
+@media screen and (max-width: 425px) { 
+    стили для широкого смартфона  
+} 
+@media screen and (max-width: 375px) { 
+    стили для среднего смартфона 
+} 
+@media screen and (max-width: 320px) { 
+    стили для малого смартфона  
 } */
 /*  Header */
 .header__container {
@@ -205,7 +205,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   grid-template-rows: 1fr;
   justify-items: center;
   justify-content: space-around;
-  scroll-margin-top: 6em;
+  scroll-margin-top: 8em;
 }
 .about-me__container .about-me__text {
   width: 80%;
@@ -224,34 +224,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .about-me__main {
   display: flex;
   flex-direction: column;
-}
-
-.education__h1 {
-  font-family: "Caveat", cursive;
-  font-size: 8em;
-  line-height: 80%;
-  padding-left: 10%;
-}
-
-.education__container {
-  scroll-margin-top: 12em;
-}
-
-.education__main {
-  display: flex;
-  flex-direction: column;
-  justify-items: flex-end;
-}
-
-.education__text__main {
-  width: 60%;
-  padding-bottom: 5vh;
-}
-
-.education__text {
-  border-bottom: solid 1px black;
-  border-top: 1px solid black;
-  padding: 3%;
 }
 
 /* experience page */
@@ -367,6 +339,94 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   justify-items: center;
 }
 
+.reviews__container-main {
+  display: grid;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 15vh;
+  grid-template-areas: "reviews__h1 reviews__h1" "reviews__container-circle reviews__container-circle";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto min-content;
+  /*это основной круглый блок*/
+  /*это плашки круглые с результатами*/
+}
+.reviews__container-main .reviews__container-circle {
+  display: grid;
+  background-color: #E8D8CB;
+  border: 3px solid #CCB0E3;
+  border-radius: 25px;
+  color: #91778C;
+  width: 250%;
+  margin: 0 auto;
+  padding: 5%;
+  grid-area: reviews__container-circle;
+}
+.reviews__container-main .reviews__container-circle .reviews__h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.2em;
+  color: #3E2E3B;
+}
+.reviews__container-main .reviews__h1 {
+  font-family: "Caveat", cursive;
+  font-size: 6.5em;
+  line-height: 80%;
+  color: #3E2E3B;
+  width: 100%;
+  text-wrap: nowrap;
+  grid-area: reviews__h1;
+}
+.reviews__container-main .reviews__container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-wrap: nowrap;
+  align-items: center;
+}
+.reviews__container-main .reviews__container .reviews__results-text {
+  background-color: #E8D8CB;
+  border: 3px solid #CCB0E3;
+  border-radius: 38px;
+  color: #91778C;
+  padding: 1%;
+  margin: 1.5%;
+  width: 25%;
+}
+.reviews__container-main .reviews__list {
+  list-style: circle;
+}
+
+/*
+.swiper {
+    width: 1000px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 58%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 140px !important;
+    left: auto;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 140px !important;
+    right: auto;
+} 
+*/
 /*  Footer */
 .footer__menu {
   padding-left: 200px;

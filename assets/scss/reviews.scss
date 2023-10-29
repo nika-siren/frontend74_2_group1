@@ -1,0 +1,110 @@
+.reviews__container-main {
+    display: grid;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 15vh;
+
+    grid-template-areas: 'reviews__h1 reviews__h1'
+        'reviews__container-circle reviews__container-circle';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto min-content;
+
+
+    /*это основной круглый блок*/
+    .reviews__container-circle {
+        display: grid;
+
+        background-color: $background-color;
+        border: 3px solid $button-color-one;
+        border-radius: 25px;
+        color: $main-text-color;
+
+        width: 250%;
+        margin: 0 auto;
+        padding: 5%;
+
+        grid-area: reviews__container-circle;
+
+        .reviews__h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.2em;
+            color: #3E2E3B;
+        }
+    }
+
+    .reviews__h1 {
+        font-family: 'Caveat', cursive;
+        font-size: 6.5em;
+        line-height: 80%;
+        color: #3E2E3B;
+        width: 100%;
+        text-wrap: nowrap;
+
+        grid-area: reviews__h1;
+
+    }
+
+    /*это плашки круглые с результатами*/
+    .reviews__container {
+        display: flex;
+        flex-direction: row;
+
+        text-align: center;
+        text-wrap: nowrap;
+        align-items: center;
+
+        .reviews__results-text {
+
+
+            background-color: $background-color;
+            border: 3px solid $button-color-one;
+            border-radius: 38px;
+            color: $main-text-color;
+            padding: 1%;
+            margin: 1.5%;
+            width: 25%;
+        }
+    }
+
+    .reviews__list {
+        list-style: circle;
+    }
+
+}
+
+
+
+
+/*
+.swiper {
+    width: 1000px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 58%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 140px !important;
+    left: auto;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 140px !important;
+    right: auto;
+} 
+*/
