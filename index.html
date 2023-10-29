@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daria's English Lessons Online</title>
     <link rel="stylesheet" href="assets/styles/normalize.css" />
+    
+    <!-- JS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+    </script>
+    <!-- JS -->
+
     <link rel="stylesheet" href="assets/styles/index.css" />
     <link rel="shortcut icon" href="assets/images/logo-new.svg" type="image/svg" /> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,6 +52,7 @@
         
       </nav>
     </header>
+
     <main>
       <!-- F I R S T  P A G E  S T A R T -->
       <div class="first-page__container" id="first-page">
@@ -162,6 +172,65 @@
         </div> 
          
       <!-- P R I C E S  E N D -->
+
+      <!-- R E V I E W S  S T A R T --> 
+
+      <div class="reviews__container-main">
+
+        <h1 class="reviews__h1">
+          Результаты моих учеников
+        </h1>
+
+        <div class="reviews__container-circle">
+          <h2 class="reviews__h2">
+            Илья, 12 лет
+          </h2>
+  
+          <div class="reviews__container">
+            <p class="reviews__results-text">экзамен YLE Movers</p>
+            <p class="reviews__results-text">отличные оценки в школе</p>
+            <p class="reviews__results-text">бегло говорит</p>
+            <p class="reviews__results-text">подготовка 8 месяцев</p>
+          </div>
+          <div class="reviews__text">
+            <p class="reviews__text-big">
+              Сдал кембриджский экзамен YLE Movers на высокий балл (14/15) 93%.  Получает отличные оценки по английскому в школе, уверенно и бегло говорит, грамотно использует основные времена в речи. С удовольствием продолжает изучать язык, в этом году будет сдавать экзамен YLE Flyers <br><br>
+              Чем может быть полезна сдача кембриджских экзаменов и зачем их сдавать? <br><br>
+              Это первый шаг по планомерной подготовке к ОГЭ и ЕГЭ. Если Илья продолжит изучать английский и сдавать кембриджские экзамены, то к 9 и 11 классу сдача этих экзаменов не вызовет у Ильи затруднений и необходимости в срочном порядке “подтягивать” знания <br><br>
+              Подготовка заняла 8 месяцев. После сдачи экзамена Илья приобрел следующие навыки: <br><br>
+            </p>
+  
+            <ul class="reviews__list-main">
+              <li class="reviews__list">Понимает и использует английскую речь, информационные надписи, указания</li>
+              <li class="reviews__list">Может заполнять простые формы и писать письма</li>
+              <li class="reviews__list">Читает книги и смотрит фильмы на английском языке</li>
+              <li class="reviews__list">Находит и использует информацию с англоязычных источников в  интернете</li>
+              <li class="reviews__list">Заводит друзей со всего мира</li>
+            </ul>
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+
+      <!-- R E V I E W S  E N D -->
       
     </main> 
     <footer class="footer"> 
