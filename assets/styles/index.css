@@ -48,6 +48,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   grid-template-rows: 1fr;
   color: #3E2E3B;
   background-color: #E8D8CB;
+  z-index: 10;
 }
 
 .sticky {
@@ -239,7 +240,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .experience__container {
   display: flex;
-  width: 100%;
   margin-left: 10%;
   margin-right: 10%;
   scroll-margin-top: 12em;
@@ -341,13 +341,10 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .reviews__container-main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin-left: 10%;
-  margin-right: 10%;
-  padding-bottom: 15vh;
-  grid-template-areas: "reviews__h1 reviews__h1" "reviews__container-circle reviews__container-circle";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto min-content;
+  grid-template-rows: auto 500px;
   scroll-margin-top: 11em;
   /*это основной круглый блок*/
   /*это плашки круглые с результатами*/
@@ -358,7 +355,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   border: 3px solid #CCB0E3;
   border-radius: 25px;
   color: #91778C;
-  width: 250%;
   margin: 0 auto;
   padding: 5%;
   grid-area: reviews__container-circle;
@@ -381,7 +377,8 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   display: flex;
   flex-direction: row;
   text-align: center;
-  text-wrap: nowrap;
+  flex-wrap: wrap;
+  white-space: nowrap;
   align-items: center;
 }
 .reviews__container-main .reviews__container .reviews__results-text {
@@ -391,44 +388,84 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   color: #91778C;
   padding: 1%;
   margin: 1.5%;
-  width: 25%;
 }
 .reviews__container-main .reviews__list {
   list-style: circle;
 }
 
-/*
-.swiper {
-    width: 1000px;
-    height: 100%;
+/*slider part start*/
+.reviews__articles {
+  display: inline-block;
+  padding: 25px 70px 25px 60px;
+  width: 1000px;
+  vertical-align: top;
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.reviews__slider {
+  position: relative;
+  height: 725px;
+  display: flex;
+  justify-content: center;
 }
 
-.swiper-slide img {
-    width: 58%;
-    object-fit: cover;
+#review__menu-main {
+  overflow: hidden;
+  position: absolute;
+  border-radius: 5px;
+  width: 1000px;
+  height: 725px;
 }
 
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-    right: 140px !important;
-    left: auto;
+.review__menu_button {
+  position: absolute;
+  height: 100%;
+  padding: 25px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  font-family: "Titillium Web";
+  cursor: pointer;
 }
 
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-    left: 140px !important;
-    right: auto;
-} 
-*/
+.review__arrow {
+  background: transparent;
+  padding: 8px;
+  border-radius: 50%;
+  width: 36px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.review__arrow:hover {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.review__menu_button:active {
+  opacity: 0.5;
+}
+
+.review__left_button {
+  left: -2px;
+  border-radius: 5px 0 0 5px;
+}
+
+.review__right_button {
+  right: -2px;
+  border-radius: 0 5px 5px 0;
+}
+
+#review__menu {
+  width: 3000%;
+  height: 725px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
 /*  Footer */
 .footer__menu {
   padding-left: 200px;
