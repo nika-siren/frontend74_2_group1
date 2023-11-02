@@ -259,6 +259,40 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   flex-direction: column;
 }
 
+/*values*/
+
+.values{
+  margin-left: 10%;
+  margin-right: 10%;
+  scroll-margin-top: 15em;
+  padding-bottom: 5%;
+}
+
+.values_h1{
+  font-size: 6.5em;
+  color: #3E2E3B;
+}
+
+.values_containers{
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+.values_containers-items{
+  background-color:#B9D0DF;
+  border-radius: 10px;
+  gap: 10px;
+  max-width: 456px;
+  text-align: center;
+}
+
+.values_containers-text{
+  font-size: 24px;
+  font-weight: 400;
+  color: #3E2E3B;
+}
+
 /* requests */
 .requests__container-main {
   margin-left: 10%;
