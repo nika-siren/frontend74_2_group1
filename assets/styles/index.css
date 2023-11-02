@@ -276,69 +276,146 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 /*  Prices */
-.prices__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content 1fr 1fr;
-  gap: 10%;
-  justify-content: center;
-  justify-items: center;
-  scroll-margin-top: 10em;
+
+.prices__container{
+  margin-left: 10%;
+  margin-right: 10%;
+  scroll-margin-top: 15em;
+  padding-top: 5%;
 }
 
 .prices__h1 {
   font-family: "Caveat", cursive;
-  font-size: 8em;
+  font-size: 6.5em;
   line-height: 80%;
-  padding-left: 10%;
-  display: grid;
-  grid-column: 1/3;
-  justify-content: center;
-  align-items: center;
+  color: #3E2E3B;
 }
 
-.services_text {
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 1.5em;
-}
+
 
 .btn_sign {
-  background-color: #FFFFFF;
-  border: 1px solid #222222;
-  border-radius: 8px;
-  color: #222222;
+  background-color: #E2B2B5;
+  border: 1px solid #E2B2B5;
+  border-radius: 50px;
+  color: #3E2E3B;
   cursor: pointer;
   display: inline-block;
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5em;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 1.7em;
   margin: 0;
   outline: none;
-  padding: 13px 23px;
-  position: relative;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
   transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
   user-select: none;
   -webkit-user-select: none;
-  width: auto;
+  width: 303px;
+}
+
+.btn_sign:hover {
+  border: 1px solid #222222;
+}
+
+.prices__container-3{
+  display: flex;
+  justify-content: space-around;
 }
 
 .services {
-  border: solid 1px none;
+  border: solid 3px #E2B2B5;
   border-radius: 5%;
-  background-color: #E2B2B5;
+  padding: 2%;
   width: 30em;
   height: 30em;
   display: grid;
-  grid-row: 2;
-  justify-content: center;
-  align-items: center;
   justify-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+.services_name{
+  font-size: 24px;
+  font-weight: 700;
+  color: #3E2E3B;
+}
+
+
+.services_text{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+/*  Prices for students*/
+
+.prices__container-students{
+  margin-left: 10%;
+  margin-right: 10%;
+  scroll-margin-top: 15em;
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
+
+.prices__container-2{
+  display: flex;
+  justify-content: flex-start;
+  gap: 4%;
+}
+
+.services_students {
+  border: solid 3px #B9D0DF;
+  border-radius: 5%;
+  padding: 2%;
+  width: 30em;
+  height: 30em;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.services_name_students{
+  font-size: 24px;
+  font-weight: 700;
+  color: #3E2E3B;
+}
+
+.services_text_students{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.btn_sign-students {
+  background-color: #B9D0DF;
+  border: 1px solid #B9D0DF;
+  border-radius: 50px;
+  color: #3E2E3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.7em;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: 303px;
+}
+
+.btn_sign-students:hover {
+  border: 1px solid #222222;
+}
+
 
 .reviews__container-main {
   display: grid;
