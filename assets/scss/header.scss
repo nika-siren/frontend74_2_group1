@@ -84,10 +84,15 @@
 }
 
 .header__contact {
-    width: 77.8px;
+    max-width: 77.8px;
 }
 
 .header__contact:hover {
-    width: 90px;
+    max-width: 90px;
    
+}
+
+.mobile-header__container {
+
+    display: none;
 }

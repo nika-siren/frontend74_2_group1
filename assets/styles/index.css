@@ -8,35 +8,6 @@ $blue: #B9D0DF;
 $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 */
-/*пока тоже примерно, шаблон из статьи 7 недели: https://itgirlschool.notion.site/7-d538acf66018487ea0b5b12167679fc9*/
-@media screen and (max-width: 768px) {
-  .requests__container-main {
-    padding: 20px;
-  }
-}
-/* 
-Основной код для разрешения 1024px  
-@media screen and (min-width: 2560px) { 
-     стили для больших мониторов с разрешением 4K  
-} 
-@media screen and (min-width: 1440px) { 
-    стили для больших настольных компьютеров и ноутбуков  
-} 
-@media screen and (max-width: 1024px) { 
-     стили для планшета в альбомной ориентации  
-} 
-@media screen and (max-width: 768px) { 
-     стили для планшета  
-} 
-@media screen and (max-width: 425px) { 
-    стили для широкого смартфона  
-} 
-@media screen and (max-width: 375px) { 
-    стили для среднего смартфона 
-} 
-@media screen and (max-width: 320px) { 
-    стили для малого смартфона  
-} */
 /*  Header */
 .header__container {
   position: sticky;
@@ -101,11 +72,15 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .header__contact {
-  width: 77.8px;
+  max-width: 77.8px;
 }
 
 .header__contact:hover {
-  width: 90px;
+  max-width: 90px;
+}
+
+.mobile-header__container {
+  display: none;
 }
 
 .first-page__container {
@@ -207,7 +182,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   grid-template-rows: 1fr;
   justify-items: center;
   justify-content: space-around;
-  scroll-margin-top: 6em;
+  scroll-margin-top: 8em;
 }
 .about-me__container .about-me__text {
   width: 80%;
@@ -714,5 +689,144 @@ a {
 li {
   list-style: none;
 }
+
+/*пока тоже примерно, шаблон из статьи 7 недели: https://itgirlschool.notion.site/7-d538acf66018487ea0b5b12167679fc9*/
+@media screen and (max-width: 768px) {
+  .requests__container-main {
+    padding: 20px;
+  }
+  .header__container {
+    display: none;
+  }
+  .mobile-header__container {
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 30% 1fr 10%;
+    grid-template-rows: 1fr;
+    color: #3E2E3B;
+    background-color: #E8D8CB;
+    z-index: 10;
+  }
+  .mobile-header__logo-link {
+    width: 75%;
+    justify-self: center;
+    margin-top: 15%;
+  }
+  .mobile-header__logo {
+    width: 100%;
+  }
+  .mobile-header__contacts {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+  }
+  .mobile-header__contact {
+    max-width: 77.8px;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn {
+    background-color: #E8D8CB;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #3E2E3B;
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #E8D8CB;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #3E2E3B;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .menu__item:hover {
+    background-color: #E2B2B5;
+  }
+}
+/* 
+Основной код для разрешения 1024px  
+@media screen and (min-width: 2560px) { 
+     стили для больших мониторов с разрешением 4K  
+} 
+@media screen and (min-width: 1440px) { 
+    стили для больших настольных компьютеров и ноутбуков  
+} 
+@media screen and (max-width: 1024px) { 
+     стили для планшета в альбомной ориентации  
+} 
+@media screen and (max-width: 768px) { 
+     стили для планшета  
+} 
+@media screen and (max-width: 425px) { 
+    стили для широкого смартфона  
+} 
+@media screen and (max-width: 375px) { 
+    стили для среднего смартфона 
+} 
+@media screen and (max-width: 320px) { 
+    стили для малого смартфона  
+}
+ */
 
 /*# sourceMappingURL=index.css.map */
