@@ -186,7 +186,9 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 /* about me page */
 .about-me__img img {
-  width: 50%;
+  width: 100%;
+  height: auto;
+  padding-top: 25%;
 }
 
 .about-me__h1 {
@@ -197,8 +199,8 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .about-me__container {
-  padding-top: 15vh;
-  padding-bottom: 15vh;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
@@ -224,6 +226,39 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .about-me__main {
   display: flex;
   flex-direction: column;
+}
+
+/*values*/
+.values {
+  margin-left: 10%;
+  margin-right: 10%;
+  scroll-margin-top: 15em;
+  padding-bottom: 5%;
+}
+
+.values_h1 {
+  font-size: 6.5em;
+  color: #3E2E3B;
+}
+
+.values_containers {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+.values_containers-items {
+  background-color: #B9D0DF;
+  border-radius: 10px;
+  gap: 10px;
+  max-width: 456px;
+  text-align: center;
+}
+
+.values_containers-text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #3E2E3B;
 }
 
 /* experience page */
@@ -259,40 +294,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   flex-direction: column;
 }
 
-/*values*/
-
-.values{
-  margin-left: 10%;
-  margin-right: 10%;
-  scroll-margin-top: 15em;
-  padding-bottom: 5%;
-}
-
-.values_h1{
-  font-size: 6.5em;
-  color: #3E2E3B;
-}
-
-.values_containers{
-  display: flex;
-  justify-items: center;
-  justify-content: space-evenly;
-}
-
-.values_containers-items{
-  background-color:#B9D0DF;
-  border-radius: 10px;
-  gap: 10px;
-  max-width: 456px;
-  text-align: center;
-}
-
-.values_containers-text{
-  font-size: 24px;
-  font-weight: 400;
-  color: #3E2E3B;
-}
-
 /* requests */
 .requests__container-main {
   margin-left: 10%;
@@ -306,12 +307,11 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .requests__text {
-  list-style: circle;
+  list-style: disc;
 }
 
 /*  Prices */
-
-.prices__container{
+.prices__container {
   margin-left: 10%;
   margin-right: 10%;
   scroll-margin-top: 15em;
@@ -324,8 +324,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   line-height: 80%;
   color: #3E2E3B;
 }
-
-
 
 .btn_sign {
   background-color: #E2B2B5;
@@ -354,7 +352,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   border: 1px solid #222222;
 }
 
-.prices__container-3{
+.prices__container-3 {
   display: flex;
   justify-content: space-around;
 }
@@ -371,22 +369,19 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-align: center;
 }
 
-.services_name{
+.services_name {
   font-size: 24px;
   font-weight: 700;
   color: #3E2E3B;
 }
 
-
-.services_text{
+.services_text {
   font-size: 24px;
   font-weight: 400;
 }
 
-
 /*  Prices for students*/
-
-.prices__container-students{
+.prices__container-students {
   margin-left: 10%;
   margin-right: 10%;
   scroll-margin-top: 15em;
@@ -394,7 +389,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   padding-bottom: 8%;
 }
 
-.prices__container-2{
+.prices__container-2 {
   display: flex;
   justify-content: flex-start;
   gap: 4%;
@@ -412,13 +407,13 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-align: center;
 }
 
-.services_name_students{
+.services_name_students {
   font-size: 24px;
   font-weight: 700;
   color: #3E2E3B;
 }
 
-.services_text_students{
+.services_text_students {
   font-size: 24px;
   font-weight: 400;
 }
@@ -449,7 +444,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .btn_sign-students:hover {
   border: 1px solid #222222;
 }
-
 
 .reviews__container-main {
   display: flex;
