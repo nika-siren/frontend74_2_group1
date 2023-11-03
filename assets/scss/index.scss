@@ -1,5 +1,4 @@
 @import 'variables.scss';
-@import 'index-media.scss';
 @import 'header.scss';
 @import 'first-page.scss';
 @import 'about-me.scss';
@@ -39,3 +38,5 @@ a {
 li {
     list-style: none;
 }
+
+@import 'index-media.scss';
