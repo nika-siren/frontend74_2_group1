@@ -54,7 +54,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-wrap: nowrap;
   align-self: center;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 500;
   transition: width 1s;
 }
@@ -101,22 +101,23 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .first-page__title {
   margin-left: 17%;
   font-family: "Caveat", cursive;
-  font-size: 10em;
-  line-height: 60%;
+  font-weight: 500;
+  font-size: 7em;
+  line-height: 40%;
   color: #3E2E3B;
 }
 
 .first-page__subtitle {
   margin-left: 17%;
   font-family: "Caveat";
-  font-size: 3em;
+  font-size: 1.5em;
   line-height: 60%;
   color: #3E2E3B;
 }
 
 .first-page__text {
   margin-left: 17%;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .first-page__item {
@@ -124,7 +125,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .first-page__link {
-  margin-left: 17%;
+  margin: 34%;
 }
 
 .first-page__button {
@@ -135,7 +136,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 600;
   line-height: 1.7em;
   margin: 0;
@@ -144,7 +145,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
+  transition: box-shadow 0.3s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
   user-select: none;
   -webkit-user-select: none;
   width: 303px;
@@ -168,8 +169,8 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .about-me__h1 {
   font-family: "Caveat", cursive;
-  font-size: 6.5em;
-  line-height: 80%;
+  font-size: 4.2em;
+  line-height: 20%;
   color: #3E2E3B;
 }
 
@@ -212,7 +213,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .values_h1 {
-  font-size: 6.5em;
+  font-size: 4.2em;
   color: #3E2E3B;
 }
 
@@ -236,17 +237,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   color: #3E2E3B;
 }
 
-.img_corner-1{
-  display: flex;
-}
-
-.img_corner-2{
-  display: flex;
-  flex-direction: row-reverse;
-
-}
-
-
 /* experience page */
 .experience__img {
   width: 100%;
@@ -258,8 +248,8 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .experience__h1 {
   font-family: "Caveat", cursive;
-  font-size: 6.5em;
-  line-height: 80%;
+  font-size: 4.2em;
+  line-height: 20%;
   color: #3E2E3B;
   flex-wrap: wrap;
   white-space: nowrap;
@@ -301,7 +291,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .requests__h1 {
-  font-size: 6.5em;
+  font-size: 4.2em;
   color: #3E2E3B;
 }
 
@@ -319,7 +309,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .prices__h1 {
   font-family: "Caveat", cursive;
-  font-size: 6.5em;
+  font-size: 4.2em;
   line-height: 80%;
   color: #3E2E3B;
 }
@@ -390,11 +380,11 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .prices__container-2 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: 4%;
 }
 
-.services_students  {
+.services_students {
   border: solid 3px #B9D0DF;
   border-radius: 5%;
   padding: 2%;
@@ -444,27 +434,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   border: 1px solid #222222;
 }
 
-.services_students-img {
-  width: 30em;
-  height: 30em;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
-}
-
-.computer{
-  display: grid;
-  grid-column: 1/3;
-}
-
-.textbook{
-  max-width: 80%;
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 2;
-  justify-content: end;
-}
-
 .reviews__container-main {
   display: flex;
   flex-direction: column;
@@ -491,7 +460,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 .reviews__container-main .reviews__h1 {
   font-family: "Caveat", cursive;
-  font-size: 6.5em;
+  font-size: 4.2em;
   line-height: 80%;
   color: #3E2E3B;
   width: 100%;
@@ -592,53 +561,111 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 /*  Footer */
-.footer{
-  margin-top: 15%;
-  margin-left: 10%;
-  margin-right: 10%;
-  scroll-margin-top: 15em;
+.footer__menu {
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 5px;
 }
 
-.Creator-1{
+.footer_menu_list {
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+.footer__menu-item + .footer__menu-item {
+  padding-top: 10px;
+}
+
+.logo__footer {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.button__footer {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 3%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
+  padding: 20px;
 }
 
-.creator_info{
-display: grid;
-grid-column: 2/3;
+.button-footer {
+  background-color: #fff;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
 }
 
-.creator_text{
-  color: #3E2E3B;
-  font-family: "roboto", sans-serif;
-  font-size: 24px;
+.button-footer {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1;
 }
 
-p.creator_text{
-  margin-block-start: none;
-  margin-block-end: none;
+.footer__menu-item {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 2;
 }
-.creator_info-links{
+
+.footer__menu-item a:after {
+  background-color: #E2B2B5;
+  /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px;
+  /* Высота линии */
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.footer__menu-item a:hover:after,
+.footer__menu-item a:focus:after {
+  width: 100%;
+}
+
+.footer__menu_list-media {
   display: flex;
-  margin-left: -20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.Creator-2{
-  display: flex;
-  justify-content: center;
+.logo__social-media {
+  max-width: 30px;
+  max-height: 30px;
 }
 
-.about_Creator{
-  color: #3E2E3B;
-  font-family: "roboto", sans-serif;
-  font-size: 24px;
+.logo__social-media1 {
+  max-width: 28px;
+  max-height: 28px;
 }
 
 body {
   color: #91778C;
   font-family: "Inter", sans-serif;
+  font-size: 24px;
   background-color: #E8D8CB;
   scroll-behavior: smooth;
 }
