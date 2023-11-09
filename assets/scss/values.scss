@@ -16,12 +16,13 @@
     display: flex;
     justify-items: center;
     justify-content: space-evenly;
+    gap: 5%;
 }
 
 .values_containers-items {
     background-color: #B9D0DF;
     border-radius: 10px;
-    gap: 10px;
+    gap: 5%;
     max-width: 456px;
     text-align: center;
 }
