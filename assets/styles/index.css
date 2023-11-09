@@ -221,12 +221,13 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   display: flex;
   justify-items: center;
   justify-content: space-evenly;
+  gap: 5%;
 }
 
 .values_containers-items {
   background-color: #B9D0DF;
   border-radius: 10px;
-  gap: 10px;
+  gap: 5%;
   max-width: 456px;
   text-align: center;
 }
@@ -235,6 +236,21 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   font-size: 24px;
   font-weight: 400;
   color: #3E2E3B;
+}
+
+.img_corner-1{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  bottom: -5%;
+  right: -5%;
+  display: flex;
+}
+
+.img_corner-2{
+  display: flex;
+  flex-direction: row-reverse;
+
 }
 
 /* experience page */
@@ -343,7 +359,8 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .prices__container-3 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  gap: 3%;
 }
 
 .services {
@@ -432,6 +449,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .btn_sign-students:hover {
   border: 1px solid #222222;
+  transition: 0.3s;
 }
 
 .reviews__container-main {
@@ -561,111 +579,54 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 /*  Footer */
-.footer__menu {
-  padding-left: 200px;
-  padding-right: 200px;
+.footer{
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  scroll-margin-top: 15em;
+}
+
+.Creator-1{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3%;
+}
+
+.creator_info{
+display: grid;
+grid-column: 2/3;
+}
+
+.creator_text{
+  color: #3E2E3B;
+  font-family: "roboto", sans-serif;
+  font-size: 24px;
+}
+
+p.creator_text{
+  margin-block-start: inherit;
+  margin-block-end: inherit;
+}
+.creator_info-links{
   display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  padding: 5px;
+  margin-left: -20px;
 }
 
-.footer_menu_list {
-  font-size: 20px;
-  font-weight: 400px;
-}
-
-.footer__menu-item + .footer__menu-item {
-  padding-top: 10px;
-}
-
-.logo__footer {
-  max-width: 100px;
-  max-height: 100px;
-}
-
-.button__footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content min-content;
-  padding: 20px;
-}
-
-.button-footer {
-  background-color: #fff;
-  border: 1px solid #222222;
-  border-radius: 8px;
-  color: #222222;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
-}
-
-.button-footer {
-  display: grid;
-  grid-column: 1/3;
-  grid-row: 1;
-}
-
-.footer__menu-item {
-  display: grid;
-  grid-column: 1/3;
-  grid-row: 2;
-}
-
-.footer__menu-item a:after {
-  background-color: #E2B2B5;
-  /* Цвет линии при наведении на нее курсора мыши */
-  display: block;
-  content: "";
-  height: 2px;
-  /* Высота линии */
-  width: 0%;
-  -webkit-transition: width 0.3s ease-in-out;
-  -moz--transition: width 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out;
-}
-
-.footer__menu-item a:hover:after,
-.footer__menu-item a:focus:after {
-  width: 100%;
-}
-
-.footer__menu_list-media {
+.Creator-2{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 
-.logo__social-media {
-  max-width: 30px;
-  max-height: 30px;
+.about_Creator{
+  color: #3E2E3B;
+  font-family: "roboto", sans-serif;
+  font-size: 24px;
 }
 
-.logo__social-media1 {
-  max-width: 28px;
-  max-height: 28px;
-}
 
 body {
   color: #91778C;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
   background-color: #E8D8CB;
   scroll-behavior: smooth;
 }
