@@ -23,12 +23,19 @@
 .first-page__title {
 
     margin-left: 17%;
-
+    margin-top: 2%;
+    margin-bottom: 0px;
+    
     font-family: 'Caveat', cursive;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 7em;
-    line-height: 40%;
     color: #3E2E3B;
+}
+
+.first-page__title-line {
+    margin-left: 5%;
+    
+
 }
 
 .first-page__subtitle {
@@ -44,18 +51,19 @@
 .first-page__text {
 
     margin-left: 17%;
-    font-size: 1em;
-    
+    font-size: 1rem;
+        
 }
 
 .first-page__item {
 
     list-style-type: disc;
+    margin-bottom: 10px;
 }
 
 .first-page__link {
 
-    margin: 34%;
+    margin-left: 25%;
     
     
 }
@@ -65,7 +73,7 @@
     background-color: $button-color-one;
     border: 1px solid $button-color-one;
     border-radius: 50px;
-    color: #3E2E3B;
+    color: $button-text-color;
     cursor: pointer;
     display: inline-block;
     font-family: 'Inter', sans-serif;
@@ -94,4 +102,5 @@
     width: 75%;
 
     margin-left: 10%;
+    align-self: center;
 }
