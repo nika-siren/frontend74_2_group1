@@ -5,7 +5,7 @@
   margin-left: 10%;
   grid-template-rows: auto 500px;
 
-  scroll-margin-top: 11em;
+  scroll-margin-top: 9em;
 
 
   /*это основной круглый блок*/
@@ -24,7 +24,9 @@
 
     .reviews__h2 {
       font-family: 'Inter', sans-serif;
-      font-size: 2.2em;
+      font-size: 2.2rem;
+      margin-top: 0px;
+      margin-bottom: 0px;
       color: #3E2E3B;
     }
   }
@@ -32,11 +34,13 @@
   .reviews__h1 {
     font-family: 'Caveat', cursive;
     font-size: 4.2em;
-    line-height: 80%;
+    line-height: 0.7rem;
+    font-weight: 400;
     color: #3E2E3B;
     width: 100%;
     text-wrap: nowrap;
     // margin-left: 10%;
+    margin-bottom: 0px;
 
     grid-area: reviews__h1;
 
@@ -59,7 +63,8 @@
       border-radius: 38px;
       color: $main-text-color;
       padding: 1%;
-      margin: 1.5%;
+      margin: 5px;
+      font-size: 1rem;
     }
   }
 
@@ -72,7 +77,7 @@
 /*slider part start*/
 .reviews__articles {
   display: inline-block;
-  padding: 25px 70px 25px 60px;
+  padding: 5px 50px 5px 60px;
   width: 1000px;
   vertical-align: top;
 }
@@ -88,7 +93,7 @@
   overflow: hidden;
   position: absolute;
   border-radius: 5px;
-  width: 1000px;
+  width: 1024px;
   height: 725px;
 }
 
@@ -141,3 +146,8 @@
   display: flex;
   align-items: center;
 }
+
+.reviews__text {
+  font-size: 1rem;
+}
+

@@ -8,10 +8,14 @@
 }
 
 .requests__h1 {
-    font-size: 4.2em;
+    font-size: 100px;
+    line-height: 0.8em;
     color: #3E2E3B;
+    font-weight: 400;
 }
 
 .requests__text {
     list-style: disc;
+    font-size: 1rem;
+    margin-bottom: 5px;
 }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*задаем цвета, добавила пока примерную структуру, чтобы не забыть (:
 $background-color: #E8D8CB;
 $purple: #CDB0E3;
@@ -100,11 +101,16 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .first-page__title {
   margin-left: 17%;
+  margin-top: 2%;
+  margin-bottom: 0px;
   font-family: "Caveat", cursive;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 7em;
-  line-height: 40%;
   color: #3E2E3B;
+}
+
+.first-page__title-line {
+  margin-left: 5%;
 }
 
 .first-page__subtitle {
@@ -117,22 +123,23 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .first-page__text {
   margin-left: 17%;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .first-page__item {
   list-style-type: disc;
+  margin-bottom: 10px;
 }
 
 .first-page__link {
-  margin: 34%;
+  margin-left: 25%;
 }
 
 .first-page__button {
   background-color: #CCB0E3;
   border: 1px solid #CCB0E3;
   border-radius: 50px;
-  color: #3E2E3B;
+  color: #222222;
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", sans-serif;
@@ -158,6 +165,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .first-page__img {
   width: 75%;
   margin-left: 10%;
+  align-self: center;
 }
 
 /* about me page */
@@ -169,6 +177,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .about-me__h1 {
   font-family: "Caveat", cursive;
+  font-weight: 400;
   font-size: 4.2em;
   line-height: 20%;
   color: #3E2E3B;
@@ -185,11 +194,15 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   justify-content: space-around;
   scroll-margin-top: 8em;
 }
+
 .about-me__container .about-me__text {
   width: 80%;
-  line-height: 1.9rem;
+  line-height: 1.7rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
   text-align: left;
 }
+
 .about-me__container .about-me__text2 {
   color: black;
   font-family: Caveat;
@@ -206,19 +219,24 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 /*values*/
 .values {
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 100vw;
+  margin-left: 8%;
+  margin-right: 8%;
   scroll-margin-top: 15em;
-  padding-bottom: 5%;
+  padding-bottom: 1%;
 }
 
 .values_h1 {
   font-size: 4.2em;
+  font-weight: 400;
+  margin-bottom: 0px;
   color: #3E2E3B;
+  line-height: 0.5rem;
 }
 
 .values_containers {
   display: flex;
+  margin-top: 0px;
   justify-items: center;
   justify-content: space-evenly;
   gap: 5%;
@@ -226,19 +244,34 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .values_containers-items {
   background-color: #B9D0DF;
-  border-radius: 10px;
-  gap: 5%;
-  max-width: 456px;
+  border-radius: 17px;
+  gap: 10px;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .values_containers-text {
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #3E2E3B;
+  margin: 25px;
 }
 
-.img_corner-1{
+.img_corner-1 {
+  position: relative;
+  top: 90px;
+  right: 62px;
+  margin-top: 0px;
+}
+
+.img_corner-2 {
+  position: relative;
+  bottom: 90px;
+  left: 93.5%;
+}
+
+.img_corner-1 {
   position: relative;
   top: 0%;
   left: 0%;
@@ -247,7 +280,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   display: flex;
 }
 
-.img_corner-2{
+.img_corner-2 {
   display: flex;
   flex-direction: row-reverse;
 
@@ -256,7 +289,9 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 /* experience page */
 .experience__img {
   width: 100%;
-  padding-top: 7%;
+  justify-self: center;
+  align-self: center;
+  padding-top: 10%;
   /*.experience__img img {
       width: 50%;
   }*/
@@ -264,39 +299,36 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .experience__h1 {
   font-family: "Caveat", cursive;
-  font-size: 4.2em;
-  line-height: 20%;
+  font-size: 100px;
+  line-height: 70%;
+  font-weight: 400;
   color: #3E2E3B;
-  flex-wrap: wrap;
-  white-space: nowrap;
-  margin-left: 18%;
 }
 
 .experience__container {
-  display: flex;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 7vh;
-  scroll-margin-top: 12em;
+  display: grid;
+  width: 100vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 7em;
+  grid-template-columns: 2fr 3fr;
+  grid-row: 1fr;
+  justify-items: center;
+  justify-content: space-around;
+  scroll-margin-top: 8em;
 }
-.experience__container .experience__list-main {
-  margin-left: 15%;
+
+.experience__list-main {
   width: 100%;
   height: 10%;
 }
-.experience__container .experience__list {
-  line-height: 1.9rem;
-  width: 65%;
-}
 
-.experience__main {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  margin-right: 10%;
-}
-.experience__main .experience__text-main {
-  flex-direction: column;
+.experience__text-main {
+  width: 80%;
+  line-height: 1.7rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: left;
 }
 
 /* requests */
@@ -307,12 +339,16 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .requests__h1 {
-  font-size: 4.2em;
+  font-size: 100px;
+  line-height: 0.8em;
   color: #3E2E3B;
+  font-weight: 400;
 }
 
 .requests__text {
   list-style: disc;
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 
 /*  Prices */
@@ -328,6 +364,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   font-size: 4.2em;
   line-height: 80%;
   color: #3E2E3B;
+  font-weight: 400;
 }
 
 .btn_sign {
@@ -457,10 +494,11 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   flex-direction: column;
   margin-left: 10%;
   grid-template-rows: auto 500px;
-  scroll-margin-top: 11em;
+  scroll-margin-top: 9em;
   /*это основной круглый блок*/
   /*это плашки круглые с результатами*/
 }
+
 .reviews__container-main .reviews__container-circle {
   display: grid;
   background-color: #E8D8CB;
@@ -471,20 +509,27 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   padding: 5%;
   grid-area: reviews__container-circle;
 }
+
 .reviews__container-main .reviews__container-circle .reviews__h2 {
   font-family: "Inter", sans-serif;
-  font-size: 2.2em;
+  font-size: 2.2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: #3E2E3B;
 }
+
 .reviews__container-main .reviews__h1 {
   font-family: "Caveat", cursive;
   font-size: 4.2em;
-  line-height: 80%;
+  line-height: 0.7rem;
+  font-weight: 400;
   color: #3E2E3B;
   width: 100%;
   text-wrap: nowrap;
+  margin-bottom: 0px;
   grid-area: reviews__h1;
 }
+
 .reviews__container-main .reviews__container {
   display: flex;
   flex-direction: row;
@@ -493,14 +538,17 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   white-space: nowrap;
   align-items: center;
 }
+
 .reviews__container-main .reviews__container .reviews__results-text {
   background-color: #E8D8CB;
   border: 3px solid #CCB0E3;
   border-radius: 38px;
   color: #91778C;
   padding: 1%;
-  margin: 1.5%;
+  margin: 5px;
+  font-size: 1rem;
 }
+
 .reviews__container-main .reviews__list {
   list-style: circle;
 }
@@ -508,7 +556,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 /*slider part start*/
 .reviews__articles {
   display: inline-block;
-  padding: 25px 70px 25px 60px;
+  padding: 5px 50px 5px 60px;
   width: 1000px;
   vertical-align: top;
 }
@@ -524,7 +572,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   overflow: hidden;
   position: absolute;
   border-radius: 5px;
-  width: 1000px;
+  width: 1024px;
   height: 725px;
 }
 
@@ -578,49 +626,60 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   align-items: center;
 }
 
+.reviews__text {
+  font-size: 1rem;
+}
+
 /*  Footer */
-.footer{
-  margin-top: 15%;
-  margin-left: 10%;
-  margin-right: 10%;
-  scroll-margin-top: 15em;
+.footer__menu {
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 5px;
 }
 
-.Creator-1{
+.footer_menu_list {
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+.footer__menu-item+.footer__menu-item {
+  padding-top: 10px;
+}
+
+.logo__footer {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.button__footer {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 3%;
+  margin-left: 50px;
+  margin-top: 100px;
+  width: 100vw;
+  grid-template-columns: 2fr 5fr;
 }
 
-.creator_info{
-display: grid;
-grid-column: 2/3;
+.Creator-1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  font-size: 1rem;
 }
 
-.creator_text{
-  color: #3E2E3B;
-  font-family: "roboto", sans-serif;
-  font-size: 24px;
+.Creator-2 {
+  align-self: center;
+  margin-left: 50px;
+  font-size: 1rem;
 }
 
-p.creator_text{
-  margin-block-start: inherit;
-  margin-block-end: inherit;
-}
-.creator_info-links{
-  display: flex;
-  margin-left: -20px;
-}
-
-.Creator-2{
-  display: flex;
-  justify-content: center;
-}
-
-.about_Creator{
-  color: #3E2E3B;
-  font-family: "roboto", sans-serif;
-  font-size: 24px;
+.creator_text {
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 
@@ -633,6 +692,7 @@ body {
 
 h1 {
   font-family: "Caveat", cursive;
+  font-size: 100px;
 }
 
 img {
@@ -658,9 +718,11 @@ li {
   .requests__container-main {
     padding: 20px;
   }
+
   .header__container {
     display: none;
   }
+
   .mobile-header__container {
     position: sticky;
     -webkit-position: sticky;
@@ -673,41 +735,51 @@ li {
     background-color: #E8D8CB;
     z-index: 10;
   }
+
   .mobile-header__logo-link {
     width: 75%;
     justify-self: center;
     margin-top: 15%;
   }
+
   .mobile-header__logo {
     width: 100%;
   }
+
   .mobile-header__contacts {
     display: flex;
     flex-direction: row;
     align-self: center;
     align-items: center;
   }
+
   .mobile-header__contact {
     max-width: 77.8px;
   }
+
   #menu__toggle {
     opacity: 0;
   }
-  #menu__toggle:checked ~ .menu__btn > span {
+
+  #menu__toggle:checked~.menu__btn>span {
     transform: rotate(45deg);
   }
-  #menu__toggle:checked ~ .menu__btn > span::before {
+
+  #menu__toggle:checked~.menu__btn>span::before {
     top: 0;
     transform: rotate(0);
   }
-  #menu__toggle:checked ~ .menu__btn > span::after {
+
+  #menu__toggle:checked~.menu__btn>span::after {
     top: 0;
     transform: rotate(90deg);
   }
-  #menu__toggle:checked ~ .menu__box {
+
+  #menu__toggle:checked~.menu__box {
     visibility: visible;
     left: 0;
   }
+
   .menu__btn {
     background-color: #E8D8CB;
     display: flex;
@@ -720,9 +792,10 @@ li {
     cursor: pointer;
     z-index: 1;
   }
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
+
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -730,14 +803,17 @@ li {
     background-color: #3E2E3B;
     transition-duration: 0.25s;
   }
-  .menu__btn > span::before {
+
+  .menu__btn>span::before {
     content: "";
     top: -8px;
   }
-  .menu__btn > span::after {
+
+  .menu__btn>span::after {
     content: "";
     top: 8px;
   }
+
   .menu__box {
     display: block;
     position: fixed;
@@ -753,6 +829,7 @@ li {
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
     transition-duration: 0.25s;
   }
+
   .menu__item {
     display: block;
     padding: 12px 24px;
@@ -763,10 +840,12 @@ li {
     text-decoration: none;
     transition-duration: 0.25s;
   }
+
   .menu__item:hover {
     background-color: #E2B2B5;
   }
 }
+
 /* 
 Основной код для разрешения 1024px  
 @media screen and (min-width: 2560px) { 
