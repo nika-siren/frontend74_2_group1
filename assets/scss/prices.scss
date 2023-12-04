@@ -3,7 +3,7 @@
 .prices__container {
     margin-left: 10%;
     margin-right: 10%;
-    scroll-margin-top: 15em;
+    scroll-margin-top: 4em;
     padding-top: 5%;
 }
 
@@ -25,9 +25,9 @@
     cursor: pointer;
     display: inline-block;
     font-family: "Inter", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 1.7em;
+    line-height: 1.7rem;
     margin: 0;
     outline: none;
     padding: 10px;
@@ -54,8 +54,8 @@
     border: solid 3px #E2B2B5;
     border-radius: 5%;
     padding: 2%;
-    width: 30em;
-    height: 30em;
+    width: 33%;
+    
     display: grid;
     justify-items: center;
     justify-content: center;
@@ -63,14 +63,14 @@
 }
 
 .services_name {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 700;
     color: #3E2E3B;
 }
 
 
 .services_text {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -80,7 +80,7 @@
 .prices__container-students {
     margin-left: 10%;
     margin-right: 10%;
-    scroll-margin-top: 15em;
+    
     padding-top: 5%;
     padding-bottom: 8%;
 }
@@ -95,8 +95,8 @@
     border: solid 3px #B9D0DF;
     border-radius: 5%;
     padding: 2%;
-    width: 30em;
-    height: 30em;
+    width: 33%;
+    
     display: grid;
     justify-items: center;
     justify-content: center;
@@ -104,13 +104,13 @@
 }
 
 .services_name_students {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 700;
     color: #3E2E3B;
 }
 
 .services_text_students {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -122,9 +122,9 @@
     cursor: pointer;
     display: inline-block;
     font-family: "Inter", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 1.7em;
+    line-height: 1.7rem;
     margin: 0;
     outline: none;
     padding: 10px;

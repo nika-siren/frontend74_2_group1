@@ -1,9 +1,9 @@
 /*values*/
 
 .values {
-    max-width: 100vw;
-    margin-left: 8%;
-    margin-right: 8%;
+    
+    margin-left: 10%;
+    margin-right: 10%;
     scroll-margin-top: 15em;
     padding-bottom: 1%;
 }
@@ -21,7 +21,7 @@
     margin-top: 0px;
     justify-items: center;
     justify-content: space-evenly;
-    gap: 5%;
+    gap: 1%;
 }
 
 .values_containers-items {
@@ -42,6 +42,7 @@
 
 .img_corner-1 {
     position: relative;
+    width: fit-content;
     top: 90px;
     right: 62px;
     margin-top: 0px;
@@ -50,6 +51,7 @@
 
 .img_corner-2 {
     position: relative;
+    width: fit-content;
     bottom: 90px;
     left: 93.5%;
 

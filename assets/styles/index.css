@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*задаем цвета, добавила пока примерную структуру, чтобы не забыть (:
 $background-color: #E8D8CB;
 $purple: #CDB0E3;
@@ -15,7 +14,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   -webkit-position: sticky;
   top: 0;
   display: grid;
-  width: 100%;
+  width: 99vw;
   grid-template-columns: 14.3% 1fr;
   grid-template-rows: 1fr;
   color: #3E2E3B;
@@ -86,7 +85,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .first-page__container {
   display: grid;
-  width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: stretch;
@@ -187,14 +185,12 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   padding-top: 5vh;
   padding-bottom: 10vh;
   display: grid;
-  width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   justify-items: center;
   justify-content: space-around;
   scroll-margin-top: 8em;
 }
-
 .about-me__container .about-me__text {
   width: 80%;
   line-height: 1.7rem;
@@ -202,7 +198,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   font-size: 1rem;
   text-align: left;
 }
-
 .about-me__container .about-me__text2 {
   color: black;
   font-family: Caveat;
@@ -219,9 +214,8 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 /*values*/
 .values {
-  max-width: 100vw;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
   scroll-margin-top: 15em;
   padding-bottom: 1%;
 }
@@ -239,7 +233,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   margin-top: 0px;
   justify-items: center;
   justify-content: space-evenly;
-  gap: 5%;
+  gap: 1%;
 }
 
 .values_containers-items {
@@ -260,6 +254,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .img_corner-1 {
   position: relative;
+  width: fit-content;
   top: 90px;
   right: 62px;
   margin-top: 0px;
@@ -267,23 +262,9 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .img_corner-2 {
   position: relative;
+  width: fit-content;
   bottom: 90px;
   left: 93.5%;
-}
-
-.img_corner-1 {
-  position: relative;
-  top: 0%;
-  left: 0%;
-  bottom: -5%;
-  right: -5%;
-  display: flex;
-}
-
-.img_corner-2 {
-  display: flex;
-  flex-direction: row-reverse;
-
 }
 
 /* experience page */
@@ -307,7 +288,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .experience__container {
   display: grid;
-  width: 100vw;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 7em;
@@ -355,7 +335,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .prices__container {
   margin-left: 10%;
   margin-right: 10%;
-  scroll-margin-top: 15em;
+  scroll-margin-top: 4em;
   padding-top: 5%;
 }
 
@@ -375,9 +355,9 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.7em;
+  line-height: 1.7rem;
   margin: 0;
   outline: none;
   padding: 10px;
@@ -397,15 +377,14 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .prices__container-3 {
   display: flex;
   justify-content: space-evenly;
-  gap: 3%;
+  gap: 5%;
 }
 
 .services {
   border: solid 3px #E2B2B5;
   border-radius: 5%;
   padding: 2%;
-  width: 30em;
-  height: 30em;
+  width: 33%;
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -413,13 +392,13 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .services_name {
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 700;
   color: #3E2E3B;
 }
 
 .services_text {
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -427,7 +406,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .prices__container-students {
   margin-left: 10%;
   margin-right: 10%;
-  scroll-margin-top: 15em;
   padding-top: 5%;
   padding-bottom: 8%;
 }
@@ -442,8 +420,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   border: solid 3px #B9D0DF;
   border-radius: 5%;
   padding: 2%;
-  width: 30em;
-  height: 30em;
+  width: 33%;
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -451,13 +428,13 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .services_name_students {
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 700;
   color: #3E2E3B;
 }
 
 .services_text_students {
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -469,9 +446,9 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.7em;
+  line-height: 1.7rem;
   margin: 0;
   outline: none;
   padding: 10px;
@@ -486,7 +463,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .btn_sign-students:hover {
   border: 1px solid #222222;
-  transition: 0.3s;
 }
 
 .reviews__container-main {
@@ -498,7 +474,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   /*это основной круглый блок*/
   /*это плашки круглые с результатами*/
 }
-
 .reviews__container-main .reviews__container-circle {
   display: grid;
   background-color: #E8D8CB;
@@ -509,7 +484,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   padding: 5%;
   grid-area: reviews__container-circle;
 }
-
 .reviews__container-main .reviews__container-circle .reviews__h2 {
   font-family: "Inter", sans-serif;
   font-size: 2.2rem;
@@ -517,7 +491,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   margin-bottom: 0px;
   color: #3E2E3B;
 }
-
 .reviews__container-main .reviews__h1 {
   font-family: "Caveat", cursive;
   font-size: 4.2em;
@@ -529,7 +502,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   margin-bottom: 0px;
   grid-area: reviews__h1;
 }
-
 .reviews__container-main .reviews__container {
   display: flex;
   flex-direction: row;
@@ -538,7 +510,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   white-space: nowrap;
   align-items: center;
 }
-
 .reviews__container-main .reviews__container .reviews__results-text {
   background-color: #E8D8CB;
   border: 3px solid #CCB0E3;
@@ -548,7 +519,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   margin: 5px;
   font-size: 1rem;
 }
-
 .reviews__container-main .reviews__list {
   list-style: circle;
 }
@@ -631,35 +601,10 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 /*  Footer */
-.footer__menu {
-  padding-left: 200px;
-  padding-right: 200px;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  padding: 5px;
-}
-
-.footer_menu_list {
-  font-size: 20px;
-  font-weight: 400px;
-}
-
-.footer__menu-item+.footer__menu-item {
-  padding-top: 10px;
-}
-
-.logo__footer {
-  max-width: 100px;
-  max-height: 100px;
-}
-
-.button__footer {
+.footer {
   display: grid;
-  margin-left: 50px;
+  margin-left: 10%;
   margin-top: 100px;
-  width: 100vw;
   grid-template-columns: 2fr 5fr;
 }
 
@@ -682,10 +627,10 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   margin-bottom: 0px;
 }
 
-
 body {
   color: #91778C;
   font-family: "Inter", sans-serif;
+  font-size: 24px;
   background-color: #E8D8CB;
   scroll-behavior: smooth;
 }
@@ -718,11 +663,9 @@ li {
   .requests__container-main {
     padding: 20px;
   }
-
   .header__container {
     display: none;
   }
-
   .mobile-header__container {
     position: sticky;
     -webkit-position: sticky;
@@ -735,51 +678,41 @@ li {
     background-color: #E8D8CB;
     z-index: 10;
   }
-
   .mobile-header__logo-link {
     width: 75%;
     justify-self: center;
     margin-top: 15%;
   }
-
   .mobile-header__logo {
     width: 100%;
   }
-
   .mobile-header__contacts {
     display: flex;
     flex-direction: row;
     align-self: center;
     align-items: center;
   }
-
   .mobile-header__contact {
     max-width: 77.8px;
   }
-
   #menu__toggle {
     opacity: 0;
   }
-
-  #menu__toggle:checked~.menu__btn>span {
+  #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
   }
-
-  #menu__toggle:checked~.menu__btn>span::before {
+  #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
   }
-
-  #menu__toggle:checked~.menu__btn>span::after {
+  #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
   }
-
-  #menu__toggle:checked~.menu__box {
+  #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
   }
-
   .menu__btn {
     background-color: #E8D8CB;
     display: flex;
@@ -792,10 +725,9 @@ li {
     cursor: pointer;
     z-index: 1;
   }
-
-  .menu__btn>span,
-  .menu__btn>span::before,
-  .menu__btn>span::after {
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -803,17 +735,14 @@ li {
     background-color: #3E2E3B;
     transition-duration: 0.25s;
   }
-
-  .menu__btn>span::before {
+  .menu__btn > span::before {
     content: "";
     top: -8px;
   }
-
-  .menu__btn>span::after {
+  .menu__btn > span::after {
     content: "";
     top: 8px;
   }
-
   .menu__box {
     display: block;
     position: fixed;
@@ -829,7 +758,6 @@ li {
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
     transition-duration: 0.25s;
   }
-
   .menu__item {
     display: block;
     padding: 12px 24px;
@@ -840,12 +768,10 @@ li {
     text-decoration: none;
     transition-duration: 0.25s;
   }
-
   .menu__item:hover {
     background-color: #E2B2B5;
   }
 }
-
 /* 
 Основной код для разрешения 1024px  
 @media screen and (min-width: 2560px) { 
