@@ -54,7 +54,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-wrap: nowrap;
   align-self: center;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: 500;
   transition: width 1s;
 }
@@ -659,6 +659,28 @@ li {
 }
 
 /*пока тоже примерно, шаблон из статьи 7 недели: https://itgirlschool.notion.site/7-d538acf66018487ea0b5b12167679fc9*/
+@media screen and (min-width: 1440px) {
+  .img_corner-2 {
+    position: relative;
+    width: fit-content;
+    bottom: 90px;
+    left: 91%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .img_corner-2 {
+    position: relative;
+    width: fit-content;
+    bottom: 90px;
+    left: 87%;
+  }
+  .btn_sign {
+    width: 250px;
+  }
+  .btn_sign-students {
+    width: 250px;
+  }
+}
 @media screen and (max-width: 768px) {
   .requests__container-main {
     padding: 20px;
