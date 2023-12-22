@@ -14,7 +14,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   -webkit-position: sticky;
   top: 0;
   display: grid;
-  width: 99vw;
+  width: 98vw;
   grid-template-columns: 14.3% 1fr;
   grid-template-rows: 1fr;
   color: #3E2E3B;
@@ -54,14 +54,14 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-wrap: nowrap;
   align-self: center;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   transition: width 1s;
 }
 
 .header__link:hover {
   color: #E2B2B5;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .header__contacts {
@@ -224,8 +224,8 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   font-size: 4.2em;
   font-weight: 400;
   margin-bottom: 0px;
+  margin-top: 0px;
   color: #3E2E3B;
-  line-height: 0.5rem;
 }
 
 .values_containers {
@@ -659,7 +659,7 @@ li {
 }
 
 /*пока тоже примерно, шаблон из статьи 7 недели: https://itgirlschool.notion.site/7-d538acf66018487ea0b5b12167679fc9*/
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .img_corner-2 {
     position: relative;
     width: fit-content;
@@ -673,6 +673,12 @@ li {
     width: fit-content;
     bottom: 90px;
     left: 87%;
+  }
+  .header__link {
+    font-size: 1.2rem;
+  }
+  .header__link:hover {
+    font-size: 1.3rem;
   }
   .btn_sign {
     width: 250px;

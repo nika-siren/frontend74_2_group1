@@ -1,6 +1,6 @@
 /*пока тоже примерно, шаблон из статьи 7 недели: https://itgirlschool.notion.site/7-d538acf66018487ea0b5b12167679fc9*/
 
-@media screen and (min-width: 1440px) { 
+@media screen and (max-width: 1440px) { 
   .img_corner-2 {
     position: relative;
     width: fit-content;
@@ -17,6 +17,15 @@
     left: 87%;
 
 }  
+
+.header__link {
+  font-size: 1.2rem;
+}
+
+.header__link:hover {
+  font-size: 1.3rem;
+}
+
 
 .btn_sign {
   width: 250px;
@@ -175,6 +184,10 @@
         background-color: $hover-line-color;
       }
 }
+
+@media screen and (max-width: 375px) { 
+   
+} 
 
 
 /* 
