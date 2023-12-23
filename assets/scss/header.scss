@@ -5,7 +5,7 @@
     -webkit-position: sticky;
     top: 0;
     display: grid;
-    width: 99vw;
+    width: 98vw;
 
     grid-template-columns: 14.3% 1fr;
     grid-template-rows: 1fr;
@@ -63,7 +63,7 @@
     align-self: center;
   
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.5rem;
     font-weight: 500;
     transition: width 1s;
   
@@ -71,7 +71,7 @@
 
 .header__link:hover {
     color: $hover-line-color;
-    font-size: 1.6em;
+    font-size: 1.6rem;
 }
 
 .header__contacts {

@@ -1,5 +1,42 @@
 /*пока тоже примерно, шаблон из статьи 7 недели: https://itgirlschool.notion.site/7-d538acf66018487ea0b5b12167679fc9*/
 
+@media screen and (max-width: 1440px) { 
+  .img_corner-2 {
+    position: relative;
+    width: fit-content;
+    bottom: 90px;
+    left: 91%;
+
+} 
+} 
+@media screen and (max-width: 1024px) { 
+  .img_corner-2 {
+    position: relative;
+    width: fit-content;
+    bottom: 90px;
+    left: 87%;
+
+}  
+
+.header__link {
+  font-size: 1.2rem;
+}
+
+.header__link:hover {
+  font-size: 1.3rem;
+}
+
+
+.btn_sign {
+  width: 250px;
+}
+
+.btn_sign-students {
+  width: 250px;
+}
+
+} 
+
 @media screen and (max-width: 768px) {
     .requests__container-main {
         padding: 20px;
@@ -147,6 +184,10 @@
         background-color: $hover-line-color;
       }
 }
+
+@media screen and (max-width: 375px) { 
+   
+} 
 
 
 /* 
