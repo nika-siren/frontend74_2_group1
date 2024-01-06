@@ -1,14 +1,15 @@
 /*values*/
 
 .values {
-    
     margin-left: 10%;
     margin-right: 10%;
     scroll-margin-top: 15em;
     padding-bottom: 1%;
+    
 }
 
 .values_h1 {
+    margin-bottom: 50px;
     font-size: 4.2em;
     font-weight: 400;
     margin-bottom: 0px;
@@ -41,18 +42,23 @@
 }
 
 .img_corner-1 {
-    position: relative;
-    width: fit-content;
-    top: 90px;
-    right: 62px;
+    position: absolute;
+    width: 167px;
+    top: -65px;
+    left: -65px;
     margin-top: 0px;
 
 }
 
 .img_corner-2 {
-    position: relative;
-    width: fit-content;
-    bottom: 90px;
-    left: 93.5%;
+    position: absolute;
+    width: 150px;
+    bottom: -55px;
+    right: -55px;
 
+}
+
+.values_values {
+    margin-top: 50px;
+    position: relative;
 }
