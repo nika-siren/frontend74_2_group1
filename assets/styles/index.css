@@ -651,37 +651,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   margin-bottom: 0px;
 }
 
-body {
-  color: #91778C;
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  background-color: #E8D8CB;
-  scroll-behavior: smooth;
-}
-
-h1 {
-  font-family: "Caveat", cursive;
-  font-size: 100px;
-}
-
-img {
-  max-width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: 0.25s ease;
-}
-
-li {
-  list-style: none;
-}
-
 /*пока тоже примерно, шаблон из статьи 7 недели: https://itgirlschool.notion.site/7-d538acf66018487ea0b5b12167679fc9*/
 @media screen and (max-width: 1440px) {
   .img_corner-2 {
@@ -717,6 +686,26 @@ li {
   }
   .btn_sign-students {
     width: 250px;
+  }
+  #review__menu-main {
+    width: 60%;
+  }
+  #review__menu-main {
+    width: 97%;
+    height: 150%;
+  }
+  #review__menu {
+    width: 100%;
+  }
+  .reviews__results-text,
+  .reviews__list {
+    font-size: 10px;
+  }
+  .reviews__text-big {
+    font-size: 14px;
+  }
+  .reviews__h1 {
+    padding-bottom: 205px;
   }
 }
 @media screen and (max-width: 912px) {
@@ -1038,6 +1027,37 @@ li {
   .btn_sign-students {
     width: 303px;
   }
+  .reviews__container-main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .reviews__container-main .reviews__h1 {
+    font-size: 2.2em;
+    padding-bottom: 5%;
+  }
+  .reviews__container-circle {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .reviews__h1 h1,
+  .reviews__h1 h2 {
+    font-size: 1em;
+  }
+  .reviews__container {
+    padding: 10px;
+  }
+  .reviews__results-text,
+  .reviews__list {
+    font-size: 12px;
+  }
+  .reviews__text-big {
+    font-size: 14px;
+  }
+  #reviews__articles {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 540px) {
   .first-page__container {
@@ -1058,6 +1078,18 @@ li {
   .img_corner-2 {
     bottom: 100px;
     left: 77%;
+  }
+  #review__menu-main {
+    width: 50%;
+  }
+  #review__menu {
+    width: 50%;
+  }
+  #reviews__articles {
+    width: 50%;
+  }
+  .reviews__h2 {
+    font-size: 0.7rem;
   }
   .footer {
     display: grid;
@@ -1168,6 +1200,19 @@ li {
     line-height: 1.2em;
     width: 250px;
   }
+  .reviews__container-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews__container-circle {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .reviews__h1 h1,
+  .reviews__h1 h2 {
+    font-size: 0.9em;
+  }
   .footer {
     margin-left: 3%;
     margin-top: 20px;
@@ -1198,6 +1243,25 @@ li {
   .mob-img2 {
     right: -20px;
   }
+  .reviews__container-main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .reviews__container-circle {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .reviews__h1 h1 {
+    font-size: 1em;
+  }
+  .reviews__h2 {
+    font-size: 10px;
+  }
+  .reviews__results-text {
+    font-size: 9px;
+  }
 }
 /* 
 Основной код для разрешения 1024px  
@@ -1223,5 +1287,35 @@ li {
     стили для малого смартфона  
 }
  */
+body {
+  color: #91778C;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  background-color: #E8D8CB;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Caveat", cursive;
+  font-size: 100px;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+li {
+  list-style: none;
+}
 
 /*# sourceMappingURL=index.css.map */
