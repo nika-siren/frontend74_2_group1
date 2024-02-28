@@ -629,7 +629,29 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   display: grid;
   margin-left: 10%;
   margin-top: 100px;
-  grid-template-columns: 2fr 5fr;
+  margin-bottom: 2%;
+  color: #3E2E3B;
+  font-weight: 700;
+  grid-template-columns: 1fr 30% 30%;
+  grid-template-rows: auto;
+  grid-template-areas: "creator-1 creator-2 creator-3" "creator-4 creator-4 creator-4";
+  column-gap: 5%;
+}
+
+.Creator-1 {
+  grid-area: creator-1;
+}
+
+.Creator-2 {
+  grid-area: creator-2;
+}
+
+.Creator-3 {
+  grid-area: creator-3;
+}
+
+.Creator-4 {
+  grid-area: creator-4;
 }
 
 .Creator-1 {
@@ -641,14 +663,89 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .Creator-2 {
-  align-self: center;
-  margin-left: 50px;
+  justify-items: center;
   font-size: 1rem;
 }
 
+.Creator-2 .about_Creator {
+  padding-top: 2%;
+}
+
+.about_Creator-2 {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .creator_text {
-  margin-top: 10px;
   margin-bottom: 0px;
+}
+
+.Creator-3 {
+  align-self: center;
+  font-size: 1rem;
+}
+
+.Creator-3-creators-links {
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+.Creator-3-creators-links:hover {
+  color: #E2B2B5;
+  transform: scale(1.05);
+}
+
+.Creator-3-creators-links {
+  transition: 1s;
+}
+
+.Creator-4 {
+  justify-items: center;
+}
+
+.Creator-4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  padding-right: 7%;
+}
+
+.Creator-4 img {
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.Creator-4 img:hover {
+  opacity: 1;
+}
+
+.creators-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.Creator-2 a:hover {
+  color: #E2B2B5;
+  transform: scale(1.02);
+}
+
+.Creator-2 a {
+  display: inline-block;
+  transition: 1s;
+}
+
+.creator1__img:hover {
+  transform: scale(1.1);
+}
+
+.creator1__img {
+  transition: 1s;
+}
+
+.Creator-3 img {
+  height: 1%;
+  padding-top: 1%;
 }
 
 body {
@@ -690,6 +787,9 @@ li {
     bottom: 90px;
     left: 91%;
   }
+  .footer .creator_text {
+    padding-left: 5%;
+  }
 }
 @media screen and (max-width: 1280px) {
   .img_corner-2 {
@@ -697,6 +797,9 @@ li {
     width: fit-content;
     bottom: 90px;
     left: 89.5%;
+  }
+  .footer .creator_text {
+    padding-left: 5%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1007,10 +1110,26 @@ li {
     width: 42%;
   }
   .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Creator-1 {
     display: grid;
-    margin-left: 10%;
-    margin-top: 100px;
-    grid-template-columns: 3fr 5fr;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    justify-items: center;
+    padding-bottom: 4%;
+  }
+  .Creator-2 {
+    padding-bottom: 4%;
+  }
+  .about_Creator-2 {
+    display: flex;
+    justify-content: center;
+  }
+  .Creator-4 {
+    padding-top: 10%;
   }
 }
 @media screen and (max-width: 820px) {
@@ -1038,6 +1157,20 @@ li {
   .btn_sign-students {
     width: 303px;
   }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_Creator-2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 730px) {
+  .Creator-1 {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 540px) {
   .first-page__container {
@@ -1059,11 +1192,8 @@ li {
     bottom: 100px;
     left: 77%;
   }
-  .footer {
-    display: grid;
-    margin-left: 10%;
-    margin-top: 100px;
-    grid-template-columns: 1fr 1fr;
+  .Creator-1 {
+    width: 90%;
   }
 }
 @media screen and (max-width: 430px) {
@@ -1168,23 +1298,8 @@ li {
     line-height: 1.2em;
     width: 250px;
   }
-  .footer {
-    margin-left: 3%;
-    margin-top: 20px;
-    grid-template-columns: 1fr 1fr;
-  }
   .Creator-1 {
-    width: 90%;
-    grid-template-columns: 1fr 3fr;
-    font-size: 0.9rem;
-  }
-  .creator1__img {
-    width: 40%;
-  }
-  .Creator-2 {
-    align-self: center;
-    margin-left: 50px;
-    font-size: 0.9rem;
+    width: 100%;
   }
 }
 @media screen and (max-width: 390px) {
@@ -1197,6 +1312,9 @@ li {
   }
   .mob-img2 {
     right: -20px;
+  }
+  .Creator-1 {
+    width: 120%;
   }
 }
 /* 
