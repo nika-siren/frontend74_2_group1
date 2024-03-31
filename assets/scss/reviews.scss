@@ -147,7 +147,69 @@
 }
 
 .reviews__text {
-  font-size: 1rem;
+  font-size: 17px;
+}
+
+.screenshots__container-main {
+  width: 1400x;
+  min-width: 0;
+
+  .screenshots__h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 4.2em;
+    font-weight: 400;
+    color: #3E2E3B;
+    text-wrap: nowrap;
+    margin-bottom: 0px;
+    line-height: 80%;
+    padding-bottom: 0.75em;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: row;
+
+
+    gap: 1em;
+    min-width: 0;
+    box-sizing: border-box;
+    width: 90%;
+  }
+
+  .screenshots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .screenshots__button {
+    height: 70%;
+    display: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    font-family: "Titillium Web";
+    cursor: pointer;
+  }
+
+
+  .screenshot {
+    display: block;
+    margin: 0 10px;
+    background-color: $background-color;
+    border: 3px solid $button-color-one;
+    border-radius: 25px;
+    color: $main-text-color;
+    padding: 1em;
+  }
+
+  .active {
+    display: block;
+  }
+
 }
 
 .active {

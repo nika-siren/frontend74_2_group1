@@ -1,62 +1,59 @@
 const sliderItems = document.querySelectorAll('.reviews__articles');
+const screenPrevButton = document.querySelector('.screenshots__button-prev');
+const screenNextButton = document.querySelector('.screenshots__button-next');
 const prevBtn = document.querySelector('.review__left_button');
 const nextBtn = document.querySelector('.review__right_button');
+const reviewsText = document.querySelectorAll('.screenshot');
+
 let currentIndex = 0;
 
-function showItem(index) {
-  sliderItems.forEach(item => item.classList.remove('active'));
-  sliderItems[index].classList.add('active');
+function showItem(index, elements) {
+  elements.forEach(item => item.classList.remove('active'));
+  elements[index].classList.add('active');
 }
 
 prevBtn.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
-  showItem(currentIndex);
+  showItem(currentIndex, sliderItems);
 });
 
 nextBtn.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % sliderItems.length;
-  showItem(currentIndex);
+  showItem(currentIndex, sliderItems);
 });
 
-// var menuDiv = document.getElementById("review__menu"),
-//     articleLength = menuDiv.getElementsByTagName("article").length - 1,
-//     maxMargin = 0 - (1000 * articleLength);
-
-// var leftMargin = 0,
-//     startMargin = 0,
-//     leftButton = document.getElementsByClassName("review__left_button")[0],
-//     rightButton = document.getElementsByClassName("review__right_button")[0];
-
-// function control() {
-//     if(leftMargin >= 0) {
-//       leftButton.style.display = "none";
-//       rightButton.style.display = "block";
+// function showSlidesDependingOnSize() {
+//   const screenWidth = window.innerWidth;
+//   const reviewsText = document.querySelectorAll('.screenshot');
+//   reviewsText.forEach((review, index) => {
+//     if (screenWidth > 785) {
+//       // review.classList.remove('active');
+//       if (index < 3) {
+//         review.classList.add('active');
+//       }
+//     } else if (screenWidth > 439) {
+//       review.classList.remove('active');
+//       if (index < 2) {
+//         review.classList.add('active');
+//       }
+//     } else {
+//       review.classList.remove('active');
+//       if (index < 1) {
+//         review.classList.add('active');
+//       }
 //     }
-//     else if(leftMargin <= maxMargin) {
-//       leftButton.style.display = "block";
-//       rightButton.style.display = "none";
-//     }
-//     else {
-//       leftButton.style.display = "block";
-//       rightButton.style.display = "block";
-//     }
+//   });
 // }
+// window.addEventListener('load', showSlidesDependingOnSize);
+// window.addEventListener('resize', showSlidesDependingOnSize);
 
-// control();
 
-// function next() {
-//     startMargin = leftMargin;
-//     leftMargin -= 1000;
-//     menuDiv.style.marginLeft = startMargin - 1000 + "px";
-//     control();
-// }
+screenPrevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + reviewsText.length) % reviewsText.length;
+  showItem(currentIndex, reviewsText);
+})
 
-// function back() {
-//     startMargin = leftMargin;
-//     leftMargin += 1000;
-//     menuDiv.style.marginLeft = startMargin + 1000 + "px";
-//     control();
-// }
-
-// leftButton.addEventListener("click", back, false);
-// rightButton.addEventListener("click", next, false);
+screenNextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % reviewsText.length;
+  showItem(currentIndex, reviewsText);
+})
