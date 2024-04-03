@@ -675,6 +675,13 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   color: #91778C;
   padding: 1em;
 }
+.screenshots__container-main .screenshot__reviewer {
+  font-family: "Inter", sans-serif;
+  font-size: 2.2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #3E2E3B;
+}
 .screenshots__container-main .active {
   display: block;
 }
@@ -1231,6 +1238,9 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   .screenshots__container-main .slider .screenshots .screenshot {
     display: none;
     width: 100%;
+  }
+  .screenshots__container-main .slider .screenshots .screenshot__reviewer {
+    font-size: 1.5rem;
   }
   .screenshots__container-main .slider .screenshots .active {
     display: block;

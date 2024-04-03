@@ -546,6 +546,12 @@
         .screenshot {
           display: none;
           width: 100%;
+
+          &__reviewer {
+
+            font-size: 1.5rem;
+
+          }
         }
 
         .active {

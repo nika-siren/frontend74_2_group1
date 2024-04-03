@@ -204,6 +204,14 @@
     border-radius: 25px;
     color: $main-text-color;
     padding: 1em;
+
+    &__reviewer {
+      font-family: 'Inter', sans-serif;
+      font-size: 2.2rem;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: #3E2E3B;
+    }
   }
 
   .active {
