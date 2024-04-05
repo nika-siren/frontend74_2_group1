@@ -1,7 +1,7 @@
 // First page
 .first-page__container {
     display: grid;
-  
+
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr 1fr;
@@ -11,14 +11,14 @@
     justify-content: center;
 
     scroll-margin-top: 15em;
-   
+
 }
 
 .first-page__main {
     display: flex;
     flex-direction: column;
     margin-left: 25%;
-   
+
 }
 
 .first-page__title {
@@ -26,8 +26,8 @@
     margin-left: 0px;
     margin-top: 5%;
     margin-bottom: 0px;
-    
- 
+
+
 }
 
 .first-page__title__text {
@@ -39,15 +39,15 @@
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 20%;
-} 
+}
 
 .first-page__title__line {
-    
+
     margin-top: 0px;
 }
-    
+
 .first-page__subtitle {
-   
+
     margin-top: 2%;
     margin-bottom: 2%;
     font-family: 'Caveat';
@@ -58,7 +58,7 @@
 
 .first-page__text {
     font-size: 1rem;
-    margin-right: 15%;        
+    margin-right: 15%;
 }
 
 .first-page__item {
@@ -70,8 +70,8 @@
 .first-page__link {
 
     margin-left: 5%;
-    
-    
+
+
 }
 
 .first-page__button {
@@ -93,7 +93,7 @@
     text-align: center;
     text-decoration: none;
     touch-action: manipulation;
-    transition: box-shadow .3s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    transition: 1s;
     user-select: none;
     -webkit-user-select: none;
     width: 303px;
