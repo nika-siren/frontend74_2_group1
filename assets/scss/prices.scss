@@ -34,7 +34,7 @@
     text-align: center;
     text-decoration: none;
     touch-action: manipulation;
-    transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
+    transition: 1s;
     user-select: none;
     -webkit-user-select: none;
     width: 303px;
@@ -52,10 +52,10 @@
 
 .services {
     border: solid 3px #E2B2B5;
-    border-radius: 5%;
+    border-radius: 19px;
     padding: 2%;
     width: 33%;
-    
+
     display: grid;
     justify-items: center;
     justify-content: center;
@@ -66,13 +66,21 @@
     font-size: 1rem;
     font-weight: 700;
     color: #3E2E3B;
+
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 
 .services_text {
     font-size: 1rem;
     font-weight: 400;
+
+    padding-left: 4%;
+    padding-right: 4%;
 }
+
+
 
 
 /*  Prices for students*/
@@ -80,7 +88,7 @@
 .prices__container-students {
     margin-left: 10%;
     margin-right: 10%;
-    
+
     padding-top: 5%;
     padding-bottom: 8%;
 }
@@ -93,10 +101,10 @@
 
 .services_students {
     border: solid 3px #B9D0DF;
-    border-radius: 5%;
+    border-radius: 19px;
     padding: 2%;
     width: 33%;
-    
+
     display: grid;
     justify-items: center;
     justify-content: center;
@@ -112,6 +120,9 @@
 .services_text_students {
     font-size: 1rem;
     font-weight: 400;
+
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .btn_sign-students {
@@ -131,7 +142,7 @@
     text-align: center;
     text-decoration: none;
     touch-action: manipulation;
-    transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
+    transition: 1s;
     user-select: none;
     -webkit-user-select: none;
     width: 303px;

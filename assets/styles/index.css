@@ -39,6 +39,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   width: 75%;
   justify-self: center;
   margin-top: 15%;
+  transition: 1s;
 }
 
 .header__logo {
@@ -46,7 +47,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 }
 
 .header__logo-link:hover {
-  width: 80%;
+  transform: scale(1.04);
 }
 
 .header__link {
@@ -54,14 +55,22 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-wrap: nowrap;
   align-self: center;
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  transition: width 1s;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: 1.5s;
 }
 
-.header__link:hover {
+.header__nav a:hover {
   color: #E2B2B5;
-  font-size: 1.6rem;
+  transform: scale(1.1);
+}
+
+.header__contact img {
+  transition: 1s;
+}
+
+.header__contact img:hover {
+  transform: scale(1.1);
 }
 
 .header__contacts {
@@ -69,14 +78,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   flex-direction: row;
   align-self: center;
   align-items: center;
-}
-
-.header__contact {
-  max-width: 77.8px;
-}
-
-.header__contact:hover {
-  max-width: 90px;
 }
 
 .mobile-header__container {
@@ -160,7 +161,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
-  transition: box-shadow 0.3s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
+  transition: 1s;
   user-select: none;
   -webkit-user-select: none;
   width: 303px;
@@ -388,7 +389,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
+  transition: 1s;
   user-select: none;
   -webkit-user-select: none;
   width: 303px;
@@ -406,7 +407,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .services {
   border: solid 3px #E2B2B5;
-  border-radius: 5%;
+  border-radius: 19px;
   padding: 2%;
   width: 33%;
   display: grid;
@@ -419,11 +420,15 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   font-size: 1rem;
   font-weight: 700;
   color: #3E2E3B;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .services_text {
   font-size: 1rem;
   font-weight: 400;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 /*  Prices for students*/
@@ -442,7 +447,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 
 .services_students {
   border: solid 3px #B9D0DF;
-  border-radius: 5%;
+  border-radius: 19px;
   padding: 2%;
   width: 33%;
   display: grid;
@@ -460,6 +465,8 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 .services_text_students {
   font-size: 1rem;
   font-weight: 400;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .btn_sign-students {
@@ -479,7 +486,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
+  transition: 1s;
   user-select: none;
   -webkit-user-select: none;
   width: 303px;
@@ -787,8 +794,30 @@ li {
     bottom: 90px;
     left: 91%;
   }
+  .btn_sign {
+    font-size: 1.3rem;
+    width: 250px;
+  }
+  .btn_sign-students {
+    font-size: 1.3rem;
+    width: 250px;
+  }
+  .services_price {
+    font-size: 1.3rem;
+  }
+  .services_price_students {
+    font-size: 1.3rem;
+  }
   .footer .creator_text {
     padding-left: 5%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .header__link {
+    font-size: 1.3rem;
+  }
+  .header__contact img {
+    width: 90%;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -798,8 +827,66 @@ li {
     bottom: 90px;
     left: 89.5%;
   }
+  .header__link {
+    font-size: 1.2rem;
+  }
+  .header__contact img {
+    width: 80%;
+  }
+  .btn_sign {
+    font-size: 1.2rem;
+    width: 200px;
+  }
+  .btn_sign-students {
+    font-size: 1.2rem;
+    width: 200px;
+  }
+  .services_price {
+    font-size: 1.2rem;
+  }
+  .services_price_students {
+    font-size: 1.2rem;
+  }
   .footer .creator_text {
     padding-left: 5%;
+  }
+}
+@media screen and (max-width: 1155px) {
+  .header__link {
+    font-size: 1.1rem;
+  }
+  .header__contact img {
+    width: 70%;
+  }
+  .btn_sign {
+    font-size: 1rem;
+    width: 150px;
+    padding: 5px;
+  }
+  .btn_sign-students {
+    font-size: 1rem;
+    width: 150px;
+    padding: 5px;
+  }
+  .services_price {
+    font-size: 1.1rem;
+  }
+  .services_price_students {
+    font-size: 1.1rem;
+  }
+  .services_text {
+    font-size: 0.9rem;
+  }
+  .services_text_students {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1052px) {
+  .header__link {
+    font-size: 1rem;
+  }
+  .header__contact img {
+    width: 65%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -810,16 +897,34 @@ li {
     left: 87%;
   }
   .header__link {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
-  .header__link:hover {
-    font-size: 1.3rem;
+  .header__contact img {
+    width: 60%;
   }
   .btn_sign {
-    width: 250px;
+    font-size: 0.8rem;
+    width: 130px;
+    padding: 4px;
   }
   .btn_sign-students {
-    width: 250px;
+    font-size: 0.8rem;
+    width: 130px;
+    padding: 4px;
+  }
+  .services_price {
+    font-size: 1rem;
+  }
+  .services_price_students {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 997px) {
+  .header__link {
+    font-size: 0.8rem;
+  }
+  .header__contact img {
+    width: 55%;
   }
 }
 @media screen and (max-width: 912px) {
@@ -844,10 +949,10 @@ li {
   .mobile-header__logo-link {
     width: 75%;
     justify-self: center;
-    margin-top: 15%;
+    margin-top: 5%;
   }
   .mobile-header__logo {
-    width: 100%;
+    width: 65%;
   }
   .mobile-header__contacts {
     display: flex;
@@ -1097,12 +1202,6 @@ li {
     align-self: center;
     padding-top: 10%;
   }
-  .btn_sign {
-    width: 220px;
-  }
-  .btn_sign-students {
-    width: 220px;
-  }
   .prices__h1 {
     font-size: 3em;
   }
@@ -1194,6 +1293,12 @@ li {
   }
   .Creator-1 {
     width: 90%;
+  }
+  .btn_sign {
+    width: 250px;
+  }
+  .btn_sign-students {
+    width: 250px;
   }
 }
 @media screen and (max-width: 430px) {
@@ -1296,7 +1401,7 @@ li {
   .btn_sign-students {
     font-size: 0.9em;
     line-height: 1.2em;
-    width: 250px;
+    width: 240px;
   }
   .Creator-1 {
     width: 100%;
