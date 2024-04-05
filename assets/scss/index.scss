@@ -8,7 +8,7 @@
 @import 'prices.scss';
 @import 'reviews.scss';
 @import 'footer.scss';
-
+@import 'index-media.scss';
 
 body {
     color: $main-text-color;
@@ -40,5 +40,3 @@ a {
 li {
     list-style: none;
 }
-
-@import 'index-media.scss';
