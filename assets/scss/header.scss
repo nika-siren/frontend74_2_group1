@@ -27,51 +27,64 @@
 .header__nav {
     display: flex;
     width: 100%;
-   
+
     justify-content: space-evenly;
     justify-items: center;
 }
 
 .header__logo-link {
-   
+
     width: 75%;
     justify-self: center;
 
     margin-top: 15%;
 
+    transition: 1s;
 
-        
+
+
 }
 
 .header__logo {
-     
+
     width: 100%;
 }
 
 .header__logo-link:hover {
 
-    width: 80%;
-    
+    transform: scale(1.04);
+    //width: 80%;
+
 }
 
 .header__link {
 
-      
+
     text-align: center;
     text-wrap: nowrap;
 
     align-self: center;
-  
+
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 500;
-    transition: width 1s;
-  
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: 1.5s;
+    //transition: width 1s;
+
 }
 
-.header__link:hover {
+.header__nav a:hover {
     color: $hover-line-color;
-    font-size: 1.6rem;
+    transform: scale(1.1);
+    //font-size: 1.6rem;
+}
+
+.header__contact img {
+    transition: 1s;
+}
+
+.header__contact img:hover {
+    transform: scale(1.1);
 }
 
 .header__contacts {
@@ -83,14 +96,14 @@
     align-items: center;
 }
 
-.header__contact {
-    max-width: 77.8px;
-}
+//.header__contact {
+//  max-width: 77.8px;
+//}
 
-.header__contact:hover {
-    max-width: 90px;
-   
-}
+//.header__contact:hover {
+//  max-width: 90px;
+
+//}
 
 .mobile-header__container {
 
