@@ -1,0 +1,26 @@
+/*  Footer */
+.footer {
+  display: grid;
+  margin-left: 10%;
+  margin-top: 100px;
+  grid-template-columns: 2fr 5fr;
+}
+
+.Creator-1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.Creator-2 {
+  align-self: center;
+  margin-left: 50px;
+  font-size: 1rem;
+}
+
+.creator_text {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}/*# sourceMappingURL=footer.css.map */
