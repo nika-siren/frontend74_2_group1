@@ -721,7 +721,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   font-weight: 700;
   grid-template-columns: 1fr 30% 30%;
   grid-template-rows: auto;
-  grid-template-areas: "creator-1 creator-2 creator-3""creator-4 creator-4 creator-4";
+  grid-template-areas: "creator-1 creator-2 creator-3" "creator-4 creator-4 creator-4";
   column-gap: 5%;
 }
 
@@ -1232,7 +1232,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr 2fr 1fr;
-    grid-template-areas: "title image""text text""button button";
+    grid-template-areas: "title image" "text text" "button button";
     justify-content: stretch;
     align-items: stretch;
     justify-items: stretch;
@@ -1555,7 +1555,8 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   }
 
   .reviews__container-main {
-    width: 820px;
+    width: 656px;
+    height: auto;
   }
 
   .reviews__container-main .reviews__h1 {
@@ -1566,10 +1567,12 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    height: 1000px;
   }
 
   .reviews__container-main .reviews__slider #review__menu-main {
     width: 90%;
+    height: 100%;
   }
 
   .reviews__container-main .reviews__slider #review__menu {
@@ -1580,8 +1583,12 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
     width: 90%;
   }
 
+  .reviews__container-main .reviews__slider #review__menu .reviews__articles .reviews__container-circle .reviews__h2 {
+    font-size: 1em;
+  }
+
   .screenshots__container-main {
-    width: 820px;
+    width: 656px;
   }
 
   .screenshots__container-main .screenshots__h1 {
@@ -1659,27 +1666,56 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   }
 
   .reviews__container-main {
-    width: 540px;
+    width: 432px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .reviews__container-main .reviews__h1 {
     font-size: 2em;
   }
 
+  .reviews__container-main .reviews__slider {
+    height: 1200px;
+  }
+
   #review__menu-main {
-    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    height: 1200px;
   }
 
-  .reviews__slider {
-    height: 1090px;
+  #review__menu-main .review__left_button {
+    order: 0;
+    left: -30px;
   }
 
-  .reviews__articles {
-    height: 100%;
+  #review__menu-main .review__right_button {
+    order: 2;
+    right: -30px;
+  }
+
+  #review__menu-main .review__menu {
+    order: 1;
+    width: 430px;
+  }
+
+  #review__menu-main .review__menu .reviews__articles {
+    width: 340px;
+    padding: 1px;
+  }
+
+  #review__menu-main .review__menu .reviews__articles .reviews__container-circle {
+    width: 310px;
+    padding: 3px;
+    height: auto;
   }
 
   .screenshots__container-main {
-    width: 540px;
+    width: 432px;
   }
 
   .screenshots__container-main .screenshots__h1 {
@@ -1821,18 +1857,49 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
     width: 100%;
   }
 
+  #review__menu-main {
+    height: 1000px;
+  }
+
   #review__menu-main .review__left_button {
     padding: 0px 5px 0px 0px;
+    left: -10px;
   }
 
   #review__menu-main .review__right_button {
     padding: 0px 0px 0px 0px;
+    right: -10px;
+  }
+
+  #review__menu-main .review__menu {
+    width: 326.42px;
+  }
+
+  #review__menu-main .review__menu .reviews__articles {
+    width: 100%;
+  }
+
+  #review__menu-main .review__menu .reviews__articles .reviews__container-circle {
+    max-width: 100%;
+  }
+
+  .reviews__container-main .reviews__slider {
+    height: 600px;
+  }
+
+  .reviews__container-main .reviews__slider #review__menu .reviews__articles .reviews__container-circle {
+    max-width: 100%;
+  }
+
+  .reviews__container-main .reviews__slider #review__menu .reviews__articles .reviews__container-circle .reviews__h2 {
+    font-size: 0.7em;
   }
 
   .reviews__container-main {
-    width: 430px;
+    width: 326.42px;
     margin: 1em;
     display: flex;
+    flex-direction: column;
     gap: 1em;
   }
 
@@ -1841,7 +1908,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   }
 
   .reviews__container-main .reviews__container-circle {
-    width: 346px;
+    width: 326.42px;
     margin: 0px;
   }
 
@@ -1856,11 +1923,15 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   }
 
   .reviews__container-main .reviews__container-circle .reviews__container .reviews__results-text {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .reviews__container-main .reviews__container-circle .reviews__text {
+    font-size: 10px;
+    max-width: 100%;
   }
 
   .reviews__container-main .reviews__slider {
-    height: 1174px;
     margin: 0px;
     padding: 0px;
   }
@@ -1869,6 +1940,22 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
     height: 100%;
     width: 100%;
     padding: 3px;
+  }
+
+  .screenshots__container-main {
+    width: 326.42px;
+  }
+
+  .screenshots__container-main .slider {
+    gap: 0.1em;
+  }
+
+  .screenshots__container-main .slider .screenshots {
+    width: 300px;
+  }
+
+  .screenshots__container-main .slider .screenshots .screenshot__reviewer {
+    font-size: 1.2em;
   }
 }
 
