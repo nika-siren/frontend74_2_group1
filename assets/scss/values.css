@@ -1,0 +1,60 @@
+/*values*/
+.values {
+  margin-left: 10%;
+  margin-right: 10%;
+  scroll-margin-top: 15em;
+  padding-bottom: 1%;
+}
+
+.values_h1 {
+  margin-bottom: 50px;
+  font-size: 4.2em;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #3E2E3B;
+}
+
+.values_containers {
+  display: flex;
+  margin-top: 0px;
+  justify-items: center;
+  justify-content: space-evenly;
+  gap: 1%;
+}
+
+.values_containers-items {
+  background-color: #B9D0DF;
+  border-radius: 17px;
+  gap: 10px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.values_containers-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #3E2E3B;
+  margin: 25px;
+}
+
+.img_corner-1 {
+  position: absolute;
+  width: 167px;
+  top: -65px;
+  left: -65px;
+  margin-top: 0px;
+}
+
+.img_corner-2 {
+  position: absolute;
+  width: 150px;
+  bottom: -55px;
+  right: -55px;
+}
+
+.values_values {
+  margin-top: 50px;
+  position: relative;
+}/*# sourceMappingURL=values.css.map */

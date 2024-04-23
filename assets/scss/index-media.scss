@@ -2,11 +2,8 @@
 
 @media screen and (max-width: 1440px) {
   .img_corner-2 {
-    position: relative;
-    width: fit-content;
-    bottom: 90px;
+    bottom: -60px;
     left: 91%;
-
   }
 
   .btn_sign {
@@ -72,9 +69,9 @@
 
 @media screen and (max-width: 1280px) {
   .img_corner-2 {
-    position: relative;
+    position: absolute;
     width: fit-content;
-    bottom: 90px;
+    bottom: -60px;
     left: 89.5%;
 
   }
@@ -160,7 +157,14 @@
   .header__contact img {
     width: 65%;
   }
+
+  .img_corner-2 {
+    bottom: -59px;
+    left: 87.5%;
+  }
 }
+
+
 
 @media screen and (max-width: 1024px) {
   .img_corner-2 {
@@ -567,10 +571,10 @@
   }
 
   .img_corner-2 {
-    position: relative;
+    position: absolute;
     width: fit-content;
-    bottom: 90px;
-    left: 85%;
+    bottom: -55px;
+    left: 87%;
   }
 
   .requests__container-main {
@@ -714,6 +718,13 @@
     flex-direction: column;
   }
 
+  .img_corner-2 {
+    position: absolute;
+    width: fit-content;
+    bottom: -54px;
+    left: 86%;
+  }
+
   .services {
     width: 90%;
     //border-radius: 9px;
@@ -850,8 +861,8 @@
   }
 
   .img_corner-2 {
-    bottom: 100px;
-    left: 77%;
+    bottom: -51px;
+    left: 80%;
   }
 
   .Creator-1 {
@@ -995,6 +1006,16 @@
 
   .values_h1 {
     font-size: 2em;
+  }
+
+  .img_corner-1 {
+    width: 90%;
+  }
+
+  .img_corner-2 {
+    width: 90%;
+    bottom: -52px;
+    left: 72%;
   }
 
   .values_containers-text {
@@ -1193,6 +1214,18 @@
 
   .mob-img2 {
     right: -20px;
+  }
+
+  .img_corner-1 {
+    width: 80%;
+    top: -55px;
+    left: -65px;
+  }
+
+  .img_corner-2 {
+    width: 80%;
+    bottom: -52px;
+    left: 68%;
   }
 
   .Creator-1 {

@@ -1,0 +1,43 @@
+/* experience page */
+.experience__img {
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  padding-top: 10%;
+  /*.experience__img img {
+      width: 50%;
+  }*/
+}
+
+.experience__h1 {
+  font-family: "Caveat", cursive;
+  font-size: 6.5em;
+  line-height: 70%;
+  font-weight: 400;
+  color: #3E2E3B;
+}
+
+.experience__container {
+  display: grid;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 7em;
+  grid-template-columns: 2fr 3fr;
+  grid-row: 1fr;
+  justify-items: center;
+  justify-content: space-around;
+  scroll-margin-top: 8em;
+}
+
+.experience__list-main {
+  width: 100%;
+  height: 10%;
+}
+
+.experience__text-main {
+  width: 80%;
+  line-height: 1.7rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: left;
+}/*# sourceMappingURL=experience.css.map */

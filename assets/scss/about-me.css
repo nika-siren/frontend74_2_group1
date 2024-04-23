@@ -1,0 +1,50 @@
+/* about me page */
+.about-me__img img {
+  width: 100%;
+  height: auto;
+  padding-top: 25%;
+}
+
+.about-me__h1 {
+  font-size: 4.2em;
+  line-height: 0.8em;
+  color: #3E2E3B;
+  font-weight: 400;
+}
+
+.mobile {
+  display: none;
+}
+
+.about-me__container {
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  justify-content: space-around;
+  scroll-margin-top: 8em;
+}
+
+.about-me__text {
+  width: 80%;
+  line-height: 1.7rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.about-me__text2 {
+  color: black;
+  font-family: Caveat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45.4px;
+}
+
+.about-me__main {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=about-me.css.map */
