@@ -721,7 +721,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   font-weight: 700;
   grid-template-columns: 1fr 30% 30%;
   grid-template-rows: auto;
-  grid-template-areas: "creator-1 creator-2 creator-3""creator-4 creator-4 creator-4";
+  grid-template-areas: "creator-1 creator-2 creator-3" "creator-4 creator-4 creator-4";
   column-gap: 5%;
 }
 
@@ -1203,7 +1203,7 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr 2fr 1fr;
-    grid-template-areas: "title image""text text""button button";
+    grid-template-areas: "title image" "text text" "button button";
     justify-content: stretch;
     align-items: stretch;
     justify-items: stretch;
