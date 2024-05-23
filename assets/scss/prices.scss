@@ -1,4 +1,11 @@
 /*  Prices */
+.services_name,
+.services_price,
+.btn_sign,
+.services_price_students,
+.btn_sign-students {
+    font-size: clamp(0.875rem, 0.809rem + 0.282vw, 1.063rem);
+}
 
 .prices__container {
     margin-left: 10%;
@@ -9,7 +16,7 @@
 
 .prices__h1 {
     font-family: "Caveat", cursive;
-    font-size: 4.2em;
+    /*font-size: 4.2em;*/
     line-height: 80%;
     color: #3E2E3B;
     font-weight: 400;
@@ -25,8 +32,8 @@
     cursor: pointer;
     display: inline-block;
     font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+    //font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1.7rem;
     margin: 0;
     outline: none;
@@ -63,7 +70,7 @@
 }
 
 .services_name {
-    font-size: 1rem;
+    //font-size: 1rem;
     font-weight: 700;
     color: #3E2E3B;
 
@@ -73,7 +80,7 @@
 
 
 .services_text {
-    font-size: 1rem;
+    //font-size: 1rem;
     font-weight: 400;
 
     padding-left: 4%;
@@ -112,13 +119,13 @@
 }
 
 .services_name_students {
-    font-size: 1rem;
+    //font-size: 1rem;
     font-weight: 700;
     color: #3E2E3B;
 }
 
 .services_text_students {
-    font-size: 1rem;
+    //font-size: 1rem;
     font-weight: 400;
 
     padding-left: 4%;
@@ -133,8 +140,8 @@
     cursor: pointer;
     display: inline-block;
     font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+    //font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1.7rem;
     margin: 0;
     outline: none;
