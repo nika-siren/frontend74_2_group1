@@ -4,6 +4,7 @@
   gap: 2.5em;
 
   margin-left: 10%;
+  margin-right: 10%;
   grid-template-rows: auto 500px;
 
   scroll-margin-top: 9em;
@@ -32,7 +33,7 @@
 
   .reviews__h1 {
     font-family: 'Caveat', cursive;
-    font-size: 4.2em;
+    /*font-size: 4.2em;*/
     font-weight: 400;
     color: #3E2E3B;
     text-wrap: nowrap;
