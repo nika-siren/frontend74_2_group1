@@ -11,10 +11,11 @@
 
 .experience__h1 {
   font-family: "Caveat", cursive;
-  font-size: 6.5em;
+  /*font-size: 6.5em;*/
   line-height: 70%;
   font-weight: 400;
   color: #3E2E3B;
+  white-space: nowrap;
 }
 
 .experience__container {

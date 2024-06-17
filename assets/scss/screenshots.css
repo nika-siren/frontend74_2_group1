@@ -1,0 +1,67 @@
+.screenshots__container-main {
+  min-width: 0;
+}
+
+.screenshots__container-main .screenshots__h1 {
+  font-family: "Caveat", cursive;
+  /*font-size: 4.2em;*/
+  font-weight: 400;
+  color: #3E2E3B;
+  margin-bottom: 0px;
+  line-height: 80%;
+  padding-bottom: 0.75em;
+}
+
+.screenshots__container-main .slider {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  min-width: 0;
+  box-sizing: border-box;
+  width: auto;
+}
+
+.screenshots__container-main .screenshots {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.screenshots__container-main .screenshots__button {
+  height: 70%;
+  display: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  font-family: "Titillium Web";
+  cursor: pointer;
+}
+
+.screenshots__container-main .screenshot {
+  display: block;
+  margin: 0 10px;
+  background-color: #E8D8CB;
+  border: 3px solid #CCB0E3;
+  border-radius: 25px;
+  color: #91778C;
+  padding: 1em;
+}
+
+.screenshots__container-main .screenshot__reviewer {
+  font-family: "Inter", sans-serif;
+  font-size: 2.2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #3E2E3B;
+}
+
+.screenshots__container-main .active {
+  display: block;
+}
+
+.active {
+  display: block;
+}/*# sourceMappingURL=screenshots.css.map */
