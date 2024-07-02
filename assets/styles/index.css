@@ -12,7 +12,6 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
 /*  Header */
 .wrapper {
   position: relative;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -471,7 +470,7 @@ main {
   margin-left: 10%;
   margin-right: 10%;
   padding-top: 5%;
-  padding-bottom: 8%;
+  padding-bottom: 4%;
 }
 
 .prices__container-2 {
@@ -558,7 +557,7 @@ main {
   font-family: "Inter", sans-serif;
   font-size: 2.2rem;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   color: #3e2e3b;
 }
 
@@ -570,6 +569,32 @@ main {
   margin-bottom: 0px;
   grid-area: reviews__h1;
   line-height: 80%;
+}
+
+.reviews__photo {
+  position: relative;
+  width: 30%;
+  height: 140px;
+  margin-bottom: 20px;
+}
+
+.reviews__photo::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #91778c;
+  opacity: 0.3;
+  border-radius: 50% 50% 0 0;
+}
+
+.reviews__photo img {
+  border-radius: 50% 50% 0 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .reviews__h1 {
@@ -604,9 +629,39 @@ main {
   list-style: circle;
 }
 
+.splide {
+  position: relative;
+}
+
+/* .splide__arrows {
+  display: none;
+} */
+
+.arrows {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
+.l-bts {
+  transform: translateX(-400%);
+  cursor: pointer;
+}
+
+.r-bts {
+  transform: translateX(200%);
+  cursor: pointer;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+}
+
 /*slider part start*/
 .reviews__articles {
-  display: none;
+  margin: 0 auto;
   padding: 5px 50px 5px 60px;
   width: 1000px;
   vertical-align: top;
@@ -890,7 +945,8 @@ main {
   .screenshots__container-main,
   .footer {
     max-width: 1440px;
-    /*width: 100%;*/
+    padding-left: 15px;
+    padding-right: 15px;
     width: auto;
   }
 
@@ -941,11 +997,6 @@ main {
     width: auto;
   }
 
-  .reviews__container-circle {
-    width: auto;
-    height: 98%;
-  }
-
   .header__link {
     font-size: 1.3rem;
   }
@@ -957,6 +1008,14 @@ main {
   .prices__img {
     top: -70px;
     left: 40%;
+  }
+
+  .l-bts {
+    transform: translateX(-350%);
+  }
+
+  .r-bts {
+    transform: translateX(150%);
   }
 }
 
@@ -978,8 +1037,16 @@ main {
   }
 
   .reviews__container-circle {
-    width: auto;
     height: 98%;
+    padding: 2%;
+  }
+
+  .reviews__articles {
+    width: auto;
+  }
+
+  .l-bts {
+    transform: translateX(-320%);
   }
 
   .img_corner-2 {
@@ -1005,6 +1072,10 @@ main {
     width: 200px;
   }
 
+  .r-bts {
+    transform: translateX(120%);
+  }
+
   .footer .creator_text {
     padding-left: 5%;
   }
@@ -1025,11 +1096,6 @@ main {
     max-width: 1155px;
     /*width: 100%;*/
     width: auto;
-  }
-
-  .reviews__container-circle {
-    width: auto;
-    height: 98%;
   }
 
   .header__link {
@@ -1068,11 +1134,6 @@ main {
     width: auto;
   }
 
-  .reviews__container-circle {
-    width: auto;
-    height: 98%;
-  }
-
   .header__link {
     font-size: 1rem;
   }
@@ -1104,11 +1165,6 @@ main {
     width: auto;
   }
 
-  .reviews__container-circle {
-    width: auto;
-    height: 98%;
-  }
-
   .img_corner-2 {
     position: relative;
     width: fit-content;
@@ -1124,6 +1180,10 @@ main {
     width: 60%;
   }
 
+  .prices__img {
+    left: 42%;
+  }
+
   .btn_sign {
     width: 130px;
     padding: 4px;
@@ -1132,6 +1192,10 @@ main {
   .btn_sign-students {
     width: 130px;
     padding: 4px;
+  }
+
+  .r-bts {
+    transform: translateX(80%);
   }
 }
 
@@ -1163,6 +1227,15 @@ main {
   .reviews__container-circle {
     width: auto;
     height: 98%;
+  }
+
+  .reviews__photo {
+    width: 50%;
+    height: auto;
+  }
+
+  .l-bts {
+    transform: translateX(-290%);
   }
 
   /*width: 1024px;*/
@@ -1237,6 +1310,10 @@ main {
     z-index: 10;
   }
 
+  .hamburger-menu {
+    position: relative;
+  }
+
   .mobile-header__logo-link {
     width: 75%;
     height: 65px;
@@ -1285,7 +1362,7 @@ main {
   .menu__btn {
     background-color: #e8d8cb;
     position: fixed;
-    top: 7%;
+    top: 50px;
     right: 20px;
     width: 26px;
     height: 26px;
@@ -1444,7 +1521,7 @@ main {
     display: block;
     width: 30%;
     top: 10%;
-    right: -50px;
+    right: -30px;
   }
 
   .mob-img2 {
@@ -1452,14 +1529,14 @@ main {
     display: block;
     width: 30%;
     top: 35%;
-    right: -50px;
+    right: -30px;
   }
 
   .mob-img3 {
     position: absolute;
     display: block;
     width: 30%;
-    right: -50px;
+    right: -30px;
     bottom: 0px;
   }
 
@@ -1592,6 +1669,10 @@ main {
     height: 98%;
   }
 
+  .r-bts {
+    transform: translateX(130%);
+  }
+
   .screenshots__container-main {
     /*width: 912px;*/
   }
@@ -1672,6 +1753,7 @@ main {
     width: fit-content;
     bottom: -54px;
     left: 86%;
+    transform: translateX(-10px);
   }
 
   .services {
@@ -1795,7 +1877,7 @@ main {
   }
 
   .reviews__container-circle {
-    width: auto;
+    width: 100%;
     height: 98%;
   }
 
@@ -1821,12 +1903,20 @@ main {
   }
 }
 
-/*@media screen and (max-width: 666px) {
-  .reviews__container-circle {
-    width: auto;
-    height: auto;
+@media screen and (max-width: 720px) {
+  .img_corner-2 {
+    bottom: -44px;
+    transform: translateX(-15px);
   }
-}*/
+}
+
+@media screen and (max-width: 666px) {
+  .prices__img {
+    width: 150px;
+    left: 65%;
+    top: -50%;
+  }
+}
 @media screen and (max-width: 540px) {
   .first-page__container,
   .about-me__container,
@@ -1841,6 +1931,10 @@ main {
     max-width: 540px;
     /*width: 100%;*/
     width: auto;
+  }
+
+  .mobile-header__container {
+    height: 105px;
   }
 
   .mobile-header__logo-link {
@@ -1858,6 +1952,7 @@ main {
 
   .first-page__container {
     grid-template-rows: 2fr 2fr 1fr;
+    padding-top: 110px;
   }
 
   .first-page__img {
@@ -1873,7 +1968,16 @@ main {
   }
 
   .mob-img3 {
-    left: 87%;
+    left: 80%;
+  }
+
+  .about-me__h1 {
+    margin-left: 0;
+  }
+
+  .about-me__list,
+  .about-me__list2 {
+    padding-left: 0;
   }
 
   .img_corner-2 {
@@ -1899,12 +2003,6 @@ main {
 
   .prices__h1 {
     margin-bottom: 17px;
-  }
-
-  .prices__img {
-    width: 150px;
-    left: 65%;
-    top: -50%;
   }
 
   .btn_sign {
@@ -1971,6 +2069,10 @@ main {
     padding: 3px;
   }
 
+  .img_corner-2 {
+    transform: translateX(-5px);
+  }
+
   /*width: 432px;*/
 }
 
@@ -2021,26 +2123,15 @@ main {
     width: 250px;
   }
 
-  .about-me__h1 {
-    margin-left: 40px;
-  }
   .about-me__text {
-    width: 80%;
+    width: 86%;
     line-height: 1.5rem;
     font-size: 0.9rem;
-  }
-
-  .about-me__list {
-    padding-left: 40px;
   }
 
   .about-me__text2 {
     font-size: 1.5rem;
     line-height: 1.7rem;
-  }
-
-  .about-me__list2 {
-    padding-left: 40px;
   }
 
   .experience__img {
@@ -2061,7 +2152,8 @@ main {
     width: 70px;
     height: 70px;
     bottom: -25px;
-    left: 310px;
+    right: 0;
+    transform: translateX(25px);
   }
 
   .prices__container-3 {
@@ -2293,6 +2385,14 @@ main {
     width: auto;
   }
 
+  .menu__btn {
+    transform: none;
+  }
+
+  .first-page__container {
+    padding-top: 90px;
+  }
+
   .first-page__title__text {
     font-size: 3em;
   }
@@ -2307,24 +2407,25 @@ main {
   }
 
   .about-me__text {
-    width: 90%;
+    width: 80%;
+  }
+
+  .mob-img1,
+  .mob-img2 {
+    right: 0;
   }
 
   .mob-img3 {
     left: 67%;
   }
 
-  /* .img_corner-1 {
-    width: 80%;
-    top: -55px;
-    left: -65px;
+  .img_corner-2 {
+    transform: translateX(10px);
   }
 
-  .img_corner-2 {
-    width: 80%;
-    bottom: -52px;
-    left: 68%;
-  } */
+  .services_students {
+    width: 100%;
+  }
 
   .Creator-1 {
     width: 120%;
@@ -2340,6 +2441,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .prices__img {
+    left: 70%;
   }
 
   #review__menu-main .review__left_button {
