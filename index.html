@@ -44,10 +44,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
   </head>
 
   <body>
@@ -429,7 +425,11 @@
           <h1 class="reviews__h1">Результаты моих учеников</h1>
 
           <!-- slider part start -->
-          <div class="splide" role="group">
+          <div
+            class="splide splide-desc"
+            role="group"
+            data-splide='{"type":"fade","perPage":3, "arrows": "true"}'
+          >
             <div class="splide__arrows arrows">
               <button class="splide__arrow arrow splide__arrow--prev l-bts">
                 <img src="assets/images/l-btn.png" alt="" />
@@ -441,7 +441,7 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <article class="reviews__articles active">
+                  <article class="reviews__articles">
                     <div class="reviews__container-circle">
                       <div class="reviews__photo">
                         <img
@@ -509,7 +509,7 @@
                   </article>
                 </li>
                 <li class="splide__slide">
-                  <article class="reviews__articles active">
+                  <article class="reviews__articles">
                     <div class="reviews__container-circle">
                       <div class="reviews__photo">
                         <img
@@ -563,7 +563,7 @@
                   </article>
                 </li>
                 <li class="splide__slide">
-                  <article class="reviews__articles active">
+                  <article class="reviews__articles">
                     <div class="reviews__container-circle">
                       <div class="reviews__photo">
                         <img
@@ -609,7 +609,7 @@
                   </article>
                 </li>
                 <li class="splide__slide">
-                  <article class="reviews__articles active">
+                  <article class="reviews__articles">
                     <div class="reviews__container-circle">
                       <div class="reviews__photo">
                         <img src="assets/images/logo_.png" alt="" />
@@ -649,195 +649,221 @@
             </div>
           </div>
 
-          <!-- <div class="reviews__slider">
-            <div id="review__menu-main">
-              <button class="review__menu_button review__left_button" id="prev">
-                <img
-                  src="assets/images/l-btn.png"
-                  class="review__arrow"
-                  alt="left-button"
-                />
-              </button>
-              <button class="review__menu_button review__right_button">
-                <img
-                  src="assets/images/r-btn.png"
-                  class="review__arrow"
-                  alt="right-button"
-                />
-              </button>
-              <div id="review__menu" class="review__menu">
-                <article class="reviews__articles">
-                  <div class="reviews__container-circle">
-                    <h2 class="reviews__h2">Илья, 12 лет</h2>
+          <div
+            class="splide splide-mob"
+            role="group"
+            data-splide='{"type":"loop","perPage":3, "arrows": "false"}'
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <article class="reviews__articles">
+                    <div class="reviews__container-circle">
+                      <div class="reviews__photo">
+                        <img
+                          src="assets/images/Ilya-student.jpg"
+                          alt="Илья, 12 лет"
+                        />
+                      </div>
+                      <h2 class="reviews__h2">Илья, 12 лет</h2>
 
-                    <div class="reviews__container">
-                      <p class="reviews__results-text">экзамен YLE Movers</p>
-                      <p class="reviews__results-text">
-                        отличные оценки в школе
-                      </p>
-                      <p class="reviews__results-text">бегло говорит</p>
-                      <p class="reviews__results-text">подготовка 8 месяцев</p>
-                    </div>
-                    <div class="reviews__text">
-                      <p class="reviews__text-big">
-                        Сдал кембриджский экзамен YLE Movers на&nbsp;высокий
-                        балл (14/15) 93%. Получает отличные оценки
-                        по&nbsp;английскому в школе, уверенно и&nbsp;бегло
-                        говорит, грамотно использует основные времена
-                        в&nbsp;речи. С&nbsp;удовольствием продолжает изучать
-                        язык, в&nbsp;этом году будет сдавать экзамен YLE Flyers
-                        <br /><br />
-                        Чем может быть полезна сдача кембриджских экзаменов и
-                        зачем их&nbsp;сдавать? <br /><br />
-                        Это первый шаг по&nbsp;планомерной подготовке к&nbsp;ОГЭ
-                        и&nbsp;ЕГЭ. Если Илья продолжит изучать английский
-                        и&nbsp;сдавать кембриджские экзамены,
-                        то&nbsp;к&nbsp;9&nbsp;и&nbsp;11&nbsp;классу сдача этих
-                        экзаменов не вызовет у&nbsp;Ильи затруднений
-                        и&nbsp;необходимости в&nbsp;срочном порядке
-                        &laquo;подтягивать&raquo; знания <br /><br />
-                        Подготовка заняла 8&nbsp;месяцев. После сдачи экзамена
-                        Илья приобрел следующие навыки:<br /><br />
-                      </p>
+                      <div class="reviews__container">
+                        <p class="reviews__results-text">экзамен YLE Movers</p>
+                        <p class="reviews__results-text">
+                          отличные оценки в школе
+                        </p>
+                        <p class="reviews__results-text">бегло говорит</p>
+                        <p class="reviews__results-text">
+                          подготовка 8 месяцев
+                        </p>
+                      </div>
+                      <div class="reviews__text">
+                        <p class="reviews__text-big">
+                          Сдал кембриджский экзамен YLE Movers на&nbsp;высокий
+                          балл (14/15) 93%. Получает отличные оценки
+                          по&nbsp;английскому в школе, уверенно и&nbsp;бегло
+                          говорит, грамотно использует основные времена
+                          в&nbsp;речи. С&nbsp;удовольствием продолжает изучать
+                          язык, в&nbsp;этом году будет сдавать экзамен YLE
+                          Flyers
+                          <br /><br />
+                          Чем может быть полезна сдача кембриджских экзаменов и
+                          зачем их&nbsp;сдавать? <br /><br />
+                          Это первый шаг по&nbsp;планомерной подготовке
+                          к&nbsp;ОГЭ и&nbsp;ЕГЭ. Если Илья продолжит изучать
+                          английский и&nbsp;сдавать кембриджские экзамены,
+                          то&nbsp;к&nbsp;9&nbsp;и&nbsp;11&nbsp;классу сдача этих
+                          экзаменов не вызовет у&nbsp;Ильи затруднений
+                          и&nbsp;необходимости в&nbsp;срочном порядке
+                          &laquo;подтягивать&raquo; знания <br /><br />
+                          Подготовка заняла 8&nbsp;месяцев. После сдачи экзамена
+                          Илья приобрел следующие навыки:<br /><br />
+                        </p>
 
-                      <ul class="reviews__list-main">
-                        <li class="reviews__list">
-                          Понимает и&nbsp;использует английскую речь,
-                          информационные надписи, указания
-                        </li>
-                        <li class="reviews__list">
-                          Может заполнять простые формы и&nbsp;писать письма
-                        </li>
-                        <li class="reviews__list">
-                          Читает книги и&nbsp;смотрит фильмы на&nbsp;английском
-                          языке
-                        </li>
-                        <li class="reviews__list">
-                          Находит и&nbsp;использует информацию
-                          с&nbsp;англоязычных источников в&nbsp;интернете
-                        </li>
-                        <li class="reviews__list">
-                          Заводит друзей со&nbsp;всего мира
-                        </li>
-                      </ul>
+                        <ul class="reviews__list-main">
+                          <li class="reviews__list">
+                            Понимает и&nbsp;использует английскую речь,
+                            информационные надписи, указания
+                          </li>
+                          <li class="reviews__list">
+                            Может заполнять простые формы и&nbsp;писать письма
+                          </li>
+                          <li class="reviews__list">
+                            Читает книги и&nbsp;смотрит фильмы
+                            на&nbsp;английском языке
+                          </li>
+                          <li class="reviews__list">
+                            Находит и&nbsp;использует информацию
+                            с&nbsp;англоязычных источников в&nbsp;интернете
+                          </li>
+                          <li class="reviews__list">
+                            Заводит друзей со&nbsp;всего мира
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </article>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="reviews__articles">
+                    <div class="reviews__container-circle">
+                      <div class="reviews__photo">
+                        <img
+                          src="assets/images/Aslan-student.jpg"
+                          alt="Аслан, 36 лет"
+                        />
+                      </div>
+                      <h2 class="reviews__h2">Аслан, 36 лет</h2>
 
-                <article class="reviews__articles active">
-                  <div class="reviews__container-circle">
-                    <h2 class="reviews__h2">Аслан, 36 лет</h2>
+                      <div class="reviews__container">
+                        <p class="reviews__results-text">
+                          английский для путешествий
+                        </p>
+                        <p class="reviews__results-text">IT английский</p>
+                        <p class="reviews__results-text">
+                          английский для начальных уровней
+                        </p>
+                        <p class="reviews__results-text">год занятий</p>
+                      </div>
+                      <div class="reviews__text">
+                        <p class="reviews__text-big">
+                          Научился общаться с&nbsp;иностранными клиентами,
+                          ориентироваться в&nbsp;путешествиях, понимать тексты
+                          по&nbsp;работе в&nbsp;IT, обсуждать направления
+                          и&nbsp;профессии, взаимодействие между клиентами
+                          и&nbsp;заказчиками в&nbsp;IT <br /><br />
+                          Занимаемся год. Пришел с&nbsp;начальным уровнем. Нужно
+                          было учить цифры, дни недели и&nbsp;другие темы
+                          базового уровня. Запрос был подтянуть общий
+                          английский, чтобы общаться с клиентами,
+                          в&nbsp;путешествиях, улучшить навык чтения.
+                          За&nbsp;год Аслан научился общаться
+                          с&nbsp;иностранными клиентами, заказывать еду
+                          в&nbsp;кафе, номер в&nbsp;отеле, общаться
+                          в&nbsp;аэропорту (просить место у&nbsp;окна,
+                          спрашивать дорогу, задавать вопросы, чтобы
+                          ориентироваться)
+                          <br /><br />
+                          Навык чтения повысил с&nbsp;уровня
+                          А0+&nbsp;до&nbsp;уровня А2. Полученный уровень
+                          позволил перейти на&nbsp;занятия английским для работы
+                          в&nbsp;IT сфере. Аслан уже научился обсуждать
+                          профессии и направления в&nbsp;IT, говорить
+                          об&nbsp;особенностях взаимодействия между заказчиками
+                          и&nbsp;исполнителями, грамотно использовать времена
+                          настоящего времени в&nbsp;обсуждении запросов целевой
+                          аудитории получателей услуг&nbsp;IT сферы <br /><br />
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="reviews__articles">
+                    <div class="reviews__container-circle">
+                      <div class="reviews__photo">
+                        <img
+                          src="assets/images/Stepha-student.jpg"
+                          alt="Стефа, 8 лет"
+                        />
+                      </div>
+                      <h2 class="reviews__h2">Стефа, 8 лет</h2>
 
-                    <div class="reviews__container">
-                      <p class="reviews__results-text">
-                        английский для путешествий
-                      </p>
-                      <p class="reviews__results-text">IT английский</p>
-                      <p class="reviews__results-text">
-                        английский для начальных уровней
-                      </p>
-                      <p class="reviews__results-text">год занятий</p>
+                      <div class="reviews__container">
+                        <p class="reviews__results-text">
+                          поступление в зарубежную школу
+                        </p>
+                        <p class="reviews__results-text">
+                          подготовка 9 месяцев
+                        </p>
+                        <p class="reviews__results-text">бегло говорит</p>
+                        <p class="reviews__results-text">
+                          подготовка 8 месяцев
+                        </p>
+                      </div>
+                      <div class="reviews__text">
+                        <p class="reviews__text-big">
+                          Цель: преодолеть сопротивление использовать
+                          и&nbsp;воспринимать английскую речь, перестать бояться
+                          ошибок, создать интерес к&nbsp;изучению языка,
+                          научиться читать на&nbsp;английском
+                          <br /><br />
+                          В&nbsp;сентябре Стефа пошла в&nbsp;иностранную школу,
+                          где может читать на&nbsp;английском, знакомиться,
+                          общаться с одноклассниками и&nbsp;учителями, может
+                          заказать еду в&nbsp;кафе, рассказать о&nbsp;любимых
+                          книгах, обсудить свое хобби - рисование
+                          и&nbsp;поделиться новостями о&nbsp;своих домашних
+                          животных (крысах)<br /><br />
+                          Мама ученицы передала, что они смотрели Барби на
+                          английском без субтитров и&nbsp;Стефа поняла
+                          содержание :) Этого удалось достигнуть
+                          за&nbsp;9&nbsp;месяцев<br /><br />
+                        </p>
+                      </div>
                     </div>
-                    <div class="reviews__text">
-                      <p class="reviews__text-big">
-                        Научился общаться с&nbsp;иностранными клиентами,
-                        ориентироваться в&nbsp;путешествиях, понимать тексты
-                        по&nbsp;работе в&nbsp;IT, обсуждать направления
-                        и&nbsp;профессии, взаимодействие между клиентами
-                        и&nbsp;заказчиками в&nbsp;IT <br /><br />
-                        Занимаемся год. Пришел с&nbsp;начальным уровнем. Нужно
-                        было учить цифры, дни недели и&nbsp;другие темы базового
-                        уровня. Запрос был подтянуть общий английский, чтобы
-                        общаться с клиентами, в&nbsp;путешествиях, улучшить
-                        навык чтения. За&nbsp;год Аслан научился общаться
-                        с&nbsp;иностранными клиентами, заказывать еду
-                        в&nbsp;кафе, номер в&nbsp;отеле, общаться
-                        в&nbsp;аэропорту (просить место у&nbsp;окна, спрашивать
-                        дорогу, задавать вопросы, чтобы ориентироваться)
-                        <br /><br />
-                        Навык чтения повысил с&nbsp;уровня
-                        А0+&nbsp;до&nbsp;уровня А2. Полученный уровень позволил
-                        перейти на&nbsp;занятия английским для работы в&nbsp;IT
-                        сфере. Аслан уже научился обсуждать профессии и
-                        направления в&nbsp;IT, говорить об&nbsp;особенностях
-                        взаимодействия между заказчиками и&nbsp;исполнителями,
-                        грамотно использовать времена настоящего времени
-                        в&nbsp;обсуждении запросов целевой аудитории получателей
-                        услуг&nbsp;IT сферы <br /><br />
-                      </p>
-                    </div>
-                  </div>
-                </article>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="reviews__articles">
+                    <div class="reviews__container-circle">
+                      <div class="reviews__photo">
+                        <img src="assets/images/logo_.png" alt="" />
+                      </div>
+                      <h2 class="reviews__h2">Ева, 10 лет</h2>
 
-                <article class="reviews__articles">
-                  <div class="reviews__container-circle">
-                    <h2 class="reviews__h2">Стефа, 8 лет</h2>
-
-                    <div class="reviews__container">
-                      <p class="reviews__results-text">
-                        поступление в зарубежную школу
-                      </p>
-                      <p class="reviews__results-text">подготовка 9 месяцев</p>
-                      <p class="reviews__results-text">бегло говорит</p>
-                      <p class="reviews__results-text">подготовка 8 месяцев</p>
+                      <div class="reviews__container">
+                        <p class="reviews__results-text">
+                          отличные оценки в школе
+                        </p>
+                        <p class="reviews__results-text">
+                          повышение оценки в школе
+                        </p>
+                        <p class="reviews__results-text">начальный уровень</p>
+                        <p class="reviews__results-text">
+                          поступление в лингвистический класс
+                        </p>
+                      </div>
+                      <div class="reviews__text">
+                        <p class="reviews__text-big">
+                          Цель: выйти на&nbsp;уровень А2&nbsp;со неуверенного
+                          А1&nbsp;и&nbsp;получить положительную годовую оценку
+                          по&nbsp;английскому языку в частной школе
+                          в&nbsp;Москве. Мы&nbsp;занимались 6&nbsp;месяцев по
+                          современному учебному пособию дважды в&nbsp;неделю.
+                          <br /><br />
+                          Цель была достигнута за&nbsp;шесть месяцев. Ева
+                          получила заветную годовую пятерку по&nbsp;английскому
+                          языку и&nbsp;поступила в&nbsp;лингвистический класс.
+                          <br /><br />
+                        </p>
+                      </div>
                     </div>
-                    <div class="reviews__text">
-                      <p class="reviews__text-big">
-                        Цель: преодолеть сопротивление использовать
-                        и&nbsp;воспринимать английскую речь, перестать бояться
-                        ошибок, создать интерес к&nbsp;изучению языка, научиться
-                        читать на&nbsp;английском
-                        <br /><br />
-                        В&nbsp;сентябре Стефа пошла в&nbsp;иностранную школу,
-                        где может читать на&nbsp;английском, знакомиться,
-                        общаться с одноклассниками и&nbsp;учителями, может
-                        заказать еду в&nbsp;кафе, рассказать о&nbsp;любимых
-                        книгах, обсудить свое хобби - рисование
-                        и&nbsp;поделиться новостями о&nbsp;своих домашних
-                        животных (крысах)<br /><br />
-                        Мама ученицы передала, что они смотрели Барби на
-                        английском без субтитров и&nbsp;Стефа поняла содержание
-                        :) Этого удалось достигнуть за&nbsp;9&nbsp;месяцев<br /><br />
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="reviews__articles">
-                  <div class="reviews__container-circle">
-                    <h2 class="reviews__h2">Ева, 10 лет</h2>
-
-                    <div class="reviews__container">
-                      <p class="reviews__results-text">
-                        отличные оценки в школе
-                      </p>
-                      <p class="reviews__results-text">
-                        повышение оценки в школе
-                      </p>
-                      <p class="reviews__results-text">начальный уровень</p>
-                      <p class="reviews__results-text">
-                        поступление в лингвистический класс
-                      </p>
-                    </div>
-                    <div class="reviews__text">
-                      <p class="reviews__text-big">
-                        Цель: выйти на&nbsp;уровень А2&nbsp;со неуверенного
-                        А1&nbsp;и&nbsp;получить положительную годовую оценку
-                        по&nbsp;английскому языку в частной школе в&nbsp;Москве.
-                        Мы&nbsp;занимались 6&nbsp;месяцев по современному
-                        учебному пособию дважды в&nbsp;неделю.
-                        <br /><br />
-                        Цель была достигнута за&nbsp;шесть месяцев. Ева получила
-                        заветную годовую пятерку по&nbsp;английскому языку
-                        и&nbsp;поступила в&nbsp;лингвистический класс.
-                        <br /><br />
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div>
+                  </article>
+                </li>
+              </ul>
             </div>
-          </div> -->
+          </div>
 
           <!-- screenshots start -->
           <div class="screenshots__container-main">
@@ -981,7 +1007,7 @@
         </div>
       </footer>
     </div>
-    <script src="splide-4.1-1.3/dist/js/splide.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script defer src="splide-4.1-1.3/dist/js/splide.min.js"></script>
+    <script defer src="scripts/main.js"></script>
   </body>
 </html>

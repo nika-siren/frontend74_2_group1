@@ -19,15 +19,35 @@ window.addEventListener("DOMContentLoaded", () => {
   smoothScroll();
 
   new Splide(".splide", {
-    type: "fade",
     pagination: false,
+    arrows: false,
+    start: 0,
+    autoWidth: true,
+    perPage: 1,
+    perMove: 1,
     rewind: true,
     autoplay: true,
     breakpoints: {
-      897: {
-        type: "slide",
-        rewind: false,
-        perPage: 2,
+      1024: {
+        heightRatio: 0.775,
+      },
+      840: {
+        heightRatio: 0.85,
+      },
+      786: {
+        heightRatio: 1,
+      },
+      666: {
+        heightRatio: 1.35,
+      },
+      555: {
+        heightRatio: 1.65,
+      },
+      464: {
+        heightRatio: 1.9,
+      },
+      430: {
+        heightRatio: 2.4,
       },
     },
     classes: {
