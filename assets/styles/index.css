@@ -540,7 +540,8 @@ main {
   border: 1px solid #222222;
 }
 
-.reviews__container-main {
+.reviews__container-main,
+.screenshots__container-main {
   display: flex;
   flex-direction: column;
   gap: 2.5em;
@@ -960,12 +961,8 @@ main {
     width: auto;
   }
 
+  .reviews__container-main,
   .screenshots__container-main {
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-
-  .reviews__container-main {
     padding: 0 15px;
   }
 
@@ -1560,8 +1557,12 @@ main {
     visibility: visible;
   }
 
+  .slider-mob .inner {
+    display: flex;
+    padding: 5px 15px;
+  }
+
   .slider-mob .screenshot {
-    margin: 0 15px;
     display: flex;
     flex-direction: column;
     width: calc(240px + 178 * (100vw - 320px) / 592);
