@@ -18,11 +18,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   smoothScroll();
 
-  new Splide(".splide", {
+  var splide = new Splide(".splide", {
     pagination: false,
-    arrows: false,
     start: 0,
-    autoWidth: true,
     perPage: 1,
     perMove: 1,
     rewind: true,
@@ -56,5 +54,6 @@ window.addEventListener("DOMContentLoaded", () => {
       prev: "splide__arrow--prev l-bts",
       next: "splide__arrow--next r-bts",
     },
-  }).mount();
+  });
+  splide.mount();
 });

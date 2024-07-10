@@ -22,6 +22,10 @@ $wine: #91778C; (!пока стоит как MAIN-COLOR!)
   display: none;
 }
 
+.slider-mob {
+  display: none;
+}
+
 header {
   padding: 0;
 }
@@ -744,10 +748,6 @@ main {
   font-size: 17px;
 }
 
-.screenshots__container-main {
-  min-width: 0;
-}
-
 .screenshots__container-main .screenshots__h1 {
   font-family: "Caveat", cursive;
   /*font-size: 4.2em;*/
@@ -953,12 +953,16 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 1440px;
     padding-left: 15px;
     padding-right: 15px;
     width: auto;
+  }
+
+  .screenshots__container-main {
+    margin: 0 auto;
+    padding: 0 15px;
   }
 
   .reviews__container-main {
@@ -1019,7 +1023,6 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 1400px;
     /*width: 100%;*/
@@ -1057,7 +1060,6 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 1280px;
     /*width: 100%;*/
@@ -1109,7 +1111,6 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 1155px;
     /*width: 100%;*/
@@ -1144,7 +1145,6 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 1052px;
     /*width: 100%;*/
@@ -1174,7 +1174,6 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 1024px;
     /*width: 100%;*/
@@ -1256,7 +1255,6 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 997px;
     /*width: 100%;*/
@@ -1292,7 +1290,6 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 912px;
     /*width: 100%;*/
@@ -1305,11 +1302,6 @@ main {
 
   .requests__container-main {
     padding: 20px;
-  }
-
-  .screenshots__container-main .slider {
-    max-width: 892px;
-    width: auto;
   }
 
   .header__container {
@@ -1560,6 +1552,26 @@ main {
     bottom: 0px;
   }
 
+  .slider-mob {
+    display: block;
+  }
+
+  .slider-mob .screenshot {
+    visibility: visible;
+  }
+
+  .slider-mob .screenshot {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: calc(240px + 178 * (100vw - 320px) / 592);
+    height: 297px;
+  }
+
+  .screenshots__container-main .slider {
+    display: none;
+  }
+
   .about-me__text {
     width: 80%;
     line-height: 1.7rem;
@@ -1684,33 +1696,8 @@ main {
     width: 35%;
   }
 
-  .screenshots__container-main .slider {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 750px;
-  }
-
-  .screenshots__container-main .slider .screenshots__button {
-    display: block;
-  }
-
-  .screenshots__container-main .slider .screenshots {
-    width: 60%;
-  }
-
-  .screenshots__container-main .slider .screenshots .screenshot {
-    display: none;
-    width: 100%;
-  }
-
   .screenshots__container-main .slider .screenshots .screenshot__reviewer {
     font-size: 1.5rem;
-  }
-
-  .screenshots__container-main .slider .screenshots .active {
-    display: block;
   }
 }
 
@@ -1718,6 +1705,12 @@ main {
   .reviews__articles {
     width: calc(254px + 446 * (100vw - 320px) / 550);
     padding: 5px 15px;
+    height: 704px;
+    display: flex;
+  }
+
+  .reviews__container-circle {
+    height: 100%;
   }
 
   .splide-mob {
@@ -1737,15 +1730,9 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 820px;
     /*width: 100%;*/
-    width: auto;
-  }
-
-  .screenshots__container-main .slider {
-    max-width: 800px;
     width: auto;
   }
 
@@ -1817,29 +1804,8 @@ main {
     font-size: 1em;
   }
 
-  .screenshots__container-main .slider {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    /*width: 100%;*/
-  }
-
-  .screenshots__container-main .slider .screenshots__button {
-    display: block;
-  }
-
   .screenshots__container-main .slider .screenshots {
     width: 60%;
-  }
-
-  .screenshots__container-main .slider .screenshots .screenshot {
-    display: none;
-    width: 100%;
-  }
-
-  .screenshots__container-main .slider .screenshots .active {
-    display: block;
   }
 }
 
@@ -1851,7 +1817,6 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 730px;
     /*width: 100%;*/
@@ -1904,6 +1869,9 @@ main {
     margin: 0 auto;
     margin-bottom: 15px;
   }
+  .reviews__articles {
+    height: 754px;
+  }
 }
 @media screen and (max-width: 540px) {
   .first-page__container,
@@ -1913,7 +1881,6 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 540px;
     /*width: 100%;*/
@@ -1930,11 +1897,6 @@ main {
 
   .mobile-header__contacts {
     padding-left: 0;
-  }
-
-  .screenshots__container-main .slider {
-    max-width: 520px;
-    width: auto;
   }
 
   .first-page__container {
@@ -2011,6 +1973,9 @@ main {
   .img_corner-2 {
     transform: translateX(-5px);
   }
+  .reviews__articles {
+    height: 804px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -2021,7 +1986,6 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 430px;
     /*width: 100%;*/
@@ -2030,15 +1994,6 @@ main {
 
   .mobile-header__container {
     grid-template-columns: 30% 1fr 20%;
-  }
-
-  .screenshots__container-main .slider {
-    max-width: 410px;
-    width: auto;
-  }
-
-  .screenshots__container-main .screenshots__h1 {
-    margin: 2.87em 0 0;
   }
 
   .first-page__title__text {
@@ -2237,14 +2192,6 @@ main {
     max-width: 100%;
   }
 
-  .screenshots__container-main .slider {
-    gap: 0.1em;
-  }
-
-  .screenshots__container-main .slider .screenshots {
-    width: 300px;
-  }
-
   .screenshots__container-main .slider .screenshots .screenshot__reviewer {
     font-size: 1.2em;
   }
@@ -2258,15 +2205,9 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 390px;
     /*width: 100%;*/
-    width: auto;
-  }
-
-  .screenshots__container-main .slider {
-    max-width: 370px;
     width: auto;
   }
 
@@ -2358,15 +2299,9 @@ main {
   .experience__container,
   .prices__container,
   .prices__container-students,
-  .screenshots__container-main,
   .footer {
     max-width: 375px;
     /*width: 100%;*/
-    width: auto;
-  }
-
-  .screenshots__container-main .slider {
-    max-width: 355px;
     width: auto;
   }
 
