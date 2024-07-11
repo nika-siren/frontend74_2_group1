@@ -5,6 +5,13 @@
 * Browsers: last 10 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
 @charset "UTF-8";
 
 /*задаем цвета, добавила пока примерную структуру, чтобы не забыть (:
@@ -1541,7 +1548,10 @@ main {
   }
 
   .screenshots__container-main .screenshots__h1 {
-    margin: 1.67em 0 0;
+    margin-top: 1.67em;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .footer {
@@ -2116,6 +2126,9 @@ main {
   .screenshots__container-main .slider .screenshots .screenshot__reviewer {
     font-size: 1.5rem;
   }
+  .screenshots__container-main .screenshots__h1 {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 912px) {
@@ -2163,6 +2176,9 @@ main {
   .splide-desc {
     display: none;
   }
+  .screenshots__container-main .screenshots__h1 {
+    margin-top: 0.67em;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -2205,8 +2221,15 @@ main {
     align-items: center;
   }
 
-  .prices__h1 {
+  .prices__h1,
+  .reviews__h1,
+  .screenshots__container-main .screenshots__h1 {
     margin-left: 5%;
+  }
+
+  .screenshots__container-main .screenshots__h1 {
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
   .prices__img {
@@ -2728,24 +2751,42 @@ main {
     font-size: 10px;
     max-width: 100%;
   }
+  .screenshots__container-main {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 1em;
+  }
 
   .screenshots__container-main .slider .screenshots .screenshot__reviewer {
     font-size: 1.2em;
+  }
+  .screenshots__container-main .screenshots__h1 {
+    margin-left: 2%;
   }
 }
 
 @media screen and (max-width: 390px) {
   .first-page__container,
-  .about-me__container,
-  .values,
-  .requests__container-main,
   .experience__container,
   .prices__container,
-  .prices__container-students,
-  .footer {
+  .prices__container-students {
     max-width: 390px;
     margin: 0 auto;
     width: auto;
+  }
+
+  .footer {
+    max-width: 390px;
+    margin: 70px auto 0 auto;
+    width: auto;
+  }
+
+  .values,
+  .about-me__container,
+  .requests__container-main {
+    width: auto;
+    max-width: 390px;
   }
 
   .menu__btn {
@@ -2845,6 +2886,9 @@ main {
     .reviews__container
     .reviews__results-text {
     font-size: 11px;
+  }
+  .screenshots__h1 {
+    margin-left: 2%;
   }
 }
 
