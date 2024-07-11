@@ -1,345 +1,668 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Daria's English Lessons Online</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="splide-4.1-1.3/dist/css/splide-core.min.css" />
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daria's English Lessons Online</title>
-  <link rel="stylesheet" href="assets/styles/normalize.css" />
-
-  <!-- JS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <!-- JS -->
-
-  <link rel="stylesheet" href="assets/styles/index.css" />
-  <link rel="shortcut icon" href="assets/images/logo-new.svg" type="image/svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&display=swap" rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-
-<body>
-  <!-- H E A D E R  S T A R T -->
-  <header class="header__container">
-    <a href="#first-page" class="header__logo-link">
-      <img class="header__logo" src="./assets/images/logo-new.svg" />
-    </a>
-    <nav class="header__nav">
-      <a href="#about-me" class="header__link">Обо мне</a><a href="#requests" class="header__link">Запросы</a><a
-        href="#education" class="header__link">Образование и опыт</a>
-      <a href="#prices" class="header__link">Консультации</a><a href="#rewews" class="header__link">Отзывы</a>
-      <div class="header__link">
-        <ul class="header__contacts">
-          <li class="header__contact">
-            <a href="https://wa.me/79231836348"><img src="./assets/images/Watsapp.png" /></a>
-          </li>
-          <li class="header__contact">
-            <a href="https://t.me/daria_eng_online"><img src="./assets/images/Telegram.png" /></a>
-          </li>
-          <li class="header__contact">
-            <a href="https://instagram.com/eng.daria.online"><img src="./assets/images/Instagram.png" /></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- M O B I L E  H E A D E R  S T A R T -->
-  <header class="mobile-header__container">
-    <a href="#first-page" class="mobile-header__logo-link">
-      <img class="mobile-header__logo" src="./assets/images/logo-new.svg" />
-    </a>
-    <div class="mobile-header__link">
-      <ul class="mobile-header__contacts">
-        <li class="mobile-header__contact">
-          <a href=""><img src="./assets/images/Watsapp.png" /></a>
-        </li>
-        <li class="mobile-header__contact">
-          <a href="https://t.me/daria_eng_online"><img src="./assets/images/Telegram.png" /></a>
-        </li>
-        <li class="mobile-header__contact">
-          <a href=""><img src="./assets/images/Instagram.png" /></a>
-        </li>
-      </ul>
-    </div>
-    <div class="hamburger-menu">
-      <input id="menu__toggle" type="checkbox" />
-      <label class="menu__btn" for="menu__toggle">
-        <span></span>
-      </label>
-
-      <ul class="menu__box">
-        <li><a class="menu__item" href="#about-me">Обо мне</a></li>
-        <li><a class="menu__item" href="#requests">Запросы</a></li>
-        <li>
-          <a class="menu__item" href="#education">Образование и опыт</a>
-        </li>
-        <li><a class="menu__item" href="#prices">Консультации</a></li>
-        <li><a class="menu__item" href="#rewews">Отзывы</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main>
-    <!-- F I R S T  P A G E  S T A R T -->
-    <div class="first-page__container" id="first-page">
-      <div class="first-page__title">
-        <h1 class="first-page__title__text">Daria</h1>
-        <img class="first-page__title__line" src="./assets/images/line-first-page.png" />
-      </div>
-      <div class="first-page__img">
-        <img src="./assets/images/Mask1 group.png" alt="first-page-photo" />
-      </div>
-      <div class="first-page__main">
-        <h2 class="first-page__subtitle">Преподаватель по английскому</h2>
-        <h2 class="first-page__subtitle">Наставник для преподавателей</h2>
-        <ul class="first-page__text">
-          <li class="first-page__item">
-            Занятия с детьми от 7 лет и подростками
-          </li>
-          <li class="first-page__item">
-            Общий английский и IT английский для взрослых с начальным уровнем
-          </li>
-          <li class="first-page__item">
-            Консультации для преподавателей по методике
-          </li>
-        </ul>
-      </div>
-      <a href="https://t.me/daria_eng_online" class="first-page__link">
-        <button class="first-page__button" type="button">Связаться</button>
-      </a>
-    </div>
-
-    <!-- A B O U T  M E  S T A R T -->
-    <div class="about-me__container" id="about-me">
-      <div class="about-me__img">
-        <img src="assets/images/cat-tracks.png" alt="about-me-photo" />
-      </div>
-      <div class="about-me__main">
-        <h1 class="about-me__h1">Обо мне</h1>
-        <ul class="about-me__list">
-          <li class="about-me__text">
-            Я обучаю английскому языку детей, подростков, взрослых начинающих уровней (общий английский, английский для IT)
-          </li>
-          <img class="mobile mob-img1" src="./assets/images/comp.png" />
-          <li class="about-me__text">
-            В настоящее время работаю как преподаватель фрилансер
-          </li>
-          <li class="about-me__text">
-            Я проходила психологические курсы и группы, поэтому умею отлично помогать справляться со страхами в изучении и преподавании английского языка и помогать достигать целей
-          </li>
-          <img class="mobile mob-img2" src="./assets/images/pen.png" />
-          <li class="about-me__text">
-            Живу в Новосибирске. У есть меня два любимых питомца кота. В свободное время нравится кататься на велосипеде, проводить время на природе, ходить в горы
-          </li>
-          
-        </ul>
-
-        <ul class="about-me__list2">
-          <img class="mobile mob-img3" src="./assets/images/textbook.png" />
-          <li class="about-me__text2">>7 лет преподавания</li>
-          <li class="about-me__text2">>10 000 часов занятий</li>
-        </ul>
-      </div>
-    </div>
-    <!-- A B O U T  M E  E N D -->
-
-    <!-- V A L U E S  S T A R T -->
-
-    <div class="values" id="#">
-      <h1 class="values_h1">Мои ценности</h1>
-      <div class="values_values">
-        <div class="img_corner-1">
-          <img src="assets/images/corner-left.png" alt="corner-left" />
-        </div>
-        <div class="values_containers">
-          <div class="values_containers-items">
-            <p class="values_containers-text">
-              Уроки полностью на английском  (Коммуникативная методика)
-            </p>
+  <body>
+    <div class="wrapper">
+      <!-- H E A D E R  S T A R T -->
+      <header class="header__container">
+        <a href="#first-page" class="header__logo-link menu-link">
+          <img class="header__logo" src="./assets/images/logo-new.svg" />
+        </a>
+        <nav class="header__nav">
+          <a href="#about-me" class="header__link menu-link">Обо мне</a
+          ><a href="#requests" class="header__link menu-link">Запросы</a
+          ><a href="#education" class="header__link menu-link"
+            >Образование и опыт</a
+          >
+          <a href="#prices" class="header__link menu-link">Консультации</a
+          ><a href="#rewews" class="header__link menu-link">Отзывы</a>
+          <div class="header__link">
+            <ul class="header__contacts">
+              <li class="header__contact">
+                <a target="_blank" href="https://wa.me/79231836348"
+                  ><img src="./assets/images/Watsapp.png"
+                /></a>
+              </li>
+              <li class="header__contact">
+                <a target="_blank" href="https://t.me/daria_eng_online"
+                  ><img src="./assets/images/Telegram.png"
+                /></a>
+              </li>
+              <li class="header__contact">
+                <a target="_blank" href="https://instagram.com/eng.daria.online"
+                  ><img src="./assets/images/Instagram.png"
+                /></a>
+              </li>
+            </ul>
           </div>
-          <div class="values_containers-items">
-            <p class="values_containers-text">
-              Беру на себя роль помощника и друга, создаю комфортную атмосферу
-              для обучения
-            </p>
-          </div>
-          <div class="values_containers-items">
-            <p class="values_containers-text">
-              Ориентируюсь на цели и запросы учеников
-            </p>
-          </div>
-        </div>
-        <div class="img_corner-2">
-          <img src="assets/images/corner-right.png" alt="corner-right" />
-        </div>
-      </div>
-    </div>
+        </nav>
+      </header>
 
-    <!-- V A L U E S  END -->
-
-    <!-- E X P E R I E N C E  S T A R T  -->
-    <div class="experience__container" id="education">
-      <!-- <div class="experience__img"> -->
-      <img class="experience__img" src="assets/images/2.png" alt="experience-photo" />
-      <!-- </div> -->
-
-      <div class="experience__text-main">
-        <h1 class="experience__h1">Мое образование <br> и опыт</h1>
-        <ul class="experience__list-main">
-          <li class="experience__text">
-            НГУ Гуманитарный факультет бакалавриат, магистратура 2012-2018
-          </li>
-          <li class="experience__text">
-            Работа преподавателем английского для детей и подростков в частных
-            языковых школах онлайн и оффлайн 2016-2022
-          </li>
-          <li class="experience__text">
-            Кембриджские сертификаты по методике преподавания английского
-            языка TKT, modules 1,2,3 в 2020
-          </li>
-          <li class="experience__text">
-            Повышение квалификации для преподавателей английского от Валерии
-            Климовой “Тот самый урок” 2021
-          </li>
-          <li class="experience__text">
-            Повышение квалификации для преподавателей английского от Валерии
-            Климовой “Траектория” 2023
-          </li>
-          <li class="experience__text">
-            Работа методистом в частной языковой школе с 2023
-          </li>
-          <li class="experience__text">
-            Участие и обучение на психологических курсах и группах 2021-2023
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- R E Q U E S T S  S T A R T -->
-    <div class="requests__container-main" id="requests">
-      <h1 class="requests__h1">
-        Вопросы, <br />
-        с которыми я могу помочь преподавателям
-      </h1>
-
-      <div class="requests__container">
-        <div class="requests">
-          <ul class="requests__list">
-            <li class="requests__text">
-              Подготовка к кембриджским экзаменам Starters, Movers, Flyers,
-              KET
+      <!-- M O B I L E  H E A D E R  S T A R T -->
+      <header class="mobile-header__container">
+        <a href="#first-page" class="mobile-header__logo-link menu-link">
+          <img class="mobile-header__logo" src="./assets/images/logo-new.svg" />
+        </a>
+        <div class="mobile-header__link">
+          <ul class="mobile-header__contacts">
+            <li class="mobile-header__contact">
+              <a target="_blank" href="https://wa.me/79231836348"
+                ><img src="./assets/images/Watsapp.png"
+              /></a>
             </li>
-            <li class="requests__text">Обучение чтению</li>
-            <li class="requests__text">
-              Работа с запросом: подтянуть оценки по школьной программе
+            <li class="mobile-header__contact">
+              <a target="_blank" href="https://t.me/daria_eng_online"
+                ><img src="./assets/images/Telegram.png"
+              /></a>
             </li>
-            <li class="requests__text">
-              Эффективное планирование уроков, как организовать повторение
-              материала
-            </li>
-            <li class="requests__text">
-              Как выстроить взаимодействие с родителями учеников и давать
-              обратную связь
-            </li>
-            <li class="requests__text">
-              Как работать с детьми и подростками онлайн и оффлайн
-            </li>
-            <li class="requests__text">
-              Как определить уровень и подобрать учебное пособие
-            </li>
-            <li class="requests__text">
-              Как организовать систему мотивации для студентов
-            </li>
-            <li class="requests__text">
-              Как выстроить свою работу, чтобы отмены и переносы не влияли на
-              доход
+            <li class="mobile-header__contact">
+              <a target="_blank" href="https://instagram.com/eng.daria.online"
+                ><img src="./assets/images/Instagram.png"
+              /></a>
             </li>
           </ul>
         </div>
-      </div>
-    </div>
-    <!-- R E Q U E S T S  E N D -->
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
 
-    <!-- P R I C E S  S T A R T -->
-    <div class="prices__container" id="prices">
-      <h1 class="prices__h1">Консультации для преподавателей</h1>
-      <div class="prices__container-3">
-        <div class="services">
-          <h2 class="services_name">Пробная консультации для преподавателей</h2>
-          <!-- <p class="services_text">Определим ваш запрос, познакомимся</p> -->
-          <h2 class="services_price"> бесплатно <br> </br></h2>
+          <ul class="menu__box">
+            <li>
+              <a class="menu__item menu-link" href="#about-me">Обо мне</a>
+            </li>
+            <li>
+              <a class="menu__item menu-link" href="#requests">Запросы</a>
+            </li>
+            <li>
+              <a class="menu__item menu-link" href="#education"
+                >Образование и опыт</a
+              >
+            </li>
+            <li>
+              <a class="menu__item menu-link" href="#prices">Консультации</a>
+            </li>
+            <li><a class="menu__item menu-link" href="#rewews">Отзывы</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <!-- F I R S T  P A G E  S T A R T -->
+        <div class="first-page__container" id="first-page">
+          <div class="first-page__title">
+            <h1 class="first-page__title__text">Daria</h1>
+            <img
+              class="first-page__title__line"
+              src="./assets/images/line-first-page.png"
+            />
+          </div>
+          <div class="first-page__img">
+            <img src="./assets/images/first.png" alt="first-page-photo" />
+          </div>
+          <div class="first-page__main">
+            <h2 class="first-page__subtitle">Преподаватель по английскому</h2>
+            <h2 class="first-page__subtitle">Наставник для преподавателей</h2>
+            <ul class="first-page__text">
+              <li class="first-page__item">
+                Занятия с детьми от 7 лет и подростками
+              </li>
+              <li class="first-page__item">
+                Общий английский и IT английский для взрослых с начальным
+                уровнем
+              </li>
+              <li class="first-page__item">
+                Консультации для преподавателей по методике
+              </li>
+            </ul>
+          </div>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeru6OwAS6aqte7TD7gBmabF5chBt9NzyLcVhI_VlKbAsOGkQ/viewform?usp=sharing"><button
-              class="btn_sign">Записаться</button></a>
-        </div>
-        <div class="services">
-          <h2 class="services_name">Консультация для начинающих/продолжающих преподавателей</h2>
-          <!-- <p class="services_text">Определим ваш запрос, познакомимся</p> -->
-          <h2 class="services_price">2300 ₽ <br>60 минут</br></h2>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeru6OwAS6aqte7TD7gBmabF5chBt9NzyLcVhI_VlKbAsOGkQ/viewform?usp=sharing"><button
-              class="btn_sign">Записаться</button></a>
+            href="https://t.me/daria_eng_online"
+            class="first-page__link"
+            target="_blank"
+          >
+            <button class="first-page__button" type="button">Связаться</button>
+          </a>
         </div>
 
-        <div class="services">
-          <h2 class="services_name">Обзервация урока</h2>
-          <!-- <p class="services_text">Определим ваш запрос, познакомимся</p> -->
-          <h2 class="services_price">2500 ₽ <br>60 минут</br></h2>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeru6OwAS6aqte7TD7gBmabF5chBt9NzyLcVhI_VlKbAsOGkQ/viewform?usp=sharing"><button
-              class="btn_sign">Записаться</button></a>
+        <!-- A B O U T  M E  S T A R T -->
+        <div class="about-me__container" id="about-me">
+          <div class="about-me__img">
+            <img src="assets/images/cat-tracks.png" alt="about-me-photo" />
+          </div>
+          <div class="about-me__main">
+            <h1 class="about-me__h1">Обо мне</h1>
+            <ul class="about-me__list">
+              <li class="about-me__text">
+                Я&nbsp;обучаю английскому языку детей, подростков, взрослых
+                начинающих уровней&nbsp;(общий английский,
+                английский&nbsp;для&nbsp;IT)
+              </li>
+              <img class="mobile mob-img1" src="./assets/images/comp.png" />
+              <li class="about-me__text">
+                В&nbsp;настоящее время работаю как преподаватель фрилансер
+              </li>
+              <li class="about-me__text">
+                Я&nbsp;проходила психологические курсы и&nbsp;группы, поэтому
+                умею отлично помогать справляться со&nbsp;страхами
+                в&nbsp;изучении и&nbsp;преподавании английского языка
+                и&nbsp;помогать достигать целей
+              </li>
+              <img class="mobile mob-img2" src="./assets/images/pen.png" />
+              <li class="about-me__text">
+                Живу в&nbsp;Новосибирске. У&nbsp;есть меня два любимых питомца
+                кота. В&nbsp;свободное время нравится кататься
+                на&nbsp;велосипеде, проводить время на&nbsp;природе, ходить
+                в&nbsp;горы
+              </li>
+            </ul>
+
+            <ul class="about-me__list2">
+              <img class="mobile mob-img3" src="./assets/images/textbook.png" />
+              <li class="about-me__text2">>7 лет преподавания</li>
+              <li class="about-me__text2">>10 000 часов занятий</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
+        <!-- A B O U T  M E  E N D -->
 
-    <!-- P R I C E S  F O R   S T U D E N T S   S T A R T -->
-    <div class="prices__container-students">
-      <h1 class="prices__h1">Для учеников <img class="prices__img" src="assets/images/pointer.png" alt="pointer"></h1>
-      <div class="prices__container-2">
-        <div class="services_students">
-          <h2 class="services_name">Индивидуальные занятия для детей, подростков, взрослых</h2>
-          <!-- <p class="services_text_students">Определим ваш запрос, познакомимся</p> -->
-          <h2 class="services_price_students">1800-3000 ₽ <br>60 минут</br></h2>
-          <a href="https://docs.google.com/forms/d/1tXx-cCrighfPBEuutT72CeCBUZjrlD1kAcfM11KXrHw/edit"><button
-              class="btn_sign-students">Записаться</button></a>
+        <!-- V A L U E S  S T A R T -->
+
+        <div class="values" id="#">
+          <h1 class="values_h1">Мои ценности</h1>
+          <div class="values_values">
+            <div class="img_corner-1">
+              <img src="assets/images/corner-left.png" alt="corner-left" />
+            </div>
+            <div class="values_containers">
+              <div class="values_containers-items">
+                <p class="values_containers-text">
+                  Уроки полностью на&nbsp;английском (Коммуникативная методика)
+                </p>
+              </div>
+              <div class="values_containers-items">
+                <p class="values_containers-text">
+                  Беру на&nbsp;себя роль помощника и&nbsp;друга, создаю
+                  комфортную атмосферу для обучения
+                </p>
+              </div>
+              <div class="values_containers-items">
+                <p class="values_containers-text">
+                  Ориентируюсь на&nbsp;цели и&nbsp;запросы учеников
+                </p>
+              </div>
+            </div>
+            <div class="img_corner-2">
+              <img src="assets/images/corner-right.png" alt="corner-right" />
+            </div>
+          </div>
         </div>
-        <div class="services_students">
-          <h2 class="services_name">Занятия в группах/парах для детей, подростков, взрослых</h2>
-          <!-- <p class="services_text_students">Определим ваш запрос, познакомимся</p> -->
-          <h2 class="services_price_students">1300-1500 ₽ <br>60 минут</br></h2>
-          <a href="https://docs.google.com/forms/d/1tXx-cCrighfPBEuutT72CeCBUZjrlD1kAcfM11KXrHw/edit"><button
-              class="btn_sign-students">Записаться</button></a>
+
+        <!-- V A L U E S  END -->
+
+        <!-- E X P E R I E N C E  S T A R T  -->
+        <div class="experience__container" id="education">
+          <!-- <div class="experience__img"> -->
+          <img
+            class="experience__img"
+            src="assets/images/2.png"
+            alt="experience-photo"
+          />
+          <!-- </div> -->
+
+          <div class="experience__text-main">
+            <h1 class="experience__h1">
+              Мое образование <br />
+              и опыт
+            </h1>
+            <ul class="experience__list-main">
+              <li class="experience__text">
+                НГУ Гуманитарный факультет бакалавриат, магистратура 2012-2018
+              </li>
+              <li class="experience__text">
+                Работа преподавателем английского для детей и&nbsp;подростков
+                в&nbsp;частных языковых школах онлайн и&nbsp;оффлайн 2016-2022
+              </li>
+              <li class="experience__text">
+                Кембриджские сертификаты по&nbsp;методике преподавания
+                английского языка TKT, modules 1,2,3&nbsp;в 2020
+              </li>
+              <li class="experience__text">
+                Повышение квалификации для преподавателей английского
+                от&nbsp;Валерии Климовой &laquo;Тот самый урок&raquo; 2021
+              </li>
+              <li class="experience__text">
+                Повышение квалификации для преподавателей английского
+                от&nbsp;Валерии Климовой &laquo;Траектория&raquo; 2023
+              </li>
+              <li class="experience__text">
+                Работа методистом в&nbsp;частной языковой школе с&nbsp;2023
+              </li>
+              <li class="experience__text">
+                Участие и&nbsp;обучение на&nbsp;психологических курсах
+                и&nbsp;группах 2021-2023
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- P R I C E S  E N D -->
 
-    <!-- R E V I E W S  S T A R T -->
+        <!-- R E Q U E S T S  S T A R T -->
+        <div class="requests__container-main" id="requests">
+          <h1 class="requests__h1">
+            Вопросы, <br />
+            с которыми я могу помочь преподавателям
+          </h1>
 
-    <div class="reviews__container-main" id="rewews">
-      <h1 class="reviews__h1">Результаты моих учеников</h1>
+          <div class="requests__container">
+            <div class="requests">
+              <ul class="requests__list">
+                <li class="requests__text">
+                  Подготовка к&nbsp;кембриджским экзаменам Starters, Movers,
+                  Flyers, KET
+                </li>
+                <li class="requests__text">Обучение чтению</li>
+                <li class="requests__text">
+                  Работа с&nbsp;запросом: подтянуть оценки по&nbsp;школьной
+                  программе
+                </li>
+                <li class="requests__text">
+                  Эффективное планирование уроков, как организовать повторение
+                  материала
+                </li>
+                <li class="requests__text">
+                  Как выстроить взаимодействие с&nbsp;родителями учеников
+                  и&nbsp;давать обратную связь
+                </li>
+                <li class="requests__text">
+                  Как работать с&nbsp;детьми и&nbsp;подростками онлайн
+                  и&nbsp;оффлайн
+                </li>
+                <li class="requests__text">
+                  Как определить уровень и&nbsp;подобрать учебное пособие
+                </li>
+                <li class="requests__text">
+                  Как организовать систему мотивации для студентов
+                </li>
+                <li class="requests__text">
+                  Как выстроить свою работу, чтобы отмены и&nbsp;переносы
+                  не&nbsp;влияли на доход
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- R E Q U E S T S  E N D -->
 
-      <!-- slider part start -->
-      <div class="reviews__slider">
-        <div id="review__menu-main">
-          <button class="review__menu_button review__left_button" id="prev">
-            <img src="assets/images/l-btn.png" class="review__arrow" alt="left-button" />
-          </button>
-          <button class="review__menu_button review__right_button">
-            <img src="assets/images/r-btn.png" class="review__arrow" alt="right-button" />
-          </button>
-          <div id="review__menu" class="review__menu">
+        <!-- P R I C E S  S T A R T -->
+        <div class="prices__container" id="prices">
+          <h1 class="prices__h1">Консультации для преподавателей</h1>
+          <div class="prices__container-3">
+            <div class="services">
+              <h2 class="services_name">
+                Пробная консультации для преподавателей
+              </h2>
+              <!-- <p class="services_text">Определим ваш запрос, познакомимся</p> -->
+              <h2 class="services_price">бесплатно</h2>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeru6OwAS6aqte7TD7gBmabF5chBt9NzyLcVhI_VlKbAsOGkQ/viewform?usp=sharing"
+                ><button class="btn_sign">Записаться</button></a
+              >
+            </div>
+            <div class="services">
+              <h2 class="services_name">
+                Консультация для начинающих/продолжающих преподавателей
+              </h2>
+              <!-- <p class="services_text">Определим ваш запрос, познакомимся</p> -->
+              <h2 class="services_price">2300 ₽ <br />60 минут</h2>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeru6OwAS6aqte7TD7gBmabF5chBt9NzyLcVhI_VlKbAsOGkQ/viewform?usp=sharing"
+                ><button class="btn_sign">Записаться</button></a
+              >
+            </div>
+
+            <div class="services">
+              <h2 class="services_name">Обзервация урока</h2>
+              <!-- <p class="services_text">Определим ваш запрос, познакомимся</p> -->
+              <h2 class="services_price">2500 ₽ <br />60 минут</h2>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeru6OwAS6aqte7TD7gBmabF5chBt9NzyLcVhI_VlKbAsOGkQ/viewform?usp=sharing"
+                ><button class="btn_sign">Записаться</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- P R I C E S  F O R   S T U D E N T S   S T A R T -->
+        <div class="prices__container-students">
+          <h1 class="prices__h1">
+            Для учеников
+            <img
+              class="prices__img"
+              src="assets/images/pointer.png"
+              alt="pointer"
+            />
+          </h1>
+          <div class="prices__container-2">
+            <div class="services_students">
+              <h2 class="services_name">
+                Индивидуальные занятия для детей, подростков,&nbsp;взрослых
+              </h2>
+              <!-- <p class="services_text_students">Определим ваш запрос, познакомимся</p> -->
+              <h2 class="services_price_students">
+                1800-3000 ₽ <br />60 минут
+              </h2>
+              <a
+                href="https://docs.google.com/forms/d/1tXx-cCrighfPBEuutT72CeCBUZjrlD1kAcfM11KXrHw/edit"
+                ><button class="btn_sign-students">Записаться</button></a
+              >
+            </div>
+            <div class="services_students">
+              <h2 class="services_name">
+                Занятия в группах/парах для детей, подростков,&nbsp;взрослых
+              </h2>
+              <!-- <p class="services_text_students">Определим ваш запрос, познакомимся</p> -->
+              <h2 class="services_price_students">
+                1300-1500 ₽ <br />60 минут
+              </h2>
+              <a
+                href="https://docs.google.com/forms/d/1tXx-cCrighfPBEuutT72CeCBUZjrlD1kAcfM11KXrHw/edit"
+                ><button class="btn_sign-students">Записаться</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- P R I C E S  E N D -->
+
+        <!-- R E V I E W S  S T A R T -->
+
+        <div class="reviews__container-main" id="rewews">
+          <h1 class="reviews__h1">Результаты моих учеников</h1>
+
+          <!-- slider part start -->
+          <div
+            class="splide splide-desc"
+            role="group"
+            data-splide='{"type":"fade", "arrows": "true"}'
+          >
+            <div class="splide__arrows arrows">
+              <button class="splide__arrow arrow splide__arrow--prev l-bts">
+                <img src="assets/images/l-btn.png" alt="" />
+              </button>
+              <button class="splide__arrow arrow splide__arrow--next r-bts">
+                <img src="assets/images/r-btn.png" alt="" />
+              </button>
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <article class="reviews__articles">
+                    <div class="reviews__container-circle">
+                      <div class="reviews__photo">
+                        <img
+                          src="assets/images/Ilya-student.jpg"
+                          alt="Илья, 12 лет"
+                        />
+                      </div>
+                      <h2 class="reviews__h2">Илья, 12 лет</h2>
+
+                      <div class="reviews__container">
+                        <p class="reviews__results-text">экзамен YLE Movers</p>
+                        <p class="reviews__results-text">
+                          отличные оценки в школе
+                        </p>
+                        <p class="reviews__results-text">бегло говорит</p>
+                        <p class="reviews__results-text">
+                          подготовка 8 месяцев
+                        </p>
+                      </div>
+                      <div class="reviews__text">
+                        <p class="reviews__text-big">
+                          Сдал кембриджский экзамен YLE Movers на&nbsp;высокий
+                          балл (14/15) 93%. Получает отличные оценки
+                          по&nbsp;английскому в школе, уверенно и&nbsp;бегло
+                          говорит, грамотно использует основные времена
+                          в&nbsp;речи. С&nbsp;удовольствием продолжает изучать
+                          язык, в&nbsp;этом году будет сдавать экзамен YLE
+                          Flyers
+                          <br /><br />
+                          Чем может быть полезна сдача кембриджских экзаменов и
+                          зачем их&nbsp;сдавать? <br /><br />
+                          Это первый шаг по&nbsp;планомерной подготовке
+                          к&nbsp;ОГЭ и&nbsp;ЕГЭ. Если Илья продолжит изучать
+                          английский и&nbsp;сдавать кембриджские экзамены,
+                          то&nbsp;к&nbsp;9&nbsp;и&nbsp;11&nbsp;классу сдача этих
+                          экзаменов не вызовет у&nbsp;Ильи затруднений
+                          и&nbsp;необходимости в&nbsp;срочном порядке
+                          &laquo;подтягивать&raquo; знания <br /><br />
+                          Подготовка заняла 8&nbsp;месяцев. После сдачи экзамена
+                          Илья приобрел следующие навыки:<br /><br />
+                        </p>
+
+                        <ul class="reviews__list-main">
+                          <li class="reviews__list">
+                            Понимает и&nbsp;использует английскую речь,
+                            информационные надписи, указания
+                          </li>
+                          <li class="reviews__list">
+                            Может заполнять простые формы и&nbsp;писать письма
+                          </li>
+                          <li class="reviews__list">
+                            Читает книги и&nbsp;смотрит фильмы
+                            на&nbsp;английском языке
+                          </li>
+                          <li class="reviews__list">
+                            Находит и&nbsp;использует информацию
+                            с&nbsp;англоязычных источников в&nbsp;интернете
+                          </li>
+                          <li class="reviews__list">
+                            Заводит друзей со&nbsp;всего мира
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="reviews__articles">
+                    <div class="reviews__container-circle">
+                      <div class="reviews__photo">
+                        <img
+                          src="assets/images/Aslan-student.jpg"
+                          alt="Аслан, 36 лет"
+                        />
+                      </div>
+                      <h2 class="reviews__h2">Аслан, 36 лет</h2>
+
+                      <div class="reviews__container">
+                        <p class="reviews__results-text">
+                          английский для путешествий
+                        </p>
+                        <p class="reviews__results-text">IT английский</p>
+                        <p class="reviews__results-text">
+                          английский для начальных уровней
+                        </p>
+                        <p class="reviews__results-text">год занятий</p>
+                      </div>
+                      <div class="reviews__text">
+                        <p class="reviews__text-big">
+                          Научился общаться с&nbsp;иностранными клиентами,
+                          ориентироваться в&nbsp;путешествиях, понимать тексты
+                          по&nbsp;работе в&nbsp;IT, обсуждать направления
+                          и&nbsp;профессии, взаимодействие между клиентами
+                          и&nbsp;заказчиками в&nbsp;IT <br /><br />
+                          Занимаемся год. Пришел с&nbsp;начальным уровнем. Нужно
+                          было учить цифры, дни недели и&nbsp;другие темы
+                          базового уровня. Запрос был подтянуть общий
+                          английский, чтобы общаться с клиентами,
+                          в&nbsp;путешествиях, улучшить навык чтения.
+                          За&nbsp;год Аслан научился общаться
+                          с&nbsp;иностранными клиентами, заказывать еду
+                          в&nbsp;кафе, номер в&nbsp;отеле, общаться
+                          в&nbsp;аэропорту (просить место у&nbsp;окна,
+                          спрашивать дорогу, задавать вопросы, чтобы
+                          ориентироваться)
+                          <br /><br />
+                          Навык чтения повысил с&nbsp;уровня
+                          А0+&nbsp;до&nbsp;уровня А2. Полученный уровень
+                          позволил перейти на&nbsp;занятия английским для работы
+                          в&nbsp;IT сфере. Аслан уже научился обсуждать
+                          профессии и направления в&nbsp;IT, говорить
+                          об&nbsp;особенностях взаимодействия между заказчиками
+                          и&nbsp;исполнителями, грамотно использовать времена
+                          настоящего времени в&nbsp;обсуждении запросов целевой
+                          аудитории получателей услуг&nbsp;IT сферы <br /><br />
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="reviews__articles">
+                    <div class="reviews__container-circle">
+                      <div class="reviews__photo">
+                        <img
+                          src="assets/images/Stepha-student.jpg"
+                          alt="Стефа, 8 лет"
+                        />
+                      </div>
+                      <h2 class="reviews__h2">Стефа, 8 лет</h2>
+
+                      <div class="reviews__container">
+                        <p class="reviews__results-text">
+                          поступление в зарубежную школу
+                        </p>
+                        <p class="reviews__results-text">
+                          подготовка 9 месяцев
+                        </p>
+                        <p class="reviews__results-text">бегло говорит</p>
+                        <p class="reviews__results-text">
+                          подготовка 8 месяцев
+                        </p>
+                      </div>
+                      <div class="reviews__text">
+                        <p class="reviews__text-big">
+                          Цель: преодолеть сопротивление использовать
+                          и&nbsp;воспринимать английскую речь, перестать бояться
+                          ошибок, создать интерес к&nbsp;изучению языка,
+                          научиться читать на&nbsp;английском
+                          <br /><br />
+                          В&nbsp;сентябре Стефа пошла в&nbsp;иностранную школу,
+                          где может читать на&nbsp;английском, знакомиться,
+                          общаться с одноклассниками и&nbsp;учителями, может
+                          заказать еду в&nbsp;кафе, рассказать о&nbsp;любимых
+                          книгах, обсудить свое хобби - рисование
+                          и&nbsp;поделиться новостями о&nbsp;своих домашних
+                          животных (крысах)<br /><br />
+                          Мама ученицы передала, что они смотрели Барби на
+                          английском без субтитров и&nbsp;Стефа поняла
+                          содержание :) Этого удалось достигнуть
+                          за&nbsp;9&nbsp;месяцев<br /><br />
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="reviews__articles">
+                    <div class="reviews__container-circle">
+                      <div class="reviews__photo">
+                        <img src="assets/images/logo_.png" alt="" />
+                      </div>
+                      <h2 class="reviews__h2">Ева, 10 лет</h2>
+
+                      <div class="reviews__container">
+                        <p class="reviews__results-text">
+                          отличные оценки в школе
+                        </p>
+                        <p class="reviews__results-text">
+                          повышение оценки в школе
+                        </p>
+                        <p class="reviews__results-text">начальный уровень</p>
+                        <p class="reviews__results-text">
+                          поступление в лингвистический класс
+                        </p>
+                      </div>
+                      <div class="reviews__text">
+                        <p class="reviews__text-big">
+                          Цель: выйти на&nbsp;уровень А2&nbsp;со неуверенного
+                          А1&nbsp;и&nbsp;получить положительную годовую оценку
+                          по&nbsp;английскому языку в частной школе
+                          в&nbsp;Москве. Мы&nbsp;занимались 6&nbsp;месяцев по
+                          современному учебному пособию дважды в&nbsp;неделю.
+                          <br /><br />
+                          Цель была достигнута за&nbsp;шесть месяцев. Ева
+                          получила заветную годовую пятерку по&nbsp;английскому
+                          языку и&nbsp;поступила в&nbsp;лингвистический класс.
+                          <br /><br />
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="splide-mob">
             <article class="reviews__articles">
               <div class="reviews__container-circle">
+                <div class="reviews__photo">
+                  <img
+                    src="assets/images/Ilya-student.jpg"
+                    alt="Илья, 12 лет"
+                  />
+                </div>
                 <h2 class="reviews__h2">Илья, 12 лет</h2>
 
                 <div class="reviews__container">
@@ -350,48 +673,57 @@
                 </div>
                 <div class="reviews__text">
                   <p class="reviews__text-big">
-                    Сдал кембриджский экзамен YLE Movers на высокий балл
-                    (14/15) 93%.  Получает отличные оценки по английскому в
-                    школе, уверенно и бегло говорит, грамотно использует
-                    основные времена в речи. С удовольствием продолжает
-                    изучать язык, в этом году будет сдавать экзамен YLE Flyers
+                    Сдал кембриджский экзамен YLE Movers на&nbsp;высокий балл
+                    (14/15) 93%. Получает отличные оценки по&nbsp;английскому в
+                    школе, уверенно и&nbsp;бегло говорит, грамотно использует
+                    основные времена в&nbsp;речи. С&nbsp;удовольствием
+                    продолжает изучать язык, в&nbsp;этом году будет сдавать
+                    экзамен YLE Flyers
                     <br /><br />
-                    Чем может быть полезна сдача кембриджских экзаменов и
-                    зачем их сдавать? <br /><br />
-                    Это первый шаг по планомерной подготовке к ОГЭ и ЕГЭ. Если
-                    Илья продолжит изучать английский и сдавать кембриджские
-                    экзамены, то к 9 и 11 классу сдача этих экзаменов не
-                    вызовет у Ильи затруднений и необходимости в срочном
-                    порядке “подтягивать” знания <br /><br />
-                    Подготовка заняла 8 месяцев. После сдачи экзамена Илья
-                    приобрел следующие навыки: <br /><br />
+                    Чем может быть полезна сдача кембриджских экзаменов и зачем
+                    их&nbsp;сдавать? <br /><br />
+                    Это первый шаг по&nbsp;планомерной подготовке к&nbsp;ОГЭ
+                    и&nbsp;ЕГЭ. Если Илья продолжит изучать английский
+                    и&nbsp;сдавать кембриджские экзамены,
+                    то&nbsp;к&nbsp;9&nbsp;и&nbsp;11&nbsp;классу сдача этих
+                    экзаменов не вызовет у&nbsp;Ильи затруднений
+                    и&nbsp;необходимости в&nbsp;срочном порядке
+                    &laquo;подтягивать&raquo; знания <br /><br />
+                    Подготовка заняла 8&nbsp;месяцев. После сдачи экзамена Илья
+                    приобрел следующие навыки:<br /><br />
                   </p>
 
                   <ul class="reviews__list-main">
                     <li class="reviews__list">
-                      Понимает и использует английскую речь, информационные
+                      Понимает и&nbsp;использует английскую речь, информационные
                       надписи, указания
                     </li>
                     <li class="reviews__list">
-                      Может заполнять простые формы и писать письма
+                      Может заполнять простые формы и&nbsp;писать письма
                     </li>
                     <li class="reviews__list">
-                      Читает книги и смотрит фильмы на английском языке
+                      Читает книги и&nbsp;смотрит фильмы на&nbsp;английском
+                      языке
                     </li>
                     <li class="reviews__list">
-                      Находит и использует информацию с англоязычных
-                      источников в  интернете
+                      Находит и&nbsp;использует информацию с&nbsp;англоязычных
+                      источников в&nbsp;интернете
                     </li>
                     <li class="reviews__list">
-                      Заводит друзей со всего мира
+                      Заводит друзей со&nbsp;всего мира
                     </li>
                   </ul>
                 </div>
               </div>
             </article>
-
-            <article class="reviews__articles active">
+            <article class="reviews__articles">
               <div class="reviews__container-circle">
+                <div class="reviews__photo">
+                  <img
+                    src="assets/images/Aslan-student.jpg"
+                    alt="Аслан, 36 лет"
+                  />
+                </div>
                 <h2 class="reviews__h2">Аслан, 36 лет</h2>
 
                 <div class="reviews__container">
@@ -406,32 +738,40 @@
                 </div>
                 <div class="reviews__text">
                   <p class="reviews__text-big">
-                    Научился общаться с иностранными клиентами,
-                    ориентироваться в путешествиях, понимать тексты по работе
-                    в IT, обсуждать направления и профессии, взаимодействие
-                    между клиентами и заказчиками в IT <br /><br />
-                    Занимаемся год. Пришел с начальным уровнем. Нужно было
-                    учить цифры, дни недели и другие темы базового уровня.
+                    Научился общаться с&nbsp;иностранными клиентами,
+                    ориентироваться в&nbsp;путешествиях, понимать тексты
+                    по&nbsp;работе в&nbsp;IT, обсуждать направления
+                    и&nbsp;профессии, взаимодействие между клиентами
+                    и&nbsp;заказчиками в&nbsp;IT <br /><br />
+                    Занимаемся год. Пришел с&nbsp;начальным уровнем. Нужно было
+                    учить цифры, дни недели и&nbsp;другие темы базового уровня.
                     Запрос был подтянуть общий английский, чтобы общаться с
-                    клиентами, в путешествиях, улучшить навык чтения. За год
-                    Аслан научился общаться с иностранными клиентами,
-                    заказывать еду в кафе, номер в отеле, общаться в аэропорту
-                    (просить место у окна, спрашивать дорогу, задавать
-                    вопросы, чтобы ориентироваться) <br /><br />
-                    Навык чтения повысил с уровня А0+ до уровня А2. Полученный
-                    уровень позволил перейти на занятия английским для работы
-                    в IT сфере. Аслан уже научился обсуждать профессии и
-                    направления в IT, говорить об особенностях взаимодействия
-                    между заказчиками и исполнителями, грамотно использовать
-                    времена настоящего времени в обсуждении запросов целевой
-                    аудитории получателей услуг IT сферы <br /><br />
+                    клиентами, в&nbsp;путешествиях, улучшить навык чтения.
+                    За&nbsp;год Аслан научился общаться с&nbsp;иностранными
+                    клиентами, заказывать еду в&nbsp;кафе, номер в&nbsp;отеле,
+                    общаться в&nbsp;аэропорту (просить место у&nbsp;окна,
+                    спрашивать дорогу, задавать вопросы, чтобы ориентироваться)
+                    <br /><br />
+                    Навык чтения повысил с&nbsp;уровня А0+&nbsp;до&nbsp;уровня
+                    А2. Полученный уровень позволил перейти на&nbsp;занятия
+                    английским для работы в&nbsp;IT сфере. Аслан уже научился
+                    обсуждать профессии и направления в&nbsp;IT, говорить
+                    об&nbsp;особенностях взаимодействия между заказчиками
+                    и&nbsp;исполнителями, грамотно использовать времена
+                    настоящего времени в&nbsp;обсуждении запросов целевой
+                    аудитории получателей услуг&nbsp;IT сферы <br /><br />
                   </p>
                 </div>
               </div>
             </article>
-
             <article class="reviews__articles">
               <div class="reviews__container-circle">
+                <div class="reviews__photo">
+                  <img
+                    src="assets/images/Stepha-student.jpg"
+                    alt="Стефа, 8 лет"
+                  />
+                </div>
                 <h2 class="reviews__h2">Стефа, 8 лет</h2>
 
                 <div class="reviews__container">
@@ -444,157 +784,271 @@
                 </div>
                 <div class="reviews__text">
                   <p class="reviews__text-big">
-                    Цель: преодолеть сопротивление использовать и воспринимать
-                    английскую речь, перестать бояться ошибок, создать интерес
-                    к изучению языка, научиться читать на английском
+                    Цель: преодолеть сопротивление использовать
+                    и&nbsp;воспринимать английскую речь, перестать бояться
+                    ошибок, создать интерес к&nbsp;изучению языка, научиться
+                    читать на&nbsp;английском
                     <br /><br />
-                    В сентябре Стефа пошла в иностранную школу, где может
-                    читать на английском, знакомиться, общаться с
-                    одноклассниками и учителями, может заказать еду в кафе,
-                    рассказать о любимых книгах, обсудить свое хобби -
-                    рисование и поделиться новостями  о своих домашних
-                    животных (крысах) <br /><br />
-                    Мама ученицы передала, что они смотрели Барби на
-                    английском без субтитров и Стефа поняла содержание :)
-                    Этого удалось достигнуть за 9 месяцев <br /><br />
+                    В&nbsp;сентябре Стефа пошла в&nbsp;иностранную школу, где
+                    может читать на&nbsp;английском, знакомиться, общаться с
+                    одноклассниками и&nbsp;учителями, может заказать еду
+                    в&nbsp;кафе, рассказать о&nbsp;любимых книгах, обсудить свое
+                    хобби - рисование и&nbsp;поделиться новостями о&nbsp;своих
+                    домашних животных (крысах)<br /><br />
+                    Мама ученицы передала, что они смотрели Барби на английском
+                    без субтитров и&nbsp;Стефа поняла содержание :) Этого
+                    удалось достигнуть за&nbsp;9&nbsp;месяцев<br /><br />
                   </p>
                 </div>
               </div>
             </article>
-
             <article class="reviews__articles">
               <div class="reviews__container-circle">
+                <div class="reviews__photo">
+                  <img src="assets/images/logo_.png" alt="" />
+                </div>
                 <h2 class="reviews__h2">Ева, 10 лет</h2>
 
                 <div class="reviews__container">
-                  <p class="reviews__results-text">
-                    отличные оценки в школе
-                  </p>
+                  <p class="reviews__results-text">отличные оценки в школе</p>
                   <p class="reviews__results-text">повышение оценки в школе</p>
                   <p class="reviews__results-text">начальный уровень</p>
-                  <p class="reviews__results-text">поступление в лингвистический класс</p>
+                  <p class="reviews__results-text">
+                    поступление в лингвистический класс
+                  </p>
                 </div>
                 <div class="reviews__text">
                   <p class="reviews__text-big">
-                    Цель: выйти на уровень А2 со неуверенного А1 и получить положительную годовую оценку по английскому
-                    языку в частной школе в Москве. Мы занимались 6 месяцев по современному учебному пособию дважды в
-                    неделю.
+                    Цель: выйти на&nbsp;уровень А2&nbsp;со неуверенного
+                    А1&nbsp;и&nbsp;получить положительную годовую оценку
+                    по&nbsp;английскому языку в частной школе в&nbsp;Москве.
+                    Мы&nbsp;занимались 6&nbsp;месяцев по современному учебному
+                    пособию дважды в&nbsp;неделю.
                     <br /><br />
-                    Цель была достигнута за шесть месяцев. Ева получила заветную годовую пятерку по английскому языку и
-                    поступила в лингвистический класс.
+                    Цель была достигнута за&nbsp;шесть месяцев. Ева получила
+                    заветную годовую пятерку по&nbsp;английскому языку
+                    и&nbsp;поступила в&nbsp;лингвистический класс.
                     <br /><br />
                   </p>
                 </div>
               </div>
             </article>
           </div>
-        </div>
-      </div>
 
-      <!-- screenshots start -->
-      <div class="screenshots__container-main">
-        <h1 class="screenshots__h1">Отзывы на методический семинар</h1>
-        <div class="slider">
-          <div class="screenshots__button screenshots__button-prev">
-            <img src="assets/images/l-btn.png" class="review__arrow" alt="left-button" />
+          <!-- screenshots start -->
+          <div class="screenshots__container-main">
+            <h1 class="screenshots__h1">Отзывы на методический семинар</h1>
+            <div class="slider">
+              <div class="screenshots__button screenshots__button-prev">
+                <img
+                  src="assets/images/l-btn.png"
+                  class="review__arrow"
+                  alt="left-button"
+                />
+              </div>
+              <div class="screenshots">
+                <div class="screenshot screenshot-1 active">
+                  <h2 class="screenshot__reviewer">Марина</h2>
+                  <p class="screenshot__text">
+                    Семинар был увлекательным и&nbsp;интересным. Для себя
+                    я&nbsp;получила много инсайдов и&nbsp;получила формулу для
+                    группового урока онлайн&#41; Мне было интересно освежить
+                    в&nbsp;памяти многие игры для практики лексики и&nbsp;после
+                    я&nbsp;применила их&nbsp;на&nbsp;занятие с учеником.
+                    <br /><br />
+                    Было здорово, что это была не&nbsp;лекция и&nbsp;что можно
+                    было участвовать в&nbsp;формате Вопрос-ответ.
+                    <br /><br />
+                    Мне кажется, особенно будет полезен семинар для начинающих
+                    учителей или тех, которые не&nbsp;работали еще
+                    по&nbsp;британским/ американским учебникам&#41;
+                  </p>
+                </div>
+                <div class="screenshot screenshot-2">
+                  <h2 class="screenshot__reviewer">Дарья</h2>
+                  <p class="screenshot__text">
+                    Я&nbsp;на&nbsp;таком семинаре впервые. Мне понравилось очень
+                    все. Для меня было много очень полезного, буду это все
+                    использовать. Очень понравилось, что ты&nbsp;каждому уделяла
+                    внимание каждый раз. Очень благодарна тебе &#127800;
+                  </p>
+                </div>
+                <div class="screenshot screenshot-3">
+                  <h2 class="screenshot__reviewer">Анна</h2>
+                  <p class="screenshot__text">
+                    Не&nbsp;заметила, как пролетело время. Круто. Получила много
+                    классных идей. Много из&nbsp;них я&nbsp;возьму себе
+                    на&nbsp;вооружение. Понравилось&nbsp;то, что ты&nbsp;точно
+                    дала четкий план урока, объяснила каждый пункт
+                    и&nbsp;мы&nbsp;по&nbsp;каждому пункту сделали свой урок.
+                    Наглядно, супер. Здорово было&nbsp;то, как
+                    ты&nbsp;с&nbsp;каждым из&nbsp;нас взаимодействовала,
+                    отвечала, давала обратную связь. Мне очень
+                    понравилось!&nbsp;&#128522;
+                  </p>
+                </div>
+                <div class="screenshot screenshot-4">
+                  <h2 class="screenshot__reviewer">Эля</h2>
+                  <p class="screenshot__text">
+                    Мне очень понравилось, больше всего понравилось&nbsp;то, что
+                    это камерная обстановка и&nbsp;можно назвать это скорее
+                    практикумом, потому что все участники почувствовали частью
+                    этого процесса &#128522; <br /><br />
+                    Я&nbsp;гуглила думала, отвечала, включала мозг, потому что
+                    это нужно было делать всем. Это очень круто, думаю, что
+                    на&nbsp;многих вебинарах этого не&nbsp;хватает. Было
+                    классно!&nbsp;👍
+                  </p>
+                </div>
+              </div>
+              <div class="screenshots__button screenshots__button-next">
+                <img
+                  src="assets/images/r-btn.png"
+                  class="review__arrow"
+                  alt="right-button"
+                />
+              </div>
+            </div>
+
+            <div class="slider-mob">
+              <div class="inner">
+                <div class="screenshot screenshot-1">
+                  <h2 class="screenshot__reviewer">Марина</h2>
+                  <p class="screenshot__text">
+                    Семинар был увлекательным и&nbsp;интересным. Для себя
+                    я&nbsp;получила много инсайдов и&nbsp;получила формулу для
+                    группового урока онлайн&#41; Мне было интересно освежить
+                    в&nbsp;памяти многие игры для практики лексики и&nbsp;после
+                    я&nbsp;применила их&nbsp;на&nbsp;занятие с учеником.
+                    <br /><br />
+                    Было здорово, что это была не&nbsp;лекция и&nbsp;что можно
+                    было участвовать в&nbsp;формате Вопрос-ответ.
+                    <br /><br />
+                    Мне кажется, особенно будет полезен семинар для начинающих
+                    учителей или тех, которые не&nbsp;работали еще
+                    по&nbsp;британским/ американским учебникам&#41;
+                  </p>
+                </div>
+              </div>
+              <div class="inner">
+                <div class="screenshot screenshot-2">
+                  <h2 class="screenshot__reviewer">Дарья</h2>
+                  <p class="screenshot__text">
+                    Я&nbsp;на&nbsp;таком семинаре впервые. Мне понравилось очень
+                    все. Для меня было много очень полезного, буду это все
+                    использовать. Очень понравилось, что ты&nbsp;каждому уделяла
+                    внимание каждый раз. Очень благодарна тебе &#127800;
+                  </p>
+                </div>
+              </div>
+              <div class="inner">
+                <div class="screenshot screenshot-3">
+                  <h2 class="screenshot__reviewer">Анна</h2>
+                  <p class="screenshot__text">
+                    Не&nbsp;заметила, как пролетело время. Круто. Получила много
+                    классных идей. Много из&nbsp;них я&nbsp;возьму себе
+                    на&nbsp;вооружение. Понравилось&nbsp;то, что ты&nbsp;точно
+                    дала четкий план урока, объяснила каждый пункт
+                    и&nbsp;мы&nbsp;по&nbsp;каждому пункту сделали свой урок.
+                    Наглядно, супер. Здорово было&nbsp;то, как
+                    ты&nbsp;с&nbsp;каждым из&nbsp;нас взаимодействовала,
+                    отвечала, давала обратную связь. Мне очень
+                    понравилось!&nbsp;&#128522;
+                  </p>
+                </div>
+              </div>
+              <div class="inner">
+                <div class="screenshot screenshot-4">
+                  <h2 class="screenshot__reviewer">Эля</h2>
+                  <p class="screenshot__text">
+                    Мне очень понравилось, больше всего понравилось&nbsp;то, что
+                    это камерная обстановка и&nbsp;можно назвать это скорее
+                    практикумом, потому что все участники почувствовали частью
+                    этого процесса &#128522;
+                    <br /><br />
+                    Я&nbsp;гуглила думала, отвечала, включала мозг, потому что
+                    это нужно было делать всем. Это очень круто, думаю, что
+                    на&nbsp;многих вебинарах этого не&nbsp;хватает. Было
+                    классно!&nbsp;👍
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="screenshots">
-            <div class="screenshot screenshot-1 active">
-              <h2 class="screenshot__reviewer">Марина</h2>
-              <p class="screenshot__text">Семинар был увлекательным и интересным. Для себя я получила много инсайдов и
-                получила формулу для группового урока онлайн&#41; Мне было интересно освежить в памяти многие игры для
-                практики лексики и после я применила их на занятие с учеником.
-                <br /><br />
-                Было здорово, что это была не лекция и что можно было участвовать в формате Вопрос-ответ.
-                <br /><br />
-                Мне кажется, особенно будет полезен семинар для начинающих учителей или тех, которые не работали еще по
-                британским/ американским учебникам&#41;
-              </p>
-            </div>
-            <div class="screenshot screenshot-2">
-              <h2 class="screenshot__reviewer">Дарья</h2>
-              <p class="screenshot__text">Я на таком семинаре впервые. Мне понравилось очень все. Для меня было много
-                очень полезного, буду это все использовать. Очень понравилось, что ты каждому уделяла внимание каждый
-                раз. Очень благодарна тебе &#127800;</p>
-            </div>
-            <div class="screenshot screenshot-3">
-              <h2 class="screenshot__reviewer">Анна</h2>
-              <p class="screenshot__text">Не заметила, как пролетело время. Круто. Получила много классных идей. Много
-                из них я возьму себе на вооружение. Понравилось то, что ты точно дала четкий план урока, объяснила
-                каждый пункт и мы по каждому пункту сделали свой урок. Наглядно, супер. Здорово было
-                то, как ты с каждым из нас взаимодействовала, отвечала, давала обратную связь. Мне очень
-                понравилось! &#128522;</p>
-            </div>
-            <div class="screenshot screenshot-4">
-              <h2 class="screenshot__reviewer">Эля</h2>
-              <p class="screenshot__text">Мне очень понравилось, больше всего понравилось то, что это камерная
-                обстановка и можно назвать это скорее практикумом, потому что все участники почувствовали частью этого
-                процесса &#128522;
-                <br /><br />
-                Я гуглила думала, отвечала, включала мозг, потому что это нужно было делать всем. Это
-                очень круто, думаю, что на многих вебинарах этого не хватает. Было классно! 👍
-              </p>
+        </div>
+
+        <!-- R E V I E W S  E N D -->
+      </main>
+      <footer class="footer">
+        <div class="Creator-1">
+          <img
+            src="assets/images/Creator-photo.svg"
+            alt="Creator_photo-footer"
+            class="Creator_photo"
+          />
+          <div class="creator_info">
+            <p class="creator_text">Дизайнер <br />Пятанина Карина</p>
+            <div class="creator_info-links">
+              <a
+                href="https://www.behance.net/kpyataninac5b9"
+                class="links_creator"
+                ><img class="creator1__img" src="./assets/images/be.png"
+              /></a>
+              <a href="https://t.me/et_riin" class="links_creator"
+                ><img class="creator1__img" src="./assets/images/te.png"
+              /></a>
             </div>
           </div>
-          <div class="screenshots__button screenshots__button-next">
-            <img src="assets/images/r-btn.png" class="review__arrow" alt="right-button" />
+        </div>
+
+        <div class="Creator-2">
+          <p class="about_Creator">
+            Cайт сделан школой
+            <a href="https://itgirlschool.com" class="Creator-2-link"
+              >ITGIRLSCHOOL</a
+            >
+          </p>
+          <p class="about_Creator-2">— Школа IT-профессий для девушек</p>
+        </div>
+
+        <div class="Creator-3">
+          <p class="creator_text">Контакты разработчиков</p>
+          <div class="creators-links">
+            <img src="./assets/images/te.png" />
+            <ul>
+              <a href="https://t.me/nika_sirenn">
+                <li class="Creator-3-creators-links">@nika_sirenn</li></a
+              >
+              <a href="https://t.me/StarostinaNatalie">
+                <li class="Creator-3-creators-links">@StarostinaNatalie</li>
+              </a>
+              <a href="https://t.me/prossicent"
+                ><li class="Creator-3-creators-links">@prossicent</li></a
+              >
+              <a href="https://t.me/marinaMoroz87"
+                ><li class="Creator-3-creators-links">@marinaMoroz87</li></a
+              >
+              <a href="https://t.me/BastLera">
+                <li class="Creator-3-creators-links">@BastLera</li>
+              </a>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- R E V I E W S  E N D -->
-  </main>
-  <footer class="footer">
-
-    <div class="Creator-1">
-      <img src="assets/images/Creator-photo.svg" alt="Creator_photo-footer" class="Creator_photo" />
-      <div class="creator_info">
-        <p class="creator_text">Дизайнер <br />Пятанина Карина</p>
-        <div class="creator_info-links">
-          <a href="https://www.behance.net/kpyataninac5b9" class="links_creator"><img class="creator1__img"
-              src="./assets/images/be.png" /></a>
-          <a href="https://t.me/et_riin" class="links_creator"><img class="creator1__img"
-              src="./assets/images/te.png" /></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="Creator-2">
-      <p class="about_Creator">Cайт сделан школой <a href="https://itgirlschool.com"
-          class="Creator-2-link">ITGIRLSCHOOL</a></p>
-      <p class="about_Creator-2">— Школа IT-профессий для девушек</p>
-    </div>
-
-    <div class="Creator-3">
-      <p class="creator_text">Контакты разработчиков</p>
-      <div class="creators-links">
-        <img src="./assets/images/te.png" />
-        <ul>
-          
-          <a href="https://t.me/nika_sirenn">
-            <li class="Creator-3-creators-links">@nika_sirenn</li></a>
-          <a href="https://t.me/StarostinaNatalie">
-              <li class="Creator-3-creators-links">@StarostinaNatalie</li>
+        <div class="Creator-4">
+          <a href="https://itgirlschool.com">
+            <img src="./assets/images/creator-itgirlschool.png" />
           </a>
-          <a href="https://t.me/prossicent"><li class="Creator-3-creators-links">@prossicent</li></a>
-          <a href="https://t.me/marinaMoroz87"><li class="Creator-3-creators-links">@marinaMoroz87</li></a>
-          <a href="https://t.me/BastLera">
-            <li class="Creator-3-creators-links">@BastLera</li>
-          </a>
-        </ul>
-      </div>
+        </div>
+      </footer>
     </div>
-
-    <div class="Creator-4">
-      <a href="https://itgirlschool.com">
-        <img src="./assets/images/creator-itgirlschool.png" />
-      </a>
-    </div>
-
-  </footer>
-  <script src="scripts/rewiew.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="scripts/slider.js" defer></script>
+    <script defer src="splide-4.1-1.3/dist/js/splide.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+  </body>
 </html>

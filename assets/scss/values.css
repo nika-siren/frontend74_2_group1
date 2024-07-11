@@ -8,7 +8,7 @@
 
 .values_h1 {
   margin-bottom: 50px;
-  font-size: 4.2em;
+  /*font-size: 4.2em;*/
   font-weight: 400;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -41,7 +41,8 @@
 
 .img_corner-1 {
   position: absolute;
-  width: 167px;
+  width: -moz-fit-content;
+  width: fit-content;
   top: -65px;
   left: -65px;
   margin-top: 0px;
@@ -49,9 +50,10 @@
 
 .img_corner-2 {
   position: absolute;
-  width: 150px;
-  bottom: -55px;
-  right: -55px;
+  width: -moz-fit-content;
+  width: fit-content;
+  bottom: -65px;
+  right: -65px;
 }
 
 .values_values {

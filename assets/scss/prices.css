@@ -1,4 +1,12 @@
 /*  Prices */
+.services_name,
+.services_price,
+.btn_sign,
+.services_price_students,
+.btn_sign-students {
+  font-size: clamp(0.875rem, 0.809rem + 0.282vw, 1.063rem);
+}
+
 .prices__container {
   margin-left: 10%;
   margin-right: 10%;
@@ -8,7 +16,7 @@
 
 .prices__h1 {
   font-family: "Caveat", cursive;
-  font-size: 4.2em;
+  /*font-size: 4.2em;*/
   line-height: 80%;
   color: #3E2E3B;
   font-weight: 400;
@@ -22,8 +30,7 @@
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.7rem;
   margin: 0;
   outline: none;
@@ -31,7 +38,7 @@
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
-  transition: box-shadow 0.2s, transform 0.1s;
+  transition: 1s;
   -moz-user-select: none;
        user-select: none;
   -webkit-user-select: none;
@@ -50,7 +57,7 @@
 
 .services {
   border: solid 3px #E2B2B5;
-  border-radius: 5%;
+  border-radius: 19px;
   padding: 2%;
   width: 33%;
   display: grid;
@@ -60,14 +67,16 @@
 }
 
 .services_name {
-  font-size: 1rem;
   font-weight: 700;
   color: #3E2E3B;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .services_text {
-  font-size: 1rem;
   font-weight: 400;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 /*  Prices for students*/
@@ -86,7 +95,7 @@
 
 .services_students {
   border: solid 3px #B9D0DF;
-  border-radius: 5%;
+  border-radius: 19px;
   padding: 2%;
   width: 33%;
   display: grid;
@@ -96,14 +105,14 @@
 }
 
 .services_name_students {
-  font-size: 1rem;
   font-weight: 700;
   color: #3E2E3B;
 }
 
 .services_text_students {
-  font-size: 1rem;
   font-weight: 400;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .btn_sign-students {
@@ -114,8 +123,7 @@
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.7rem;
   margin: 0;
   outline: none;
@@ -123,7 +131,7 @@
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
-  transition: box-shadow 0.2s, transform 0.1s;
+  transition: 1s;
   -moz-user-select: none;
        user-select: none;
   -webkit-user-select: none;
